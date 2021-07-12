@@ -1,0 +1,26 @@
+/* ----------------------------------------------------------------
+	Custom CSS
+
+	Add all your Custom Styled CSS here for New Styles or
+	Overwriting Default Theme Styles for Better Handling Updates
+-----------------------------------------------------------------*/
+
+.sinaptic-header #header-wrap {
+  background-color: #2d3956;
+}
+
+.clients {
+  background-image: url("../images/bannerclientescolor.jpg");
+}
+
+#section-work {
+  height: 900px;
+}
+
+#footerimg {
+  width: 40%;
+}
+
+.footer-data {
+  color: white;
+}
