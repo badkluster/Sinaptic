@@ -18,7 +18,7 @@
 
     <!-- PWA -->
     <meta name="MobileOptimized" content="width" />
-    <meta name="theme-color" content="#F0DB4F" />
+    <meta name="theme-color" content="#626b80" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta
@@ -27,26 +27,19 @@
     />
 
     <link rel="apple-touch-icon" href="./assets/logoSinaptic.ico" />
-    <link rel="apple-touch-startup-image" href="./assets/logoSinaptic.webp" />
-    <!-- <link rel="manifest" href="./manifest.json" /> -->
+    <link rel="apple-touch-startup-image" href="./assets/logoSinaptic.webp" /> 
+    <link rel="manifest" href="./manifest.json" />
 
     <link
       rel="stylesheet"
       href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
     />
-    <link rel="stylesheet" href="./assets/css/bootstrap.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/swiper.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/font-icons.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/dark.css" type="text/css" />
-    <link rel="stylesheet" href="./assets/css/custom.css" type="text/css" />
-    <link rel="stylesheet" href="css/estilos.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+    
+    <link rel="stylesheet" href="css/estilos.css" defer/>
+    <script
+      src="https://kit.fontawesome.com/bcdef35034.js"
       crossorigin="anonymous"
-    />
+    ></script>
     <meta content="Sinaptic" name="Author" />
 
     <!-- Og: Property -->
@@ -81,8 +74,10 @@
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     
-    
   </head>
+
+
+
   <body>
     <!-- BOTON DE IR ARRIBA -->
     <div id="btn-top">
@@ -95,17 +90,24 @@
       <div class="logo" id="logo">
         <img src="assets/logoblanco.webp" alt="Logo Sinaptic" />
       </div>
+      
 
       <div class="menu-bar" id="menuBar">
         <i class="fas fa-angle-right" id="btnMenuClose"> </i>
 
+
+      
+
         <nav class="enlaces" id="enlaces">
           <ul>
-            <li><a href="#nosotros">Nosotros</a></li>
+            
+           
             <li><a href="#servicios">Servicios</a></li>
             <li><a href="#porfolio">Portfolio</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#testimoniales">Testimoniales</a></li>
+
           </ul>
         </nav>
 
@@ -117,13 +119,14 @@
             ><span class="fab fa-instagram"></span
           ></a>
           <a
-            href="https://api.whatsapp.com/send?phone=+542214205710"
+            href="https://api.whatsapp.com/send?phone=+541168119269"
             target="_blank"
             ><span class="fab fa-whatsapp"></span
           ></a>
           <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
             ><span class="fab fa-linkedin"></span
           ></a>
+          <div id="google_translate_element" class="google"></div>
         </div>
       </div>
       <i class="fas fa-bars" id="btnMenuOpen"></i>
@@ -131,7 +134,7 @@
     <!-- HEADER -->
     <header>
       <div class="head">
-        <h1>Hacemos realidad los sueños de nuestros clientes</h1>
+        <h1>Hacemos tu trabajo más fácil</h1>
       </div>
 
       <a href="#servicios">
@@ -141,256 +144,167 @@
     <!-- FINISH HEADER -->
 
      <!-- Servicios =============================================  -->
+     <main class="nosotros-contenedor" id="servicios">
+      <h2> NUESTROS SERVICIOS </h2>
+      <div class="contenido-servicios">
 
-     <section id="servicios">
-
-    <main>
-     <div class="content-wrap py-0" >
-        <div
-          id="section-about"
-          class="page-section section bg-transparent m-0"
-          style="
-            background: url('./assets/bannerservicios.webp') center center;
-          "
-        >
-          <div class="container clearfix servicios">
-            <div class="heading-block bottommargin-lg center">
-              <h2>Nuestros Servicios</h2>
-              <span class="content-servicios"
-                >Las empresas constantemente suman objetivos y se enfrentan a
-                nuevos desafíos, una empresa que crece debe ser dinámica y
-                afrontar transformaciones para mantenerse a la vanguardia de su
-                mercado. No se trata solo de tecnología: se trata de impatar en
-                todos los puntos clave de la organización. Es por eso que en
-                SINAPTIC contamos con profesionales con múltiples habilidades para
-                dar soluciones integrales que cumplan y superen las expectativas
-                en las necesidades de sus clientes.</span
-              >
+        <p>
+          Las empresas constantemente suman objetivos y se enfrentan a nuevos
+          desafíos, una empresa que crece debe ser dinámica y afrontar
+          transformaciones para mantenerse a la vanguardia de su mercado. No se
+          trata solo de tecnología: se trata de impatar en todos los puntos clave
+          de la organización. Es por eso que en SINAPTIC contamos con
+          profesionales con múltiples habilidades para dar soluciones integrales
+          que cumplan y superen las expectativas en las necesidades de sus
+          clientes.
+        </p>
+      </div>
+      <div class="nosotros-grid">
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon alt-it">
+              <a href="#"><i class="fas fa-file-excel i-alt"></i></a>
             </div>
-  
-            <div class="row col-mb-50">
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon">
-                    <a href="#"><i class="fas fa-file-excel"></i></a>
-                  </div>
-                  <div class="fbox-content  content-servicios-item">
-                    <h3>
-                      Servicios Integrales de Office365 y SharePoint<span
-                        class="subtitle"
-                        >Ayudamos a las organizaciones a incrementar sus
-                        fortalezas de negocio valiendonos</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon">
-                    <a href="#"><i class="icon-tint i-alt"></i></a>
-                  </div>
-                  <div class="fbox-content content-servicios-item">
-                    <h3>
-                      Unlimited Color Options<span class="subtitle"
-                        >16.7+ Million on your fingertips</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon">
-                    <a href="#"><i class="icon-text-width i-alt"></i></a>
-                  </div>
-                  <div class="fbox-content content-servicios-item">
-                    <h3>
-                      CUSTOMIZABLE FONTS<span class="subtitle"
-                        >Unlimited Fonts &amp; Customizations</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon content-servicios-item">
-                    <a href="#"><i class="icon-ok i-alt"></i></a>
-                  </div>
-                  <div class="fbox-content">
-                    <h3>
-                      12+ Header Designs<span class="subtitle"
-                        >Customizable Headers &amp; Menus</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon">
-                    <a href="#"><i class="icon-thumbs-up i-alt"></i></a>
-                  </div>
-                  <div class="fbox-content content-servicios-item">
-                    <h3>
-                      Awesome Mega menu<span class="subtitle"
-                        >Stylish &amp; Simple Chunky Menus</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="col-sm-6 col-lg-4">
-                <div
-                  class="feature-box fbox-center fbox-outline fbox-lg fbox-effect"
-                >
-                  <div class="fbox-icon">
-                    <a href="#"><i class="icon-eye i-alt"></i></a>
-                  </div>
-                  <div class="fbox-content content-servicios-item">
-                    <h3>
-                      Retina Ready Graphics<span class="subtitle"
-                        >Crystal Clear Images &amp; Icons</span
-                      >
-                    </h3>
-                  </div>
-                </div>
-              </div>
-            </div>
+          </div>
+          <h4>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h4>
+          <p>
+            Ayudamos a las organizaciones a incrementar sus fortalezas de
+            negocio valiendonos
+          </p>
         </div>
-      </main>
-    </section>
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#"><i class="fas fa-tint i-alt"></i></a>
+            </div>
+          </div>
+          <h4>UNLIMITED COLOR OPTIONS</h4>
+          <p>16.7+ Million on your fingertips</p>
+        </div>
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#"><i class="fas fa-text-width i-alt"></i></a>
+            </div>
+          </div>
+          <h4>CUSTOMIZABLE FONTS</h4>
+          <p>Unlimited Fonts & Customizations</p>
+        </div>
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#"><i class="fas fa-check i-alt"></i></a>
+            </div>
+          </div>
+          <h4>12+ HEADER DESIGNS</h4>
+          <p>Customizable Headers & Menus</p>
+        </div>
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#"><i class="fas fa-thumbs-up i-alt"></i></a>
+            </div>
+          </div>
+          <h4>AWESOME MEGA MENU</h4>
+          <p>Stylish & Simple Chunky Menus</p>
+        </div>
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#"><i class="fas fa-eye i-alt"></i></a>
+            </div>
+          </div>
+          <h4>RETINA READY GRAPHICS</h4>
+          <p>Crystal Clear Images & Icons</p>
+        </div>
+      </div>
+    </main>
         <!-- Servicios end =============================================  -->
 
         <!-- Portfolio =============================================  -->
-<section id="portfolio" class="portfolio">
-
-      <div
-      id="section-services"
-      
-      
-    >
-      <div class="vertical-middle">
-        <div class="container clearfix">
-          <div class="heading-block center bottommargin-lg">
-            <h2>Portfolio</h2>
-          </div>
-
-          <div class="row justify-content-left col-mb-50">
-            <div class="col-sm-6 col-lg-6">
-              <div class="feature-box fbox-plain">
-                <div class="fbox-content">
-                  <img src="./assets/willislogo.webp" />
-                  <p>
-                    Los equipos involucrados en el proceso de gestión de
-                    siniestros, presentaban dificultades en el manejo del
-                    flujo de trabajo. El principal motivo era la falta de
-                    visibilidad, trazabilidad y unificación del sistema de
-                    gestión. Para ello se valían de correos electrónicos y
-                    planillas de cálculo como soporte a la operatoria. Esto
-                    generaba sobrecarga de trabajo, falta de control de estado
-                    global, incumplimiento en los tiempos de completitos de
-                    las tareas, desconocimiento del vencimiento de las mismas,
-                    imposibilidad de generar reportes para el análisis, entre
-                    dificultades. No disponían de la información de manera
-                    eficiente y centralizada para detectar fallas en el
-                    proceso y poder ajustarlo para mejorar.
-                  </p>
-
-                  <h2>Trabajo realizado por Sinaptic.</h2>
-                  <p>
-                    Enfocada puramente en el usuario aplicando estándares UX
-                    en el diseño de la herramienta. Workflow de gestión del
-                    ciclo de vida de un siniestro. Generación de tareas por
-                    equipo según estado del siniestro. Detalle de estado,
-                    archivos, comentarios e información general del siniestro.
-                    Dashboard con reporta de siniestros por estado; tareas por
-                    estado; tareas vencidas; agin de siniestros.
-                  </p>
-
-                  <h2>Equipo</h2>
-                  <dl>
-                    <dd>Especialistas de Sharepoint</dd>
-                    <dd>Desarrolladores UX</dd>
-                    <dd>Especialistas de gestión de siniestros</dd>
-                    <dd>Diseñadores gráficos</dd>
-                  </dl>
-
-                  <h2>Tecnologías</h2>
-                  <dl>
-                    <dd>Sharepoint 2010/2019</dd>
-                    <dd>Jquery</dd>
-                    <dd>CSOM</dd>
-                  </dl>
-                </div>
-              </div>
+        <section class="portfolio" id="portfolio">
+          <h2> PORTFOLIO </h2>
+          <div class="contenidos-portfolio">
+            <div class="contenido-portfolio portfolio-left">
+              <img src="assets/willislogo.webp" alt="Logo Willis"></img>
+              <p>
+                Los equipos involucrados en el proceso de gestión de siniestros,
+                presentaban dificultades en el manejo del flujo de trabajo. El
+                principal motivo era la falta de visibilidad, trazabilidad y
+                unificación del sistema de gestión. Para ello se valían de correos
+                electrónicos y planillas de cálculo como soporte a la operatoria.
+                Esto generaba sobrecarga de trabajo, falta de control de estado
+                global, incumplimiento en los tiempos de completitos de las tareas,
+                desconocimiento del vencimiento de las mismas, imposibilidad de
+                generar reportes para el análisis, entre dificultades. No disponían
+                de la información de manera eficiente y centralizada para detectar
+                fallas en el proceso y poder ajustarlo para mejorar.
+              </p>
+    
+              <h3>Trabajo realizado por Sinaptic.</h3>
+              <p>
+                Enfocada puramente en el usuario aplicando estándares UX en el
+                diseño de la herramienta. Workflow de gestión del ciclo de vida de
+                un siniestro. Generación de tareas por equipo según estado del
+                siniestro. Detalle de estado, archivos, comentarios e información
+                general del siniestro. Dashboard con reporta de siniestros por
+                estado; tareas por estado; tareas vencidas; agin de siniestros.
+              </p>
+    
+              <h3>Equipo</h3>
+              <dl>
+                <dd>Especialistas de Sharepoint</dd>
+                <dd>Desarrolladores UX</dd>
+                <dd>Especialistas de gestión de siniestros</dd>
+                <dd>Diseñadores gráficos</dd>
+              </dl>
+    
+              <h3>Tecnologías</h3>
+              <dl>
+                <dd>Sharepoint 2010/2019</dd>
+                <dd>Jquery</dd>
+                <dd>CSOM</dd>
+              </dl>
             </div>
-
-            <div class="col-sm-6 col-lg-6">
-              <div class="feature-box fbox-plain">
-                <div class="fbox-content">
-                  <img id="syngenta" src="./assets/syngentalogo.webp" />
-                  <p>
-                    La empresa requería tener un medio para comunicar su
-                    portfolio de productos (Insecticidas, Herbicidas,
-                    Fungicidas y Tratamiento de Semillas), poder en él también
-                    especificar las características generales de productos,
-                    sus recomendaciones de uso, control de plagas/malezas y la
-                    información de dosis.
-                  </p>
-
-                  <h2>Trabajo realizado por Sinaptic.</h2>
-                  <p>
-                    A partir de un relevamiento inicial de las necesidades de
-                    la empresa, se desarrolló una aplicacion mobile acorde a
-                    lo que estaban necesitando llamada Syngenta Agrimecum.
-                    Para su desarollo se utilizó Ionic con Angular para
-                    generar una aplicación hibrica que permite su publicación
-                    tanto en Android como en IOs. La base de datos se montó
-                    sobre Google Firebase.
-                  </p>
-
-                  <h2>Equipo</h2>
-                  <dl>
-                    <dd>Desarrollador Ionic</dd>
-                    <dd>Diseñador gráfico</dd>
-                    <dd>Arquitecto / analista</dd>
-                  </dl>
-
-                  <h2>Tecnologías</h2>
-                  <dl>
-                    <dd>Ionic</dd>
-                    <dd>Angular</dd>
-                    <dd>Google Firebase</dd>
-                  </dl>
-                </div>
-              </div>
+            <div class="contenido-portfolio portfolio-rigth">
+              <img src="assets/syngentalogo.webp" alt="Logo Sygenta"></img>
+              <p>
+                La empresa requería tener un medio para comunicar su portfolio de
+                productos (Insecticidas, Herbicidas, Fungicidas y Tratamiento de
+                Semillas), poder en él también especificar las características
+                generales de productos, sus recomendaciones de uso, control de
+                plagas/malezas y la información de dosis.
+              </p>
+    
+              <h3>Trabajo realizado por Sinaptic.</h3>
+              <p>
+                A partir de un relevamiento inicial de las necesidades de la
+                empresa, se desarrolló una aplicacion mobile acorde a lo que estaban
+                necesitando llamada Syngenta Agrimecum. Para su desarollo se utilizó
+                Ionic con Angular para generar una aplicación hibrica que permite su
+                publicación tanto en Android como en IOs. La base de datos se montó
+                sobre Google Firebase.
+              </p>
+    
+              <h3>Equipo</h3>
+              <dl>
+                <dd>Desarrollador Ionic</dd>
+                <dd>Diseñador gráfico</dd>
+                <dd>Arquitecto / analista</dd>
+              </dl>
+    
+              <h3>Tecnologías</h3>
+              <dl>
+                <dd>Ionic</dd>
+                <dd>Angular</dd>
+                <dd>Google Firebase</dd>
+              </dl>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
+        </section>
     <!-- Portfolio end =============================================  -->
 
-        <!-- Clientes =============================================  -->
+    <!-- Clientes =============================================  -->
   <section id="clientes" class="clientes">
     <div class="contenedor-h2">
       <h2> ALGUNOS DE NUESTROS CLIENTES </h2>
@@ -402,142 +316,147 @@
         <!-- Clientes  end =============================================  -->
 
         <!-- Contacto  =============================================  -->
-    <section class="contacto">
+    <section id="contacto" class="contacto">
+      <div class="content">
 
-   
-      <div
-      id="section-contact"
-      class="page-section section m-0 border-0 overflow-hidden"
-    >
-      <h2 id="contacto" class="center">CONTACTO</h2>
-      <div class="mx-auto topmargin" style="max-width: 850px">
-        <div class="form-widget">
-          <div class="form-result"></div>
+        <h1 class="logo">CONTACTO</h1>
+      <div  > 
 
-          <div
-            class="row mb-0"
-            id="template-contactform"
-            name="template-contactform"
-          >
-            <div class="form-process">
-              <div class="css3-spinner">
-                <div class="css3-spinner-scale-ripple">
-                  <div></div>
-                  <div></div>
-                  <div></div>
+        <div class="contact-wrapper animated bounceInUp">
+            <div class="contact-form">
+            
+                <div id="app" class="form">
+                    <p>
+                        <label>Nombre</label>
+                        <input type="text" name="nombre" id="nombre">
+                    </p>
+                    <p>
+                        <label>Correo Electrónico</label>
+                        <input type="email" name="email" id="email" v-model="from_name">
+                    </p>
+                    <p>
+                        <label>Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" v-model="from_telefono" >
+                    </p>
+                    <p>
+                        <label>Asunto</label>
+                        <input type="text" name="asunto" id="asunto" v-model="subject">
+                    </p>
+                    <p class="block">
+                       <label>Ingrese su mensaje</label> 
+                        <textarea name="message" rows="3" v-model="message" id="mensaje"></textarea>
+                    </p>
+                    <p class="block">
+                        <button @click="enviar">
+                            ENVIAR CONSULTA
+                        </button>
+                    </p>
                 </div>
-              </div>
             </div>
-
-            <div class="col-md-6 mb-4">
-              <input
-                type="text"
-                id="template-contactform-name"
-                name="template-contactform-name"
-                value=""
-                class="sm-form-control border-form-control required"
-                placeholder="Nombre"
-              />
+            <div class="contact-info">
+                <h4>Más Info</h4>
+                <ul>
+                    <li><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</li>
+                    <li><i class="fas fa-phone"></i> +541168119269</li>
+                    <li><i class="fas fa-envelope-open-text"></i> sales@sinaptic.com.ar</li>
+                </ul>
+                <p>Envianos tu consulta. Hace realidad tus sueños, nosotros te ayudamos.</p>
             </div>
-            <div class="col-md-6 mb-4">
-              <input
-                type="email"
-                id="template-contactform-email"
-                name="template-contactform-email"
-                value=""
-                class="required email sm-form-control border-form-control"
-                placeholder="Correo electrónico"
-              />
-            </div>
-
-            <div class="w-100"></div>
-
-            <div class="col-md-4 mb-4">
-              <input
-                type="text"
-                id="template-contactform-phone"
-                name="template-contactform-phone"
-                value=""
-                class="sm-form-control border-form-control"
-                placeholder="Teléfono"
-              />
-            </div>
-
-            <div class="col-md-8 mb-4">
-              <input
-                type="text"
-                id="template-contactform-subject"
-                name="subject"
-                value=""
-                class="required sm-form-control border-form-control"
-                placeholder="Asunto"
-              />
-            </div>
-
-            <div class="w-100"></div>
-
-            <div class="col-12 mb-4">
-              <textarea
-                class="required sm-form-control border-form-control"
-                id="template-contactform-message"
-                name="template-contactform-message"
-                rows="7"
-                cols="30"
-                placeholder="Ingrese su mensaje"
-              ></textarea>
-            </div>
-
-            <div class="col-12 center mb-4">
-              <button
-                class="
-                  button button-border button-circle
-                  font-weight-medium
-                  ml-0
-                  topmargin-sm
-                  button-send
-                "
-                (click)="sendContactEmail()"
-                id="template-contactform-submit"
-                name="template-contactform-submit"
-                value="submit"
-              >
-                Enviar consulta
-              </button>
-              <!-- <button class="button button-border button-circle font-weight-medium ml-0 topmargin-sm button-send" data-target="myModal1"  id="template-contactform-submit" name="template-contactform-submit" value="submit">Enviar consulta</button> -->
-
-              <br />
-              <small
-                style="display: block; font-size: 13px; margin-top: 15px"
-              ></small>
-            </div>
-
-            <div class="w-100"></div>
-
-            <div class="col-12 d-none">
-              <input
-                type="text"
-                id="template-contactform-botcheck"
-                name="template-contactform-botcheck"
-                value=""
-                class="sm-form-control"
-              />
-            </div>
-
-            <input
-              type="hidden"
-              name="prefix"
-              value="template-contactform-"
-            />
-          </div>
         </div>
-      </div>
-    </div>
 
-  </div>
+      </div>
+      </div>
+
+      <!-- ALERTAS -->
+     <div class="alertas">
+      <div id="alertError" class="alert hide">
+           <span class="icono-alert fas fa-exclamation-circle"></span>
+           <span class="msg">Error: campos de entrada vacios.</span>
+      </div>
+
+      <div id="alertErrorMail" class="alert hide">
+        <span class="icono-alert fas fa-exclamation-circle"></span>
+        <span class="msg">El correo electrónico debe ser valido.</span>
+     </div>
+
+      <div id="alertSuccess" class="alert hide">
+           <span class="icono-alert fas fa-check-circle"></span>
+           <span class="msg">¡Datos enviados! Gracias por contactarnos.</span>
+      </div>
+ </div>
+      
     </section>
   <!-- Contacto end =============================================  -->
 
-        <footer id="footer" class="footer">
+    <!-- TESTIMONIALES -->
+    <section class="page-section testimoniales" id="testimoniales">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Testimoniales</h2>
+          <h3 class="section-subheading text-muted">
+            Nuestros clientes nos recomiendan
+          </h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image timeline-image-juanunda">
+             
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Juan Carlos Hunda</h4>
+                <h5 class="subheading">Jefe de Procesos y Mejora Continua
+                  Cordial Compañía Financiera</h5>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  "Para nosotros incorporar los servicios de Sinaptic fue ampliamente ventajoso y beneficioso, ya que nos encontrábamos con una mala experiencia anterior, y mediante sus servicios logramos desarrollar con éxito nuestra primera intranet."
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image timeline-image-jorge">
+              
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Jorge Donantueno</h4>
+                <h5 class="subheading"> Owner
+                  Inbio Tubes</h5>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  "Con Sinaptic hemos logrado construir una aplicación móvil robusta que nos permite llevar a cabo la tarea de toma de pedidos de manera más eficiente en los clientes, es sin duda una ventaja competitiva la que adquirimos al contratar sus servicios."
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image timeline-image-monica">
+              
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>Mónica Garibaldi</h4>
+                <h5 class="subheading">Gerenta de RR. HH.
+                  Cordial Cia. Financiera</h5>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  "Con la herramienta de analytics logramos conocer como las personas de nuestra organización usan la intranet y eso nos permite desplegar estrategias de publicación de los contenidos."
+                </p>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </section>
+
+  <!-- FOOTER =============================================  -->
+
+<footer id="footer" class="footer">
  <div class="footer-img">
 
    <a href="#">
@@ -563,13 +482,142 @@
                 <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
                   ><span class="fab fa-linkedin"></span
                 ></a>
-                <div class="footer-data"><i class="icon-envelope2"></i> info@sinaptic.com <span class="middot">&middot;</span></div>
+                <div class="footer-data"><i class="icon-envelope2"></i> sales@sinaptic.com.ar <span class="middot">&middot;</span></div>
             </div>
      </div>
         </footer>
         <!-- #footer end -->
 
 
-    <script src="js/app.js"></script>
+
+        <!--TRADUCIR PAGINA WEB-->
+
+   <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
+            }
+    </script>
+    
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+        <!--APP JS DE LA WEB-->
+    <script src="./pwa.js"></script>
+    <script src="js/app.js" defer></script>
+   
+
+    <!--EFECTOS DE SCROOL CON AOS-->
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script> -->
+   
+
+     <!--TRABAJAMOS CON VUE PARA EMAIL-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js">
+     </script>
+     <!--INTEGRAMOS EMAILJS-->
+     <script src="https://cdn.emailjs.com/dist/email.min.js" type="text/javascript">
+     </script>
+     <!--VALIDACION Y ENVIAR EMAIL CON EMAILJS-->
+     <script>
+          (function () {
+               emailjs.init("user_glGpscUm4wdPBCAVrXQQE");
+          })();
+          const vue = new Vue({
+               el: '#app',
+               data() {
+                    return {
+                         from_name: '',
+                         from_email: '',
+                         message: '',
+                         subject: '',
+                         from_telefono: '',
+                         
+                    }
+               },
+               methods: {
+                    enviar() {
+                         let data = {
+                              from_name: this.from_name,
+                              from_email: this.from_email,
+                              message: this.message,
+                              subject: this.subject,
+                              from_telefono: this.from_telefono,
+                             
+                         };
+                         var inputNombre = document.getElementById("nombre")
+                         var inputAsunto = document.getElementById("asunto")
+                         var inputEmail = document.getElementById("email")
+                         var inputMensaje = document.getElementById("mensaje")
+                         var inputTelefono = document.getElementById("telefono")
+                         var alertErrorEmail = document.getElementById("alertErrorMail");
+                         var alertSuccess = document.getElementById("alertSuccess")
+                         var alertError = document.getElementById("alertError");
+                         
+                         const emailRegex = /^(([^<>()\[\]\\.,:\s@"]+(\.[^<>()\[\]\\.,:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                         
+
+
+                         if (inputNombre.value == 0 || inputMensaje.value == 0 || inputEmail.value == 0 ) {
+
+                            
+                              alertError.classList.remove("hide");
+                              alertError.classList.add("show");
+
+                              setTimeout(function () {
+                                   alertError.classList.remove("show");
+                                   alertError.classList.add("hide");
+                              }, 2000);
+
+                         } else if (emailRegex.test(inputEmail.value) == false && inputEmail.value != 0  ) { 
+                             alertErrorEmail.classList.remove("hide");
+                              alertErrorEmail.classList.add("show");
+
+                              setTimeout(function () {
+                                   alertErrorEmail.classList.remove("show");
+                                   alertErrorEmail.classList.add("hide");
+                              }, 2000);
+                         }
+                           else {
+                              emailjs.send("service_b2hkwla", "template_ncklwvf", data)
+
+                                   .then(function (response) {
+                                        if (response.text === 'OK' && inputNombre.value != 0 && inputEmail.value != 0 && inputMensaje.value != 0 ) {
+                                             alertSuccess.classList.remove("hide");
+                                             alertSuccess.classList.add("show");
+
+                                             setTimeout(function () {
+                                                  alertSuccess.classList.remove("show");
+                                                  alertSuccess.classList.add("hide");
+                                             }, 2000);
+                                             inputNombre.value = "";
+                                             inputAsunto.value = "";
+                                             inputEmail.value = "";
+                                             inputMensaje.value = "";
+                                             inputTelefono.value= "";
+                                             
+
+                                             console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
+                                        }
+
+                                   },
+                                        function (err) {
+
+                                             console.log("FAILED. error=", err);
+                                        });
+                         }
+                    }
+
+               }
+          });
+     </script>
+
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
+     <script src="js/main.js" defer></script>
+     <script src="js/t.min.js" defer ></script>
+     <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js" defer ></script>
+
+
+   
+     
+  
   </body>
 </html>
