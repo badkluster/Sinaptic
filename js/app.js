@@ -38,9 +38,9 @@ window.addEventListener("scroll", function () {
 
   // MODIFICAR ELEMENTO CUANDO LLEGUE A FINAL DE PAGINA
   if (fullSize == scroll + sizeVP) {
-    btnTop.classList.add("scrollFinal");
-  } else {
     btnTop.classList.remove("scrollFinal");
+  } else {
+    btnTop.classList.add("scrollFinal");
   }
 });
 
@@ -52,4 +52,12 @@ btnTop.addEventListener("click", function () {
 // DETECTAR EVENTO CLIC EN EL LOGO
 logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
+});
+
+var nosotros = document.getElementById("nosotros");
+var title = document.getElementById("title");
+
+nosotros.addEventListener("mouseover", function () {
+  title.classList.remove("invisible");
+  title.classList.add("visible");
 });

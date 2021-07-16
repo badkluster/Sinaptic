@@ -30,10 +30,7 @@
     <link rel="apple-touch-startup-image" href="./assets/logoSinaptic.webp" /> 
     <link rel="manifest" href="./manifest.json" />
 
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <link rel="stylesheet" href="./css/normalize.css">
     
     <link rel="stylesheet" href="css/estilos.css" defer/>
     <script
@@ -113,18 +110,18 @@
 
         <div class="sociales">
           <a href="https://www.facebook.com/Sinaptic.ES" target="_blank"
-            ><span class="fab fa-facebook"></span
+            ><span class="fab fa-facebook" ></span
           ></a>
           <a href="https://www.instagram.com/sinaptic_ar/" target="_blank"
-            ><span class="fab fa-instagram"></span
+            ><span class="fab fa-instagram" ></span
           ></a>
           <a
             href="https://api.whatsapp.com/send?phone=+541168119269"
             target="_blank"
-            ><span class="fab fa-whatsapp"></span
+            ><span class="fab fa-whatsapp" ></span
           ></a>
           <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
-            ><span class="fab fa-linkedin"></span
+            ><span class="fab fa-linkedin" ></span
           ></a>
           <div id="google_translate_element" class="google"></div>
         </div>
@@ -134,7 +131,7 @@
     <!-- HEADER -->
     <header>
       <div class="head">
-        <h1>Hacemos tu trabajo más fácil</h1>
+        <h1 data-aos="zoom-in"  data-aos-duration="1000">Hacemos tu trabajo más fácil</h1>
       </div>
 
       <a href="#servicios">
@@ -148,7 +145,7 @@
       <h2> NUESTROS SERVICIOS </h2>
       <div class="contenido-servicios">
 
-        <p>
+        <p data-aos="flip-up">
           Las empresas constantemente suman objetivos y se enfrentan a nuevos
           desafíos, una empresa que crece debe ser dinámica y afrontar
           transformaciones para mantenerse a la vanguardia de su mercado. No se
@@ -159,63 +156,70 @@
           clientes.
         </p>
       </div>
-      <div class="nosotros-grid">
+      <div class="nosotros-grid" >
         <div class="nosotros-secciones">
-          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
-            <div class="fbox-icon alt-it">
-              <a href="#"><i class="fas fa-file-excel i-alt"></i></a>
+      
+              <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+                <div class="fbox-icon alt-it">
+                <a  id="nosotros"><i class="fas fa-file-word i-alt" ></i></a>
+                </div>
             </div>
-          </div>
-          <h4>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h4>
-          <p>
-            Ayudamos a las organizaciones a incrementar sus fortalezas de
-            negocio valiendonos
-          </p>
+            <h4>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h4>
+            <p id="title" class="invisible">
+              Ayudamos a las organizaciones a incrementar sus fortalezas de
+              negocio valiendonos de las múltiples funcionalidades que la plataforma Microsoft Office 365 ofrece.
+            </p>
+              
         </div>
+
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#"><i class="fas fa-tint i-alt"></i></a>
+                <a id="nosotros" ><i class="fas fa-code i-alt"></i></a>
+              </div>
             </div>
-          </div>
-          <h4>UNLIMITED COLOR OPTIONS</h4>
-          <p>16.7+ Million on your fingertips</p>
+            <h4>DESARROLLO WEB</h4>
+            <p id="title" class="invisible">Somos líderes en el desarrollo de aplicaciones web y móviles. Contamos con una gran experiencia creando soluciones de alta performance utilizando las últimas tendencias y la tecnología que mejor se ajusta al contexto de la implementación.</p>
         </div>
+
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#"><i class="fas fa-text-width i-alt"></i></a>
+              <a id="nosotros"><i class="fas fa-mobile-alt i-alt"></i></a>
             </div>
           </div>
-          <h4>CUSTOMIZABLE FONTS</h4>
-          <p>Unlimited Fonts & Customizations</p>
+          <h4>DESARROLLO MOBILE</h4>
+          <p id="title" class="invisible">Nuestro equipo de especialistas en desarrollo mobile le ofrecen un servicio end-to-end para lograr que sus proyectos móviles se materialicen en aplicaciones performantes, robustas y escalables. Podemos ayudarlo cuando necesite desarrollar un proyecto de cero mobilizar uno existente o mantener una aplicación productiva.</p>
         </div>
+
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#"><i class="fas fa-check i-alt"></i></a>
+              <a id="nosotros"><i class="fas fa-cogs i-alt"></i></a>
             </div>
           </div>
-          <h4>12+ HEADER DESIGNS</h4>
-          <p>Customizable Headers & Menus</p>
+          <h4>DISEÑO Y ARQUITECTURA DE SISTEMAS </h4>
+          <p id="title" class="invisible">Nuestros consultores lo guiarán en el diseño y arquitectura de soluciones,aplicando patrones de diseño y buenas prácticas con el fin de lograr un software robusto y escalable.El proceso de desarrollo de un sistema o plataforma requiere un plan de trabajo robusto. Nuestros expertos realizarán investigaciones y análisis para ofrecer la mejor solución de software. Los arquitectos de Sinaptic ofrecen su experiencia en el diseño, revisión, desarrollo, ajuste y mejora de una arquitectura de software compleja para sistemas de TI heredados, nuevos y obsoletos.</p>
         </div>
+
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#"><i class="fas fa-thumbs-up i-alt"></i></a>
+              <a id="nosotros" class="nosotros"><i class="fas fa-chalkboard-teacher i-alt"></i></a>
             </div>
           </div>
-          <h4>AWESOME MEGA MENU</h4>
-          <p>Stylish & Simple Chunky Menus</p>
+          <h4 >CAPACITACIÓN Y TRANSFERENCIA DE CONOCIMIENTO A EQUIPOS PARA AUTOGESTION</h4>
+          <p id="title" class="invisible">Acompañamos a las organizaciones en su proceso de transformación digital, integramos a las personas, los procesos y la tecnología. Contamos con servicios de capacitación y workshops.</p>
         </div>
+
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#"><i class="fas fa-eye i-alt"></i></a>
+              <a id="nosotros"><i class="fas fa-robot i-alt"></i></a>
             </div>
           </div>
-          <h4>RETINA READY GRAPHICS</h4>
-          <p>Crystal Clear Images & Icons</p>
+          <h4>RPA Y BPM</h4>
+          <p id="title" class="invisible">Trabajamos utilizando tecnologías RPA Y BPM para generar nuevos niveles de calidad y productividad en la estrategia de transformación digital de la empresa y sus procesos.</p>
         </div>
       </div>
     </main>
@@ -409,14 +413,14 @@
                   Cordial Compañía Financiera</h5>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">
+                <p class="text-muted" data-aos="fade-right"  data-aos-duration="1000">
                   "Para nosotros incorporar los servicios de Sinaptic fue ampliamente ventajoso y beneficioso, ya que nos encontrábamos con una mala experiencia anterior, y mediante sus servicios logramos desarrollar con éxito nuestra primera intranet."
                 </p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
-            <div class="timeline-image timeline-image-jorge">
+            <div class="timeline-image timeline-image-jorge" >
               
             </div>
             <div class="timeline-panel">
@@ -426,7 +430,7 @@
                   Inbio Tubes</h5>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">
+                <p class="text-muted" data-aos="fade-right"  data-aos-duration="1000">
                   "Con Sinaptic hemos logrado construir una aplicación móvil robusta que nos permite llevar a cabo la tarea de toma de pedidos de manera más eficiente en los clientes, es sin duda una ventaja competitiva la que adquirimos al contratar sus servicios."
                 </p>
               </div>
@@ -443,7 +447,7 @@
                   Cordial Cia. Financiera</h5>
               </div>
               <div class="timeline-body">
-                <p class="text-muted">
+                <p class="text-muted" data-aos="fade-right">
                   "Con la herramienta de analytics logramos conocer como las personas de nuestra organización usan la intranet y eso nos permite desplegar estrategias de publicación de los contenidos."
                 </p>
               </div>
@@ -489,16 +493,8 @@
         <!-- #footer end -->
 
 
-
-        <!--TRADUCIR PAGINA WEB-->
-
-   <script type="text/javascript">
-    function googleTranslateElementInit() {
-      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'ca,eu,gl,en,fr,it,pt,de', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true}, 'google_translate_element');
-            }
-    </script>
-    
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <script src="./js/google.js"></script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
         <!--APP JS DE LA WEB-->
     <script src="./pwa.js"></script>
@@ -506,8 +502,8 @@
    
 
     <!--EFECTOS DE SCROOL CON AOS-->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script> AOS.init();</script> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script> AOS.init();</script>
    
 
      <!--TRABAJAMOS CON VUE PARA EMAIL-->
