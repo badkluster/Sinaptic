@@ -85,7 +85,7 @@
 
     <div class="menu-principal">
       <div class="logo" id="logo">
-        <img class="lazy" src="assets/logoblanco.webp" alt="Logo Sinaptic" />
+        <img src="assets/logoblanco.webp" alt="Logo Sinaptic" />
       </div>
 
       <div class="menu-bar" id="menuBar">
@@ -155,12 +155,12 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
-              <a><i class="fas fa-file-word i-alt"></i></a>
+              <a class="eventHover"><i class="fas fa-file-word i-alt"></i></a>
             </div>
           </div>
           <h4>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h4>
           <p
-            class="text-servicios"
+            class="text-servicios addClass"
             data-aos="flip-up"
             data-aos-duration="2000"
             data-aos-delay="100"
@@ -174,7 +174,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a><i class="fas fa-code i-alt"></i></a>
+              <a class="eventHover"><i class="fas fa-code i-alt"></i></a>
             </div>
           </div>
           <h4>DESARROLLO WEB</h4>
@@ -191,7 +191,7 @@
           </p>
         </div>
 
-        <div class="nosotros-secciones">
+        <div class="nosotros-secciones addClass">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a><i class="fas fa-mobile-alt i-alt"></i></a>
@@ -287,7 +287,7 @@
 
       <div class="contenedor-informacion contenedor">
         <div class="texto-portfolio">
-          <img class="lazy" src="./assets/willislogo.webp" alt="Logo Willis" />
+          <img src="./assets/willislogo.webp" alt="Logo Willis" />
           <h3 class="title-portfolio">Resumen de la Problematica</h3>
           <p>
             Los equipos involucrados en el proceso de gestión de siniestros,
@@ -314,7 +314,7 @@
         </div>
         <div class="contenedor-img-portfolio">
           <img
-            class="img-portfolio lazy"
+            class="img-portfolio"
             src="./assets/willisempresa.jpg"
             alt="imagen empresa willis"
             data-aos="fade-left"
@@ -342,11 +342,7 @@
 
       <div class="contenedor-informacion contenedor">
         <div class="texto-portfolio">
-          <img
-            class="lazy"
-            src="./assets/syngentalogo.webp"
-            alt="Logo syngenta"
-          />
+          <img src="./assets/syngentalogo.webp" alt="Logo syngenta" />
           <h3>Resumen de la Problematica</h3>
           <p>
             La empresa requería tener un medio para comunicar su portfolio de
@@ -367,7 +363,7 @@
         </div>
         <div class="contenedor-img-portfolio">
           <img
-            class="img-portfolio lazy"
+            class="img-portfolio"
             src="./assets/syngenta empresa.jpeg"
             alt="imagen empresa syngenta"
             data-aos="fade-left"
@@ -476,11 +472,7 @@
         <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
       </div>
 
-      <img
-        class="lazy"
-        src="assets/bannerclientescolor.webp"
-        alt="banner clientes"
-      />
+      <img src="assets/bannerclientescolor.webp" alt="banner clientes" />
     </section>
     <!-- Clientes  end =============================================  -->
 
@@ -661,7 +653,7 @@
     <footer id="footer" class="footer">
       <div class="footer-img">
         <a href="#">
-          <img class="lazy" id="footerimg" src="./assets/logoblanco.webp" />
+          <img id="footerimg" src="./assets/logoblanco.webp" />
         </a>
       </div>
 
@@ -822,46 +814,5 @@
       src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"
       defer
     ></script>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        var e;
-        if ("IntersectionObserver" in window) {
-          e = document.querySelectorAll(".lazy");
-          var n = new IntersectionObserver(function (e, t) {
-            e.forEach(function (e) {
-              if (e.isIntersecting) {
-                var t = e.target;
-                (t.src = t.dataset.src),
-                  t.classList.remove("lazy"),
-                  n.unobserve(t);
-              }
-            });
-          });
-          e.forEach(function (e) {
-            n.observe(e);
-          });
-        } else {
-          var t;
-          function r() {
-            t && clearTimeout(t),
-              (t = setTimeout(function () {
-                var n = window.pageYOffset;
-                e.forEach(function (e) {
-                  e.offsetTop < window.innerHeight + n &&
-                    ((e.src = e.dataset.src), e.classList.remove("lazy"));
-                }),
-                  0 == e.length &&
-                    (document.removeEventListener("scroll", r),
-                    window.removeEventListener("resize", r),
-                    window.removeEventListener("orientationChange", r));
-              }, 20));
-          }
-          (e = document.querySelectorAll(".lazy")),
-            document.addEventListener("scroll", r),
-            window.addEventListener("resize", r),
-            window.addEventListener("orientationChange", r);
-        }
-      });
-    </script>
   </body>
 </html>
