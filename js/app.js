@@ -53,3 +53,11 @@ btnTop.addEventListener("click", function () {
 logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
+
+var nosotros = document.getElementById("nosotros");
+var title = document.getElementById("title");
+
+nosotros.addEventListener("mouseover", function () {
+  title.classList.remove("invisible");
+  title.classList.add("visible");
+});
