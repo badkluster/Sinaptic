@@ -38,9 +38,9 @@ window.addEventListener("scroll", function () {
 
   // MODIFICAR ELEMENTO CUANDO LLEGUE A FINAL DE PAGINA
   if (fullSize == scroll + sizeVP) {
-    btnTop.classList.add("scrollFinal");
-  } else {
     btnTop.classList.remove("scrollFinal");
+  } else {
+    btnTop.classList.add("scrollFinal");
   }
 });
 
