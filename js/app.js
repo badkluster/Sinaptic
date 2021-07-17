@@ -54,10 +54,17 @@ logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-var nosotros = document.getElementById("nosotros");
-var title = document.getElementById("title");
+// visible / invisible parrafo seccion servicios.
 
-nosotros.addEventListener("mouseover", function () {
-  title.classList.remove("invisible");
-  title.classList.add("visible");
-});
+// let titulo = document.querySelectorAll(".titulo");
+// titulo.forEach((elemento) => {
+//   elemento.addEventListener("mouseover", () => {
+//     let parrafo = [...document.querySelectorAll(".parrafo")];
+
+//     parrafo.map((p) => p.classList.replace("invisible", "visible"));
+//   });
+//   elemento.addEventListener("mouseout", () => {
+//     let parrafo = [...document.querySelectorAll(".parrafo")];
+//     parrafo.map((p) => p.classList.replace("visible", "invisible"));
+//   });
+// });

@@ -170,7 +170,8 @@ img {
   margin: auto;
   justify-content: space-between;
   align-items: center;
-  height: 7.5rem;
+  height: auto;
+
   padding: 0 30px;
   background-color: rgba(13, 37, 56, 0.322);
   overflow: hidden;
@@ -302,12 +303,17 @@ header {
 /**************SERVICIOS ***********/
 .invisible {
   display: none;
-  transition: all 5s;
 }
 
 .visible {
   display: block;
+  transition: all 5s;
 }
+
+.titulo:hover.invisible {
+  display: block;
+}
+
 main {
   height: auto;
 }
@@ -351,12 +357,14 @@ main {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
   margin-bottom: 10rem;
+  padding: 0 3rem;
 }
 
 @media (min-width: 400px) {
   .nosotros-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    padding: 0 3rem;
   }
 }
 
@@ -364,6 +372,7 @@ main {
   .nosotros-grid {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 5rem;
+    padding: 0 3rem;
   }
 }
 
@@ -375,6 +384,7 @@ main {
 .nosotros-secciones h4 {
   font-weight: bolds;
   font-size: 1.5rem;
+  margin-top: 0;
 }
 
 .nosotros-secciones p {
@@ -454,6 +464,7 @@ main {
 }
 
 /**************PORFTOLIO***********/
+
 .portfolio {
   background-image: url("../assets/fondoportfolio.webp");
   background-repeat: no-repeat;
@@ -461,6 +472,8 @@ main {
   background-position: center;
   height: auto;
   max-width: 100%;
+  color: #fff;
+  padding: 0 3rem;
 }
 
 .portfolio h2 {
@@ -470,59 +483,72 @@ main {
   margin-top: 0;
 }
 
+.portfolio h3 {
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: 0;
+  border-bottom: solid 1px #fff;
+}
+
+.portfolio h4 {
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+}
+
+.portfolio p {
+  padding: 0;
+  margin: 0;
+}
+
 .portfolio img {
   max-width: 100%;
 }
 
-.contenidos-portfolio {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  margin: 0;
-  padding: 0;
+@media (min-width: 874px) {
+  .contenedor-informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+  }
+}
+
+.img-portfolio {
+  height: 400px;
+}
+
+.contenedor-img-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.contenedor-tecnologias {
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor-tecnologias ul li {
+  list-style: circle;
 }
 
 @media (min-width: 768px) {
-  .contenidos-portfolio {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .contenedor-tecnologias {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
   }
 
-  .contenido-portfolio p {
-    padding: 5rem;
-  }
-
-  .portfolio-rigth {
-    padding-right: 20rem;
-    padding-left: 5rem;
-  }
-
-  .portfolio-left {
-    padding-left: 20rem;
+  .contenedor-tecnologias ul li {
+    list-style: circle;
   }
 }
 
-.contenido-portfolio {
-  text-align: start;
-  color: #fff;
-}
-
-.contenido-portfolio h3 {
-  color: #fff;
-}
-
-.contenido-portfolio p {
-  color: #bbbbbb;
-  font-size: 1.8rem;
-}
-
-.portfolio-rigth {
-  padding: 0;
-  text-align: center;
-}
-
-.portfolio-left {
-  padding: 0;
-  text-align: center;
+.barra {
+  width: 80%;
+  border: solid 4px black;
+  display: flex;
+  margin: 2rem auto;
 }
 
 /****** CONTACTO ******/
@@ -533,11 +559,16 @@ main {
   background-size: cover;
   margin-bottom: 3rem;
 }
+
 .container {
   max-width: 1170px;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
+}
+
+.form label {
+  color: #fff;
 }
 
 ul {
@@ -632,6 +663,12 @@ ul {
   .contact-info ul,
   .contact-info p {
     text-align: left;
+  }
+}
+
+@media (max-width: 670px) {
+  .contact-form .form {
+    display: block;
   }
 }
 
@@ -1483,6 +1520,7 @@ Featured Boxes
 
 .page-section {
   padding: 6rem 0;
+  color: white;
 }
 .page-section h2.section-heading,
 .page-section .section-heading.h2 {
@@ -1563,7 +1601,7 @@ Featured Boxes
   text-transform: uppercase !important;
 }
 .text-muted {
-  color: #6c757d !important;
+  color: #d0d2d4 !important;
 }
 
 .timeline {
@@ -1784,4 +1822,30 @@ Featured Boxes
 
 .google {
   line-height: 1;
+}
+
+.goog-te-gadget-simple {
+  background-color: transparent !important;
+  border: none !important;
+  font-size: 1rem;
+  display: inline-block;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+.goog-te-gadget-icon {
+  width: 0px !important;
+  height: 0px !important;
+  padding: 0 !important;
+  vertical-align: middle;
+}
+
+.goog-te-gadget-simple .goog-te-menu-value span {
+  font-size: 1rem !important;
+  color: #fff !important;
+}
+
+.goog-te-menu-value {
+  margin-left: -4px !important;
 }
