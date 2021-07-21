@@ -67,7 +67,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="./css/css2.css">
 
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
+    
   </head>
 
   <body id="body">
@@ -116,7 +116,7 @@
       <i class="fas fa-bars" id="btnMenuOpen"></i>
     </div>
     <!-- HEADER -->
-    <!-- data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" -->
+   
     <header>
       <div class="head">
         <h1 class="zoom-in-zoom-out" >
@@ -254,8 +254,9 @@
 
       <article>
         <div class="contenedor-informacion contenedor">
-          <div class="texto-portfolio">
-            <img src="./assets/willislogo.webp" alt="Logo Willis" />
+          <div class="texto-portfolio"  >
+            <div id="willis"></div>
+          
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
               - Reducir los tiempos en la gestión de los siniestros
@@ -285,8 +286,9 @@
           </div>
           
           
-          <div class="texto-portfolio">
-            <img src="./assets/syngentalogo.webp" alt="Logo Willis" />
+          <div class="texto-portfolio" >
+            <div id="syngenta"></div>
+           
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
               - Contar con un catalogo de productos que se pueda ver desde el celular
@@ -320,7 +322,8 @@
       <article>
         <div class="contenedor-informacion contenedor">
           <div class="texto-portfolio">
-            <img src="./assets/1024px-Red_link_logo.svg.webp" style="width: 80px;" alt="Logo RedLink S.A" />
+            <div id="redlink"></div>
+           
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
               - Que los empleados puedan autogestionar la obtención de beneficios corporativos
@@ -348,8 +351,9 @@
           </div>
           
           
-          <div class="texto-portfolio">
-            <img src="./assets/inta-logo.webp" style="width: 150px; margin-left: -3rem" alt="Logo INTA" />
+          <div class="texto-portfolio" >
+            <div id="inta"></div>
+            
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
               - Contar con un portal de comunicación interna y portal colaborativo para la gestión de proyectos de investigación
@@ -388,7 +392,8 @@
         <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
       </div>
 
-      <img src="assets/bannerclientescolor.webp" alt="banner clientes" />
+      <div id="clientesImg" ></div>
+      
     </section>
     <!-- Clientes  end =============================================  -->
 
@@ -600,19 +605,14 @@
     <script src="./pwa.js"></script>
     <script src="js/app.js" defer></script>
 
-    <!--EFECTOS DE SCROOL CON AOS-->
-    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script> -->
-
+    
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js" defer></script>
     <!--INTEGRAMOS EMAILJS-->
     <script
       src="https://cdn.emailjs.com/dist/email.min.js"
       type="text/javascript"
-    ></script>
+       defer ></script>
     <!--VALIDACION Y ENVIAR EMAIL CON EMAILJS-->
     <script>
       (function () {
@@ -717,9 +717,9 @@
 
 
 <!-- HACER SCROLL DE FORMA SUAVE -->
- <script src="./js/jquery-1.11.0.min.js"></script>
+ <script src="./js/jquery-1.11.0.min.js" defer></script>
    
-<script src="./js/scrool.js"></script>
+<script src="./js/scrool.js" defer></script>
 
 
   </body>

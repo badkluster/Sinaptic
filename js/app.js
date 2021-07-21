@@ -44,65 +44,52 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   agregarImagen();
-// });
+// DETECTAMOS EVENTO CLICK EN EL BOTON
+btnTop.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 
-// function agregarImagen() {
-//   const imagenWillis = document.createElement("IMG");
-//   imagenWillis.src = "../assets/willisempresa.webp";
-//   imagenWillis.classList.add("img-portfolio");
-//   imagenWillis.alt = "imagen empresa Willis";
-//   document.querySelector("#willis").appendChild(imagenWillis);
+// DETECTAR EVENTO CLIC EN EL LOGO
+logo.addEventListener("click", function () {
+  window.scrollTo(0, 0);
+});
 
-//   const imagenSyngenta = document.createElement("IMG");
-//   imagenSyngenta.src = "../assets/syngenta empresa.webp";
-//   imagenSyngenta.classList.add("img-portfolio");
-//   imagenSyngenta.alt = "imagen empresa Syngenta";
-//   document.querySelector("#syngenta").appendChild(imagenSyngenta);
+document.addEventListener("DOMContentLoaded", () => {
+  agregarImagen();
+});
 
-//   const imagenRedlink = document.createElement("IMG");
-//   imagenRedlink.src = "../assets/redlinkempresa.webp";
-//   imagenRedlink.classList.add("img-portfolio");
-//   imagenRedlink.alt = "imagen empresa RedLink";
-//   document.querySelector("#redlink").appendChild(imagenRedlink);
+function agregarImagen() {
+  const imagenWillis = document.createElement("IMG");
+  imagenWillis.src = "../assets/willislogo.webp";
 
-//   const imagenCordial = document.createElement("IMG");
-//   imagenCordial.src = "../assets/cordialempresa.webp";
-//   imagenCordial.classList.add("img-portfolio");
-//   imagenCordial.alt = "imagen empresa Cordial";
-//   document.querySelector("#cordial").appendChild(imagenCordial);
-// }
+  imagenWillis.alt = "imagen empresa Willis";
+  document.querySelector("#willis").appendChild(imagenWillis);
 
-// document.addEventListener("DOMContentLoaded", () => {
-//   agregarImagen();
-// });
+  const imagenSyngenta = document.createElement("IMG");
+  imagenSyngenta.src = "../assets/syngentalogo.webp";
 
-// function agregarImagen() {
-//   const imagenWillis = document.createElement("IMG");
-//   imagenWillis.src = "../assets/willisempresa.webp";
-//   imagenWillis.classList.add("img-portfolio");
-//   imagenWillis.alt = "imagen empresa Willis";
-//   document.querySelector("#willis").appendChild(imagenWillis);
+  imagenSyngenta.alt = "imagen empresa Syngenta";
+  document.querySelector("#syngenta").appendChild(imagenSyngenta);
 
-//   const imagenSyngenta = document.createElement("IMG");
-//   imagenSyngenta.src = "../assets/syngenta empresa.webp";
-//   imagenSyngenta.classList.add("img-portfolio");
-//   imagenSyngenta.alt = "imagen empresa Syngenta";
-//   document.querySelector("#syngenta").appendChild(imagenSyngenta);
+  const imagenRedlink = document.createElement("IMG");
+  imagenRedlink.src = "../assets/1024px-Red_link_logo.svg.webp";
+  imagenRedlink.style = "width: 80px;";
+  imagenRedlink.alt = "imagen empresa RedLink";
+  document.querySelector("#redlink").appendChild(imagenRedlink);
 
-//   const imagenRedlink = document.createElement("IMG");
-//   imagenRedlink.src = "../assets/redlinkempresa.webp";
-//   imagenRedlink.classList.add("img-portfolio");
-//   imagenRedlink.alt = "imagen empresa RedLink";
-//   document.querySelector("#redlink").appendChild(imagenRedlink);
+  const imagenInta = document.createElement("IMG");
+  imagenInta.src = "../assets/inta-logo.webp";
+  imagenInta.style = "width: 150px; margin-left: -3rem";
 
-//   const imagenCordial = document.createElement("IMG");
-//   imagenCordial.src = "../assets/cordialempresa.webp";
-//   imagenCordial.classList.add("img-portfolio");
-//   imagenCordial.alt = "imagen empresa Cordial";
-//   document.querySelector("#cordial").appendChild(imagenCordial);
-// }
+  imagenInta.alt = "imagen empresa INTA";
+  document.querySelector("#inta").appendChild(imagenInta);
+
+  const imagenClientes = document.createElement("IMG");
+  imagenClientes.src = "../assets/bannerclientescolor.webp";
+
+  imagenClientes.alt = "imagen Clientes";
+  document.querySelector("#clientesImg").appendChild(imagenClientes);
+}
 
 // visible / invisible parrafo seccion servicios.
 
