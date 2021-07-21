@@ -44,15 +44,35 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// DETECTAMOS EVENTO CLICK EN EL BOTON
-btnTop.addEventListener("click", function () {
-  window.scrollTo(0, 0);
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   agregarImagen();
+// });
 
-// DETECTAR EVENTO CLIC EN EL LOGO
-logo.addEventListener("click", function () {
-  window.scrollTo(0, 0);
-});
+// function agregarImagen() {
+//   const imagenWillis = document.createElement("IMG");
+//   imagenWillis.src = "../assets/willisempresa.webp";
+//   imagenWillis.classList.add("img-portfolio");
+//   imagenWillis.alt = "imagen empresa Willis";
+//   document.querySelector("#willis").appendChild(imagenWillis);
+
+//   const imagenSyngenta = document.createElement("IMG");
+//   imagenSyngenta.src = "../assets/syngenta empresa.webp";
+//   imagenSyngenta.classList.add("img-portfolio");
+//   imagenSyngenta.alt = "imagen empresa Syngenta";
+//   document.querySelector("#syngenta").appendChild(imagenSyngenta);
+
+//   const imagenRedlink = document.createElement("IMG");
+//   imagenRedlink.src = "../assets/redlinkempresa.webp";
+//   imagenRedlink.classList.add("img-portfolio");
+//   imagenRedlink.alt = "imagen empresa RedLink";
+//   document.querySelector("#redlink").appendChild(imagenRedlink);
+
+//   const imagenCordial = document.createElement("IMG");
+//   imagenCordial.src = "../assets/cordialempresa.webp";
+//   imagenCordial.classList.add("img-portfolio");
+//   imagenCordial.alt = "imagen empresa Cordial";
+//   document.querySelector("#cordial").appendChild(imagenCordial);
+// }
 
 // document.addEventListener("DOMContentLoaded", () => {
 //   agregarImagen();
