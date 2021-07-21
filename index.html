@@ -40,7 +40,7 @@
     <!-- Og: Property -->
     <meta property="og:title" content="Sinaptic || Applied Technology" />
     <meta property="og:type" content="text" />
-    <meta property="og:url" content="http://www.sinaptic.com.ar" />
+    <meta property="og:url" content="http://sinaptic.com.ar" />
 
     <!-- Twitter Card -->
     <meta
@@ -65,25 +65,22 @@
     <link rel="shortcut icon" href="assets/logoSinaptic.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="./css/css2.css">
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" /> -->
   </head>
 
-  <body>
+  <body id="body">
     <!-- BOTON DE IR ARRIBA -->
     <div id="btn-top">
-      <span class="fas fa-angle-up"></span>
+     <a href="#body"><span class="fas fa-angle-up"></span> </a>
     </div>
 
     <!--  MENU PRINCIPAL-->
 
-    <div class="menu-principal">
+    <div class="menu-principal" >
       <div class="logo" id="logo">
-        <img src="assets/logoblanco.webp" alt="Logo Sinaptic" />
+        <a href="#body"> <img src="assets/logoblanco.webp" alt="Logo Sinaptic" /></a>
       </div>
 
       <div class="menu-bar" id="menuBar">
@@ -114,15 +111,15 @@
           <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
             ><span class="fab fa-linkedin"></span
           ></a>
-          <div id="google_translate_element" class="google"></div>
         </div>
       </div>
       <i class="fas fa-bars" id="btnMenuOpen"></i>
     </div>
     <!-- HEADER -->
+    <!-- data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400" -->
     <header>
       <div class="head">
-        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+        <h1 class="zoom-in-zoom-out" >
           Hacemos tu trabajo más fácil
         </h1>
       </div>
@@ -137,7 +134,7 @@
     <main class="nosotros-contenedor" id="servicios">
       <h2>NUESTROS SERVICIOS</h2>
       <div class="contenido-servicios">
-        <p data-aos="flip-up">
+        <p>
           Las empresas constantemente suman objetivos y se enfrentan a nuevos
           desafíos, una empresa que crece debe ser dinámica y afrontar
           transformaciones para mantenerse a la vanguardia de su mercado. No se
@@ -157,7 +154,7 @@
             </div>
           </div>
           <h4>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Ayudamos a las organizaciones a incrementar sus fortalezas de
             negocio valiendonos de las múltiples funcionalidades que la
             plataforma Microsoft Office 365 ofrece.
@@ -171,7 +168,7 @@
             </div>
           </div>
           <h4>DESARROLLO WEB</h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Somos líderes en el desarrollo de aplicaciones web y móviles.
             Contamos con una gran experiencia creando soluciones de alta
             performance utilizando las últimas tendencias y la tecnología que
@@ -186,7 +183,7 @@
             </div>
           </div>
           <h4>DESARROLLO MOBILE</h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Nuestro equipo de especialistas en desarrollo mobile le ofrecen un
             servicio end-to-end para lograr que sus proyectos móviles se
             materialicen en aplicaciones performantes, robustas y escalables.
@@ -202,7 +199,7 @@
             </div>
           </div>
           <h4>DISEÑO Y ARQUITECTURA DE SISTEMAS</h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Nuestros consultores lo guiarán en el diseño y arquitectura de
             soluciones,aplicando patrones de diseño y buenas prácticas con el
             fin de lograr un software robusto y escalable.El proceso de
@@ -227,7 +224,7 @@
             CAPACITACIÓN Y TRANSFERENCIA DE CONOCIMIENTO A EQUIPOS PARA
             AUTOGESTION
           </h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Acompañamos a las organizaciones en su proceso de transformación
             digital, integramos a las personas, los procesos y la tecnología.
             Contamos con servicios de capacitación y workshops.
@@ -241,7 +238,7 @@
             </div>
           </div>
           <h4>RPA Y BPM</h4>
-          <p data-aos="flip-up" data-aos-duration="2000" data-aos-delay="100">
+          <p>
             Trabajamos utilizando tecnologías RPA Y BPM para generar nuevos
             niveles de calidad y productividad en la estrategia de
             transformación digital de la empresa y sus procesos.
@@ -259,106 +256,129 @@
         <div class="contenedor-informacion contenedor">
           <div class="texto-portfolio">
             <img src="./assets/willislogo.webp" alt="Logo Willis" />
-            <h3 class="title-portfolio">Resumen de la Problematica</h3>
+            <h3 class="title-portfolio">Necesidad</h3>
             <p>
-              Los equipos involucrados en el proceso de gestión de siniestros,
-              presentaban dificultades en el manejo del flujo de trabajo. El
-              principal motivo era la falta de visibilidad, trazabilidad y
-              unificación del sistema de gestión. Para ello se valían de correos
-              electrónicos y planillas de cálculo como soporte a la operatoria.
-              Esto generaba sobrecarga de trabajo, falta de control de estado
-              global, incumplimiento en los tiempos de completitos de las
-              tareas, desconocimiento del vencimiento de las mismas,
-              imposibilidad de generar reportes para el análisis, entre
-              dificultades. No disponían de la información de manera eficiente y
-              centralizada para detectar fallas en el proceso y poder ajustarlo
-              para mejorar.
+              - Reducir los tiempos en la gestión de los siniestros
             </p>
-            <h3>Trabajo realizado por Sinaptic</h3>
-            <p>
-              Enfocada puramente en el usuario aplicando estándares UX en el
-              diseño de la herramienta. Workflow de gestión del ciclo de vida de
-              un siniestro. Generación de tareas por equipo según estado del
-              siniestro. Detalle de estado, archivos, comentarios e información
-              general del siniestro. Dashboard con reporta de siniestros por
-              estado; tareas por estado; tareas vencidas; agin de siniestros.
-            </p>
+            <h3 class="title-portfolio">Beneficios</h3>
+            <ul> 
+              <li>Posiblidad de visualizar todo el sistema de manera gráfica desde el tablero de control  </li>
+              <li>Segmentación de tareas por rol de usuario con niveles de jerarquía</li>
+              <li>Manejo de legajos de siniestros para adjuntar toda la documentación digital relativa de manera centralizada</li>
+              <li>Posibilidad de realizar comentarios sobre un proceso para detallar los sucesos relacionados a un siniestro</li>
+              <li>Servicio automatizado de alertas y seguimiento de tareas</li>
+              <li>Trazabilidad mediante la medición de tiempos del ciclo de vida del siniestro que ayudaron a detectar procesos a mejorar</li>
+              <li>Reportes para el análisis de datos para la toma de decisiones (BI)</li>  
+            <ul/>
+
+
+            <div class="contenedor-tecnologias contenedor">
+              <h4>Técnologias usadas</h4>
+              <ul>
+                <li>Sharepoint 2010/2019</li>
+                <li>C#</li>
+                <li>CSOM</li>
+                <li>NodeJs</li>
+              </ul>
+            
+            </div>
           </div>
-          <div class="contenedor-img-portfolio">
-            <img
-              class="img-portfolio"
-              src="./assets/willisempresa.webp"
-              alt="imagen empresa willis"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            />
+          
+          
+          <div class="texto-portfolio">
+            <img src="./assets/syngentalogo.webp" alt="Logo Willis" />
+            <h3 class="title-portfolio">Necesidad</h3>
+            <p>
+              - Contar con un catalogo de productos que se pueda ver desde el celular
+            </p>
+            <h3 class="title-portfolio">Beneficios</h3>
+            <ul> 
+              <li>Contar con una aplicación mobile compatible con dispositivos Android e iOS  </li>
+              <li>Información centralizada y fácilmente actualizable sin necesidad de publicar nuevas versiones de la aplicación</li>
+              <li>Funcionalidad de productos favoritos</li>
+              <li> Interfaz sencilla y con mucha gráfica para su fácil navegación</li>
+              <li> Buscador de productos para localizar productos por cultivo, marca o datos accesorios del mismo</li> 
+            <ul/>
+
+            <div class="contenedor-tecnologias contenedor">
+              <h4>Técnologias usadas</h4>
+              <ul>
+                <li>Ionic</li>
+                <li>Firebase</li>
+                <li>Android</li>
+                <li>iOS</li>
+              </ul>
+            </div>
+
           </div>
         </div>
-        <div class="contenedor-tecnologias contenedor">
-          <h4>Tecnologias usadas</h4>
-          <ul>
-            <li>Sharepoint 2010/2019</li>
-            <li>Jquery</li>
-            <li>CSOM</li>
-          </ul>
-          <h4>Equipo</h4>
-          <ul>
-            <li>Especialistas de Sharepoint</li>
-            <li>Desarrolladores UX</li>
-            <li>Especialistas de gestión de siniestros</li>
-            <li>Diseñadores gráficos</li>
-          </ul>
-        </div>
+       
       </article>
 
       <div class="barra"></div>
+
       <article>
         <div class="contenedor-informacion contenedor">
           <div class="texto-portfolio">
-            <img src="./assets/syngentalogo.webp" alt="Logo syngenta" />
-            <h3>Resumen de la Problematica</h3>
+            <img src="./assets/1024px-Red_link_logo.svg.webp" style="width: 80px;" alt="Logo RedLink S.A" />
+            <h3 class="title-portfolio">Necesidad</h3>
             <p>
-              La empresa requería tener un medio para comunicar su portfolio de
-              productos (Insecticidas, Herbicidas, Fungicidas y Tratamiento de
-              Semillas), poder en él también especificar las características
-              generales de productos, sus recomendaciones de uso, control de
-              plagas/malezas y la información de dosis.
+              - Que los empleados puedan autogestionar la obtención de beneficios corporativos
             </p>
-            <h3>Trabajo realizado por Sinaptic</h3>
-            <p>
-              A partir de un relevamiento inicial de las necesidades de la
-              empresa, se desarrolló una aplicacion mobile acorde a lo que
-              estaban necesitando llamada Syngenta Agrimecum. Para su desarollo
-              se utilizó Ionic con Angular para generar una aplicación hibrica
-              que permite su publicación tanto en Android como en IOs. La base
-              de datos se montó sobre Google Firebase.
-            </p>
+            <h3 class="title-portfolio">Beneficios</h3>
+            <ul> 
+              <li> Los usuarios pueden solicitar beneficios desde la plataforma optimizando recursos y tiempos</li>
+              <li>Notificaciones automatizadas a los involucrados del proceso</li>
+              <li>Procesos automatizados de asignación de puntos y beneficios programados</li>
+              <li>Circuitos de aprobación de beneficios especiales </li>
+              >  
+            <ul/>
+
+
+            <div class="contenedor-tecnologias contenedor">
+              <h4>Técnologias usadas</h4>
+              <ul>
+                <li>Sharepoint 2010/2019</li>
+                <li>C#</li>
+                <li>CSOM</li>
+                
+              </ul>
+            
+            </div>
           </div>
-          <div class="contenedor-img-portfolio">
-            <img
-              class="img-portfolio"
-              src="./assets/syngenta empresa.webp"
-              alt="imagen empresa syngenta"
-              data-aos="fade-left"
-              data-aos-duration="3000"
-            />
+          
+          
+          <div class="texto-portfolio">
+            <img src="./assets/inta-logo.webp" style="width: 150px; margin-left: -3rem" alt="Logo INTA" />
+            <h3 class="title-portfolio">Necesidad</h3>
+            <p>
+              - Contar con un portal de comunicación interna y portal colaborativo para la gestión de proyectos de investigación
+            </p>
+            <h3 class="title-portfolio">Beneficios</h3>
+            <ul> 
+              <li>Se desarrolló una intranet para canalizar la comunicación mediante el portal </li>
+              <li> Posibilidad de gestionar búsquedas internas de personal</li>
+              <li>Se optimizó la plataforma para dar servicio a los más de 10.000 usuarios distribuidos por todo el país</li>
+              <li> Gestión y reserva de salas y equipamiento tecnológico</li>
+              <li> Diseño de la arquitectura de información para que los usuarios encuentren de manera sencilla lo que necesitan</li> 
+            <ul/>
+
+            <div class="contenedor-tecnologias contenedor">
+              <h4>Técnologias usadas</h4>
+              <ul>
+                <li>Office 365</li>
+                <li>SharePoint</li>
+                
+              </ul>
+            </div>
+
           </div>
         </div>
-        <div class="contenedor-tecnologias contenedor">
-          <h4>Tecnologias usadas</h4>
-          <ul>
-            <li>Ionic</li>
-            <li>Angular</li>
-            <li>Google Firebase</li>
-          </ul>
-          <h4>Equipo</h4>
-          <ul>
-            <li>Desarrollador Ionic</li>
-            <li>Diseñador gráfico</li>
-            <li>Arquitecto / analista</li>
-          </ul>
-        </div>
+       
       </article>
+
+      
+     
     </section>
     <!-- Portfolio end =============================================  -->
 
@@ -375,7 +395,7 @@
     <!-- Contacto  =============================================  -->
     <section id="contacto" class="contacto">
       <div class="content">
-        <h1 class="logo">CONTACTO</h1>
+        <h1 class="logo-contact">CONTACTO</h1>
         <div>
           <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
@@ -488,8 +508,7 @@
               <div class="timeline-body">
                 <p
                   class="text-muted"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
+                 
                 >
                   "Para nosotros incorporar los servicios de Sinaptic fue
                   ampliamente ventajoso y beneficioso, ya que nos encontrábamos
@@ -509,8 +528,7 @@
               <div class="timeline-body">
                 <p
                   class="text-muted"
-                  data-aos="fade-right"
-                  data-aos-duration="1000"
+                 
                 >
                   "Con Sinaptic hemos logrado construir una aplicación móvil
                   robusta que nos permite llevar a cabo la tarea de toma de
@@ -531,7 +549,7 @@
                 </h5>
               </div>
               <div class="timeline-body">
-                <p class="text-muted" data-aos="fade-right">
+                <p class="text-muted" >
                   "Con la herramienta de analytics logramos conocer como las
                   personas de nuestra organización usan la intranet y eso nos
                   permite desplegar estrategias de publicación de los
@@ -583,10 +601,10 @@
     <script src="js/app.js" defer></script>
 
     <!--EFECTOS DE SCROOL CON AOS-->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script>
+    </script> -->
 
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
@@ -697,19 +715,12 @@
       });
     </script>
 
-    <!-- TRADUCTOR DE GOOGLE -->
-    <script src="./js/google.js"></script>
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" defer></script>
-    <script src="js/main.js" defer></script>
-    <script src="js/t.min.js" defer></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"
-      defer
-    ></script> -->
+<!-- HACER SCROLL DE FORMA SUAVE -->
+ <script src="./js/jquery-1.11.0.min.js"></script>
+   
+<script src="./js/scrool.js"></script>
+
+
   </body>
 </html>

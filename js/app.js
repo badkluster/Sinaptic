@@ -38,9 +38,9 @@ window.addEventListener("scroll", function () {
 
   // MODIFICAR ELEMENTO CUANDO LLEGUE A FINAL DE PAGINA
   if (fullSize == scroll + sizeVP) {
-    btnTop.classList.remove("scrollFinal");
-  } else {
     btnTop.classList.add("scrollFinal");
+  } else {
+    btnTop.classList.remove("scrollFinal");
   }
 });
 
@@ -53,6 +53,36 @@ btnTop.addEventListener("click", function () {
 logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
+
+// document.addEventListener("DOMContentLoaded", () => {
+//   agregarImagen();
+// });
+
+// function agregarImagen() {
+//   const imagenWillis = document.createElement("IMG");
+//   imagenWillis.src = "../assets/willisempresa.webp";
+//   imagenWillis.classList.add("img-portfolio");
+//   imagenWillis.alt = "imagen empresa Willis";
+//   document.querySelector("#willis").appendChild(imagenWillis);
+
+//   const imagenSyngenta = document.createElement("IMG");
+//   imagenSyngenta.src = "../assets/syngenta empresa.webp";
+//   imagenSyngenta.classList.add("img-portfolio");
+//   imagenSyngenta.alt = "imagen empresa Syngenta";
+//   document.querySelector("#syngenta").appendChild(imagenSyngenta);
+
+//   const imagenRedlink = document.createElement("IMG");
+//   imagenRedlink.src = "../assets/redlinkempresa.webp";
+//   imagenRedlink.classList.add("img-portfolio");
+//   imagenRedlink.alt = "imagen empresa RedLink";
+//   document.querySelector("#redlink").appendChild(imagenRedlink);
+
+//   const imagenCordial = document.createElement("IMG");
+//   imagenCordial.src = "../assets/cordialempresa.webp";
+//   imagenCordial.classList.add("img-portfolio");
+//   imagenCordial.alt = "imagen empresa Cordial";
+//   document.querySelector("#cordial").appendChild(imagenCordial);
+// }
 
 // visible / invisible parrafo seccion servicios.
 
