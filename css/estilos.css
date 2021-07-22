@@ -1,5 +1,5 @@
 /**************SERVICIOS ***********/
-.invisible {
+/* .invisible {
   display: none;
 }
 
@@ -8,9 +8,7 @@
   transition: all 5s;
 }
 
-.titulo:hover.invisible {
-  display: block;
-}
+ */
 
 main {
   height: auto;
@@ -28,6 +26,7 @@ main {
 }
 
 .nosotros-contenedor h2 {
+  padding: 0 2rem;
   padding-top: 3rem;
   margin-bottom: 0;
   font-size: 3rem;
