@@ -94,9 +94,13 @@ img {
   overflow: hidden;
 }
 
+.hidden {
+  overflow: hidden;
+}
 /***********************
   ********UTILIDADES********
   ************************/
+
 .centrar-texto {
   text-align: center;
 }
@@ -577,7 +581,7 @@ main {
   text-align: center;
 }
 
-.nosotros-secciones h4 {
+.nosotros-secciones h3 {
   font-weight: bolds;
   font-size: 1.5rem;
   margin-top: 0;
@@ -637,6 +641,8 @@ main {
 .clientes {
   height: auto;
   position: relative;
+  background-color: #fff;
+  height: auto;
 }
 
 .contenedor-h2 {
@@ -648,12 +654,7 @@ main {
   padding-top: 0rem;
   font-size: 5vw;
   text-align: center;
-}
-
-.img-clientes img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  color: #333;
 }
 
 @media (min-width: 768px) {
@@ -877,8 +878,11 @@ ul {
   background: transparent;
   color: #fff;
 }
+.contact-info h2 {
+  font-size: 2.8rem;
+}
 
-.contact-info h4,
+.contact-info h2,
 .contact-info ul,
 .contact-info p {
   text-align: center;
@@ -894,7 +898,7 @@ ul {
   .contact-wrapper > * {
     padding: 2em;
   }
-  .contact-info h4,
+  .contact-info h2,
   .contact-info ul,
   .contact-info p {
     text-align: left;

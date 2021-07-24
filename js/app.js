@@ -7,15 +7,18 @@ var btnMenuOpen = document.getElementById("btnMenuOpen"),
 // Click abrir
 btnMenuOpen.addEventListener("click", function () {
   menuResponsive.classList.add("active");
+  document.body.classList.add("hidden");
 });
 
 // Click cerrar
 btnMenuClose.addEventListener("click", function () {
   menuResponsive.classList.remove("active");
+  document.body.classList.remove("hidden");
 });
 
 // Cerrar menu con elementos de enlace
 enlaces.addEventListener("click", function () {
+  document.body.classList.remove("hidden");
   menuResponsive.style.transitionDelay = "0.5s";
   menuResponsive.classList.remove("active");
 });
@@ -86,7 +89,7 @@ function agregarImagen() {
 
   const imagenClientes = document.createElement("IMG");
   imagenClientes.src = "./assets/bannerclientescolor.webp";
-  imagenClientes.classList = "img-clientes";
+  imagenClientes.style = "max-width: 100%; width:100%; height: auto";
   imagenClientes.alt = "imagen Clientes";
   document.querySelector("#clientesImg").appendChild(imagenClientes);
 }
