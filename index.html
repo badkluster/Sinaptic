@@ -30,11 +30,18 @@
     <link rel="apple-touch-startup-image" href="./assets/logoSinaptic.webp" />
     <link rel="manifest" href="./manifest.json" />
 
-    <link rel="stylesheet" href="./css/normalize.css" />
-
-    <link rel="stylesheet" href="css/estilos.css" defer />
-    <link rel="stylesheet" href="./lib/fontawesome/css/all.css" />
-
+    <!-- ESTILOS -->
+ 
+      <link rel="preload" href="./css/normalize.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="./css/normalize.css"></noscript>
+      <link rel="stylesheet" href="./css/estilos.css">
+     
+      <link rel="preload" href="./lib/fontawesome/css/all.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="./lib/fontawesome/css/all.css"></noscript> 
+      <link rel="preload" href="./css/css2.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+      <noscript><link rel="stylesheet" href="./css/css2.css"></noscript>
+    
+    
     <meta content="Sinaptic" name="Author" />
 
     <!-- Og: Property -->
@@ -65,23 +72,21 @@
     <link rel="shortcut icon" href="assets/logoSinaptic.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./css/css2.css">
 
-    
+
   </head>
-
-  <body id="body">
-    <!-- BOTON DE IR ARRIBA -->
-    <div id="btn-top">
-     <a href="#body"><span class="fas fa-angle-up"></span> </a>
-    </div>
-
-    <!--  MENU PRINCIPAL-->
-
-    <div class="menu-principal" >
-      <div class="logo" id="logo">
-        <a href="#body"> <img src="assets/logoblanco.webp" alt="Logo Sinaptic" /></a>
+    <body id="body">
+      <!-- BOTON DE IR ARRIBA -->
+      <div id="btn-top">
+       <a href="#body"><span class="fas fa-angle-up"></span> </a>
       </div>
+
+      <!--  MENU PRINCIPAL-->
+
+      <div class="menu-principal" >
+        <div class="logo" id="logo">
+          <a href="#body"> <img src="assets/logoblanco.webp" alt="Logo Sinaptic" /></a>
+        </div>
 
       <div class="menu-bar" id="menuBar">
         <i class="fas fa-angle-right" id="btnMenuClose"> </i>
@@ -97,20 +102,21 @@
         </nav>
 
         <div class="sociales">
-          <a href="https://www.facebook.com/Sinaptic.ES" target="_blank"
+          <a href="https://www.facebook.com/Sinaptic.ES"  target="_blank" rel="noopener"
             ><span class="fab fa-facebook"></span
           ></a>
-          <a href="https://www.instagram.com/sinaptic_ar/" target="_blank"
+          <a href="https://www.instagram.com/sinaptic_ar/" target="_blank" rel="noopener"
             ><span class="fab fa-instagram"></span
           ></a>
           <a
             href="https://api.whatsapp.com/send?phone=+541168119269"
-            target="_blank"
+            target="_blank" rel="noopener"
             ><span class="fab fa-whatsapp"></span
           ></a>
-          <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
+          <a href="https://www.linkedin.com/company/sinaptic" target="_blank" rel="noopener"
             ><span class="fab fa-linkedin"></span
           ></a>
+          
         </div>
       </div>
       <i class="fas fa-bars" id="btnMenuOpen"></i>
@@ -406,11 +412,11 @@
             <div class="contact-form">
               <div id="app" class="form">
                 <p>
-                  <label>Nombre</label>
+                  <label for="nombre">Nombre</label>
                   <input type="text" name="nombre" id="nombre" />
                 </p>
                 <p>
-                  <label>Correo Electrónico</label>
+                  <label for="email">Correo Electrónico</label>
                   <input
                     type="email"
                     name="email"
@@ -419,7 +425,7 @@
                   />
                 </p>
                 <p>
-                  <label>Teléfono</label>
+                  <label for="telefono">Teléfono</label>
                   <input
                     type="tel"
                     name="telefono"
@@ -428,7 +434,7 @@
                   />
                 </p>
                 <p>
-                  <label>Asunto</label>
+                  <label for="asunto">Asunto</label>
                   <input
                     type="text"
                     name="asunto"
@@ -437,7 +443,7 @@
                   />
                 </p>
                 <p class="block">
-                  <label>Ingrese su mensaje</label>
+                  <label for="mensaje">Ingrese su mensaje</label>
                   <textarea
                     name="message"
                     rows="3"
@@ -571,27 +577,28 @@
 
     <footer id="footer" class="footer">
       <div class="footer-img">
-        <a href="#">
-          <img id="footerimg" src="./assets/logoblanco.webp" />
+        <a href="#body">
+          <img id="footerimg" src="./assets/logoblanco.webp" alt="logo Sinaptic" />
         </a>
       </div>
 
       <div class="social-icons">
         <div class="sociales">
-          <a href="https://www.facebook.com/Sinaptic.ES" target="_blank"
+          <a href="https://www.facebook.com/Sinaptic.ES" target="_blank" rel="noopener"
             ><span class="fab fa-facebook"></span
           ></a>
-          <a href="https://www.instagram.com/sinaptic_ar/" target="_blank"
+          <a href="https://www.instagram.com/sinaptic_ar/" target="_blank" rel="noopener"
             ><span class="fab fa-instagram"></span
           ></a>
           <a
             href="https://api.whatsapp.com/send?phone=+542214205710"
-            target="_blank"
+            target="_blank" rel="noopener"
             ><span class="fab fa-whatsapp"></span
           ></a>
-          <a href="https://www.linkedin.com/company/sinaptic" target="_blank"
+          <a href="https://www.linkedin.com/company/sinaptic" target="_blank" rel="noopener"
             ><span class="fab fa-linkedin"></span
           ></a>
+         
           <div class="footer-data">
             <i class="icon-envelope2"></i> sales@sinaptic.com.ar
             <span class="middot">&middot;</span>
@@ -607,14 +614,15 @@
 
     
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js" defer></script>
+    <script src="./js/vue@2.js" ></script>
     <!--INTEGRAMOS EMAILJS-->
     <script
       src="https://cdn.emailjs.com/dist/email.min.js"
-      type="text/javascript"
-       defer ></script>
+      type="text/javascript" 
+       ></script>
+
     <!--VALIDACION Y ENVIAR EMAIL CON EMAILJS-->
-    <script>
+    <script defer>
       (function () {
         emailjs.init("user_glGpscUm4wdPBCAVrXQQE");
       })();
@@ -717,7 +725,7 @@
 
 
 <!-- HACER SCROLL DE FORMA SUAVE -->
- <script src="./js/jquery-1.11.0.min.js" defer></script>
+ <script src="./js/jquery-3.6.0.min.js" defer></script>
    
 <script src="./js/scrool.js" defer></script>
 
