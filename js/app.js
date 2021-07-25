@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
   agregarImagen();
 });
 
+// FUNCION PARA AGREGAR IMAGENES SIN USAR EL INDEX
 function agregarImagen() {
   const imagenWillis = document.createElement("IMG");
   imagenWillis.src = "./assets/willislogo.webp";
@@ -94,21 +95,7 @@ function agregarImagen() {
   document.querySelector("#clientesImg").appendChild(imagenClientes);
 }
 
-// visible / invisible parrafo seccion servicios.
-
-// let titulo = document.querySelectorAll(".titulo");
-// titulo.forEach((elemento) => {
-//   elemento.addEventListener("mouseover", () => {
-//     let parrafo = [...document.querySelectorAll(".parrafo")];
-
-//     parrafo.map((p) => p.classList.replace("invisible", "visible"));
-//   });
-//   elemento.addEventListener("mouseout", () => {
-//     let parrafo = [...document.querySelectorAll(".parrafo")];
-//     parrafo.map((p) => p.classList.replace("visible", "invisible"));
-//   });
-// });
-
+// SCROLL SUAVE
 (function () // Code in a function to create an isolate scope
 {
   var speed = 1500;

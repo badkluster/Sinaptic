@@ -238,7 +238,7 @@ font-family: 'PT Serif', serif; */
             rgba(106, 110, 112, 0.5) 0%,
             rgba(70, 75, 74, 0.5) 100%
           ),
-          url(../assets/workoffice2.webp);
+          url(./assets/workoffice2.webp);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
@@ -696,7 +696,7 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
-              <a href="#" class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><i class="fas fa-file-word i-alt"></i
               ></a>
             </div>
@@ -712,7 +712,9 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" class="titulo"><i class="fas fa-code i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-code i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>DESARROLLO WEB</h3>
@@ -727,7 +729,7 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><i class="fas fa-mobile-alt i-alt"></i
               ></a>
             </div>
@@ -745,7 +747,9 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" class="titulo"><i class="fas fa-cogs i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-cogs i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
@@ -765,7 +769,7 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><i class="fas fa-chalkboard-teacher i-alt"></i
               ></a>
             </div>
@@ -784,7 +788,9 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" class="titulo"><i class="fas fa-robot i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-robot i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>RPA Y BPM</h3>
@@ -1199,7 +1205,7 @@ font-family: 'PT Serif', serif; */
     <!-- #footer end -->
 
     <!--APP JS DE LA WEB-->
-    <script src="./pwa.js"></script>
+    <script src="./pwa.js" defer></script>
     <script src="js/app.js" defer></script>
 
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
@@ -1211,7 +1217,7 @@ font-family: 'PT Serif', serif; */
     ></script>
 
     <!--VALIDACION Y ENVIAR EMAIL CON EMAILJS-->
-    <script defer>
+    <script>
       (function () {
         emailjs.init("user_glGpscUm4wdPBCAVrXQQE");
       })();
