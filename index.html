@@ -27,7 +27,7 @@
     />
 
     <link rel="apple-touch-icon" href="./assets/logoSinaptic.ico" />
-    <link rel="apple-touch-startup-image" href="./assets/logoSinaptic.webp" />
+    <link rel="apple-touch-startup-image" href="./assets/logoblanco.webp" />
     <link rel="manifest" href="./manifest.json" />
 
     <!-- ESTILOS -->
@@ -39,17 +39,26 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./css/normalize.css" /></noscript>
-    <link rel="stylesheet" href="./css/estilos.css" />
+
+    <link rel="stylesheet" href="./css/inicio.css" />
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link
       rel="preload"
-      href="./lib/fontawesome/css/all.css"
+      href="./css/estilos.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
-    <noscript
-      ><link rel="stylesheet" href="./lib/fontawesome/css/all.css"
-    /></noscript>
+    <noscript><link rel="stylesheet" href="./css/estilos.css" /></noscript>
+
+    <script
+      src="https://kit.fontawesome.com/bcdef35034.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
     <link
       rel="preload"
       href="./css/css2.css"
@@ -92,14 +101,14 @@
   <body id="body">
     <!-- BOTON DE IR ARRIBA -->
     <div id="btn-top">
-      <a href="#body"><span class="fas fa-angle-up"></span> </a>
+      <a href="#body" aria-label="UP"><span class="fas fa-angle-up"></span> </a>
     </div>
 
     <!--  MENU PRINCIPAL-->
 
     <div class="menu-principal">
       <div class="logo" id="logo">
-        <a href="#body">
+        <a href="#body" aria-label="UP">
           <img src="assets/logoblanco.webp" alt="Logo Sinaptic"
         /></a>
       </div>
@@ -121,24 +130,32 @@
           <a
             href="https://www.facebook.com/Sinaptic.ES"
             target="_blank"
+            aria-label="Facebook"
+            alt="facebook de Sinaptic"
             rel="noopener"
             ><span class="fab fa-facebook" alt="facebook de Sinaptic"></span
           ></a>
           <a
             href="https://www.instagram.com/sinaptic_ar/"
             target="_blank"
+            aria-label="Instagram"
+            alt="instagram de Sinaptic"
             rel="noopener"
             ><span class="fab fa-instagram" alt="intagram de Sinaptic"></span
           ></a>
           <a
             href="https://api.whatsapp.com/send?phone=+541168119269"
             target="_blank"
+            aria-label="Whatsapp"
+            alt="whatsapp de Sinaptic"
             rel="noopener"
             ><span class="fab fa-whatsapp" alt="whatsapp de Sinaptic"></span
           ></a>
           <a
             href="https://www.linkedin.com/company/sinaptic"
             target="_blank"
+            aria-label="Linkedin"
+            alt="linkedin de Sinaptic"
             rel="noopener"
             ><span class="fab fa-linkedin" alt="linkedin de Sinaptic"></span
           ></a>
@@ -150,10 +167,12 @@
 
     <header>
       <div class="head">
-        <h1 class="zoom-in-zoom-out">Hacemos tu trabajo más fácil</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="400">
+          Hacemos tu trabajo más fácil
+        </h1>
       </div>
 
-      <a href="#servicios">
+      <a href="#servicios" aria-label="Abajo">
         <i class="fas fa-chevron-down" alt="ir abajo"></i>
       </a>
     </header>
@@ -179,7 +198,9 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
-              <a class="titulo"><i class="fas fa-file-word i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-file-word i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h3>
@@ -193,7 +214,9 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a class="titulo"><i class="fas fa-code i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-code i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>DESARROLLO WEB</h3>
@@ -208,7 +231,9 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a class="titulo"><i class="fas fa-mobile-alt i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-mobile-alt i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>DESARROLLO MOBILE</h3>
@@ -224,7 +249,9 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a class="titulo"><i class="fas fa-cogs i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-cogs i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
@@ -244,7 +271,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><i class="fas fa-chalkboard-teacher i-alt"></i
               ></a>
             </div>
@@ -263,7 +290,9 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a class="titulo"><i class="fas fa-robot i-alt"></i></a>
+              <a href="#" aria-label="title" class="titulo"
+                ><i class="fas fa-robot i-alt"></i
+              ></a>
             </div>
           </div>
           <h3>RPA Y BPM</h3>
@@ -284,7 +313,12 @@
       <article>
         <div class="contenedor-informacion contenedor">
           <div class="texto-portfolio">
-            <div id="willis"></div>
+            <img
+              loading="lazy"
+              src="./assets/willislogo.webp"
+              alt="logo Willis"
+              style="max-width: 100%"
+            />
 
             <h3 class="title-portfolio">Necesidad</h3>
             <p>- Reducir los tiempos en la gestión de los siniestros</p>
@@ -329,7 +363,12 @@
           </div>
 
           <div class="texto-portfolio">
-            <div id="syngenta"></div>
+            <img
+              loading="lazy"
+              src="./assets/syngentalogo.webp"
+              alt="logo Sygenta"
+              style="max-width: 100%"
+            />
 
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
@@ -374,7 +413,12 @@
       <article>
         <div class="contenedor-informacion contenedor">
           <div class="texto-portfolio">
-            <div id="redlink"></div>
+            <img
+              loading="lazy"
+              src="./assets/1024px-Red_link_logo.svg.webp"
+              alt="logo Redlink"
+              style="width: 80px; height: auto"
+            />
 
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
@@ -408,7 +452,12 @@
           </div>
 
           <div class="texto-portfolio">
-            <div id="inta"></div>
+            <img
+              loading="lazy"
+              src="./assets/inta-logo.webp"
+              alt="imagen empresa INTA"
+              style="width: 150px; margin-left: -3rem"
+            />
 
             <h3 class="title-portfolio">Necesidad</h3>
             <p>
@@ -452,7 +501,13 @@
         <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
       </div>
 
-      <div id="clientesImg"></div>
+      <img
+        loading="lazy"
+        src="./assets/bannerclientescolor.webp"
+        alt="imagen de
+      clientes"
+        style="max-width: 100%; width: 100%; height: auto"
+      />
     </section>
     <!-- Clientes  end =============================================  -->
 
@@ -638,24 +693,32 @@
           <a
             href="https://www.facebook.com/Sinaptic.ES"
             target="_blank"
+            alt="facebook de Sinaptic"
+            aria-label="Facebook"
             rel="noopener"
             ><span class="fab fa-facebook" alt="facebook de Sinaptic"></span
           ></a>
           <a
             href="https://www.instagram.com/sinaptic_ar/"
             target="_blank"
+            aria-label="Instagram"
+            alt="instagram de Sinaptic"
             rel="noopener"
             ><span class="fab fa-instagram" alt="instagram de Sinaptic"></span
           ></a>
           <a
             href="https://api.whatsapp.com/send?phone=+542214205710"
             target="_blank"
+            aria-label="Whastapp"
+            alt="whatsapp de Sinaptic"
             rel="noopener"
             ><span class="fab fa-whatsapp" alt="whatsapp de Sinaptic"></span
           ></a>
           <a
             href="https://www.linkedin.com/company/sinaptic"
             target="_blank"
+            aria-label="Linkedin"
+            alt="linkedin de Sinaptic"
             rel="noopener"
             ><span class="fab fa-linkedin" alt="linkedin de Sinaptic"></span
           ></a>
@@ -670,8 +733,14 @@
     <!-- #footer end -->
 
     <!--APP JS DE LA WEB-->
-    <script src="./pwa.js"></script>
+    <script src="./pwa.js" defer></script>
     <script src="js/app.js" defer></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
     <script src="./js/vue@2.js"></script>
@@ -682,7 +751,7 @@
     ></script>
 
     <!--VALIDACION Y ENVIAR EMAIL CON EMAILJS-->
-    <script defer>
+    <script>
       (function () {
         emailjs.init("user_glGpscUm4wdPBCAVrXQQE");
       })();
@@ -782,10 +851,5 @@
         },
       });
     </script>
-
-    <!-- HACER SCROLL DE FORMA SUAVE -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-
-    <script src="./js/scrool.js" defer></script>
   </body>
 </html>

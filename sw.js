@@ -2,12 +2,13 @@
 const CACHE_NAME = "v1_cache_Sinaptic",
   urlsToCache = [
     "./",
-    "https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap",
+    "./css/css2.css",
     "https://fonts.gstatic.com",
-    "./lib/fontawesome/css/all.css",
-    "https://unpkg.com/aos@2.3.1/dist/aos.css",
+    "https://kit.fontawesome.com/bcdef35034.js",
+    "./css/normalize.css",
     "/css/estilos.css",
     "./pwa.js",
+    "./js/vue@2.js",
     "./assets/logoblanco.webp",
     "./assets/logoSinaptic.ico",
   ];

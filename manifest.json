@@ -1,5 +1,5 @@
 {
-    "name": "Sinaptic",
+    "name": "Sinaptic || Applied Technology",
     "short_name": "Sinaptic",
     "description": "Bienvenid@s a Sinaptic || Applied Technology, Empresa dedicada al desarrollo web y de aplicaciones moviles.",
     "background_color": "#2B2B2B",
@@ -11,10 +11,17 @@
     "lang": "es-AR",
  "icons": [
    {
-      "src": "./assets/img/logoSinaptic.webp",
-      "sizes": "337x409",
-      "type": "image/webp",
-      "density": "5.0",
+      "src": "./assets/img/ms-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any"
+   },
+   {
+      "src": "./assets/img/android-icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "density": "4.0",
       "purpose": "any"
    },
    {
@@ -22,15 +29,23 @@
       "sizes": "310x310",
       "type": "image/png",
       "density": "5.0",
+      "purpose": "maskable"
+   }, 
+   {
+      "src": "./assets/img/icon-maskable.png",
+      "sizes": "310x310",
+      "type": "image/png",
+      "density": "5.0",
       "purpose": "any"
    }, 
    {
-    "src": "./assets/img/android-icon-192x192.png",
-    "sizes": "192x192",
-    "type": "image/png",
-    "density": "4.0",
-    "purpose": "any"
+      "src": "./assets/img/logoSinaptic.webp",
+      "sizes": "337x409",
+      "type": "image/webp",
+      "density": "5.0",
+      "purpose": "any maskable"
    },
+   
    {
    "src": "./assets/img/android-icon-36x36.png",
    "sizes": "36x36",
