@@ -214,6 +214,7 @@ header {
   font-size: 3vw;
   color: #f8f8f8;
   letter-spacing: 0.1em;
+  padding-bottom: 8rem;
 }
 
 .logo img {
@@ -296,7 +297,6 @@ header {
 }
 
 .fa-plus {
-  margin-top: 8rem;
   font-weight: bold;
   font-size: 3em;
   color: #fff;
