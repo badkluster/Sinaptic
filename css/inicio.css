@@ -175,15 +175,19 @@ img {
   justify-content: space-between;
   align-items: center;
   height: auto;
-
-  padding: 0 80px;
+  padding: 0 4rem;
   padding-top: 1rem;
-
   background-color: rgba(13, 37, 56, 0.322);
   overflow: hidden;
   position: sticky;
   top: 0;
   z-index: 200;
+}
+
+@media (min-width: 768px) {
+  .menu-principal {
+    padding: 0 8rem;
+  }
 }
 
 header {
@@ -221,7 +225,7 @@ header {
   /* DISPLAY FLEX PARA QUE APAREZCAN UNO AL LADO DEL OTRO space bet separa uno para qcada lado*/
   display: flex;
   width: 100%;
-  justify-content: space-evenly;
+  justify-content: flex-end;
   left: 2rem;
   margin-left: 1rem;
   align-items: center;
@@ -233,7 +237,7 @@ header {
 
 @media (min-width: 768px) {
   .enlaces {
-    padding-left: 5rem;
+    padding-right: 5rem;
   }
 }
 .menu-bar .enlaces ul li {

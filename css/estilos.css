@@ -45,14 +45,14 @@ main {
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 1rem;
   margin-bottom: 10rem;
-  padding: 0 10rem;
+  padding: 0 5rem;
 }
 
 @media (min-width: 400px) {
   .nosotros-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
-    padding: 0 10rem;
+    padding: 0 4rem;
   }
 }
 
@@ -73,6 +73,7 @@ main {
   font-weight: bolds;
   font-size: 1.5rem;
   margin-top: 0;
+  line-height: 1.5;
 }
 
 .nosotros-secciones p {
@@ -82,6 +83,7 @@ main {
   color: #333;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .nosotros-secciones span {
@@ -302,7 +304,7 @@ Featured Boxes
 -----------------------------------------------------------------*/
 
 .fbox-lg .fbox-icon {
-  width: 13rem;
+  width: 12rem;
   height: 12rem;
 }
 
@@ -775,7 +777,7 @@ ul {
 
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
-  margin: 0 3rem;
+  margin: 0 7rem;
 }
 
 .contact-wrapper > * {
