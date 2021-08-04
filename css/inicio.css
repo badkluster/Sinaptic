@@ -176,7 +176,7 @@ img {
   align-items: center;
   height: auto;
 
-  padding: 0 30px;
+  padding: 0 80px;
   padding-top: 1rem;
 
   background-color: rgba(13, 37, 56, 0.322);
@@ -195,7 +195,7 @@ header {
       rgba(106, 110, 112, 0.5) 0%,
       rgba(70, 75, 74, 0.5) 100%
     ),
-    url(../assets/workoffice2.webp);
+    url(../assets/banner-header.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -285,32 +285,22 @@ header {
   color: var(--color-secundario);
 }
 
-.fa-chevron-down {
+.container-flecha {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-plus {
   margin-top: 8rem;
   font-weight: bold;
   font-size: 3em;
   color: #fff;
-  animation-name: upAnDown;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  transition: all 0.5s;
-  overflow: hidden;
+  transition: all 3s;
 }
 
-@keyframes upAnDown {
-  from,
-  to {
-    transform: translate(0, -5px);
-  }
-  50% {
-    transform: translate(0, 5px);
-  }
-  100% {
-    transform: translate(0, -5px);
-  }
-}
-
-.fa-chevron-down:hover {
+.fa-plus:hover::before {
+  content: "\f063";
   color: var(--color-secundario);
 }
 
