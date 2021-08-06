@@ -222,6 +222,13 @@ header {
   cursor: pointer;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
 .menu-bar {
   /* DISPLAY FLEX PARA QUE APAREZCAN UNO AL LADO DEL OTRO space bet separa uno para qcada lado*/
   display: flex;
@@ -405,6 +412,7 @@ header {
     font-size: 2.3vh;
     text-align: center;
     padding: 0 2rem;
+    padding-bottom: 8rem;
   }
 
   .fa-bars:before {
