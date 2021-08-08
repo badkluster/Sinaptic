@@ -113,8 +113,7 @@ main {
 }
 
 .nosotros-secciones span:hover {
-  background: #53d6e8;
-  background: linear-gradient(144deg, #1c7885 50%, #53d6e8 100%);
+  background: #fec400;
 }
 
 .nosotros-secciones span::before {
@@ -259,8 +258,7 @@ main {
 }
 
 .tecnologias-secciones span:hover {
-  background: #53d6e8;
-  background: linear-gradient(144deg, #1c7885 50%, #53d6e8 100%);
+  background: #fec400;
 }
 
 .tecnologias-secciones span::before {
@@ -782,7 +780,7 @@ Featured Boxes
   top: -3px;
   left: -3px;
   padding: 3px;
-  box-shadow: 0 0 0 2px #53d6e8;
+  box-shadow: 0 0 0 2px #fec400;
   -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
   -webkit-transform: scale(0.8);
   -moz-transition: -moz-transform 0.3s, opacity 0.3s;
@@ -795,17 +793,17 @@ Featured Boxes
 
 .fbox-effect .fbox-icon i:hover,
 .fbox-effect:hover .fbox-icon i {
-  background-color: #53d6e8;
+  background-color: #fec400;
   color: #fff;
 }
 
 .fbox-effect.fbox-dark .fbox-icon i::after {
-  box-shadow: 0 0 0 2px #1abc9c;
+  box-shadow: 0 0 0 2px #fec400;
 }
 
 .fbox-effect.fbox-dark .fbox-icon i:hover,
 .fbox-effect.fbox-dark:hover .fbox-icon i {
-  background-color: #1abc9c;
+  background-color: #fec400;
 }
 
 .fbox-effect .fbox-icon i:hover::after,
@@ -862,11 +860,11 @@ Featured Boxes
 
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i:hover,
 .fbox-border.fbox-effect.fbox-dark:hover .fbox-icon i {
-  box-shadow: 0 0 0 1px #1abc9c;
+  box-shadow: 0 0 0 1px #fec400;
 }
 
 .fbox-border.fbox-effect.fbox-dark .fbox-icon i::after {
-  background-color: #1abc9c;
+  background-color: #fec400;
 }
 
 .fbox-border.fbox-effect .fbox-icon i:hover::after,
@@ -984,9 +982,9 @@ ul {
 
 .contact-form .form button:hover,
 .contact-form .form button:focus {
-  background: #636060;
+  background: #fec400;
   color: #fff;
-  transition: background-color 1s ease-out;
+  transition: background-color 0.5s ease-out;
   outline: 0;
 }
 

@@ -1,6 +1,6 @@
 :root {
   --color-primario: #626b80;
-  --color-secundario: rgb(15, 148, 224);
+  --color-secundario: #fec400;
   --color-backgroud-sombra: #e92f3d30;
   --color-background: #3d3c3d;
   --color-texto: #a1a5a6;
@@ -18,7 +18,7 @@ html {
 }
 
 ::selection {
-  background: #1abc9c;
+  background: #fec400;
   color: #fff;
   text-shadow: none;
 }
@@ -123,7 +123,7 @@ img {
 }
 
 .btn:hover {
-  color: rgb(15, 148, 224);
+  color: #fec400;
 }
 
 /* BOTON DE IR ARRIBA */
@@ -158,7 +158,7 @@ img {
 }
 
 #btn-top:hover {
-  background: rgb(15, 148, 224);
+  background: #fec400;
 }
 
 #btn-top:hover span {
