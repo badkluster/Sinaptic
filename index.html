@@ -26,12 +26,12 @@
       content="black-translucent"
     />
 
-    <link rel="apple-touch-icon" href="./assets/logoSinaptic.ico" />
+    <link rel="apple-touch-icon" href="./assets/32x32.png" />
     <link rel="apple-touch-startup-image" href="./assets/logoblanco.webp" />
     <link rel="manifest" href="./manifest.json" />
 
     <!-- ESTILOS -->
-
+    <link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" />
     <link
       rel="preload"
       href="./css/normalize.css"
@@ -40,510 +40,10 @@
     />
     <noscript><link rel="stylesheet" href="./css/normalize.css" /></noscript>
 
-    <style>
-      :root {
-        --color-primario: #626b80;
-        --color-secundario: rgb(15, 148, 224);
-        --color-backgroud-sombra: #e92f3d30;
-        --color-background: #3d3c3d;
-        --color-texto: #a1a5a6;
-        --text-defaul: "Poppins", sans-serif;
-      }
+    <link rel="stylesheet" href="./css/inicio.css" />
 
-      /* 
-font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
-font-family: 'PT Serif', serif; */
-
-      html {
-        box-sizing: border-box;
-        font-size: 62.5%; /*1REM = 10px*/
-      }
-
-      ::selection {
-        background: #1abc9c;
-        color: #fff;
-        text-shadow: none;
-      }
-
-      *,
-      *:before,
-      *:after {
-        box-sizing: inherit;
-        text-decoration: none;
-      }
-      /* 
-* {
-  scroll-behavior: smooth;
-} */
-
-      body {
-        font-family: "Lato", sans-serif;
-        font-size: 1.6rem;
-        line-height: 2;
-        background: #626b80;
-      }
-
-      p {
-        font-size: 1.6rem;
-        line-height: 2;
-      }
-
-      /***********************
-  ********GOBLALES********
-  ************************/
-
-      .contenedor {
-        max-width: 120rem;
-        width: 95%;
-        margin: 0 auto;
-        overflow: auto;
-      }
-
-      h1,
-      h2,
-      h3,
-      h4 {
-        font-family: "Poppins", sans-serif;
-      }
-
-      h1 {
-        font-size: 4.8rem;
-      }
-
-      h2 {
-        font-size: 4rem;
-        line-height: 1.2;
-      }
-
-      h3 {
-        font-size: 3.2rem;
-      }
-
-      h4 {
-        font-size: 2.8rem;
-      }
-
-      img {
-        max-width: 100%;
-      }
-
-      .section {
-        position: relative;
-        width: 100%;
-
-        padding: 60px 0;
-
-        overflow: hidden;
-      }
-
-      .hidden {
-        overflow: hidden;
-      }
-      /***********************
-  ********UTILIDADES********
-  ************************/
-
-      .centrar-texto {
-        text-align: center;
-      }
-
-      .no-margin {
-        margin: 0;
-      }
-
-      .btn {
-        text-align: center;
-        padding: 1rem 3rem;
-        margin: 2rem 0;
-        color: #fff;
-        text-decoration: none;
-        font-weight: 700;
-        text-transform: uppercase;
-        font-size: 1.8rem;
-        background-color: #c0400e;
-        transition: all 0.3s;
-      }
-
-      .btn:hover {
-        color: rgb(15, 148, 224);
-      }
-
-      /* BOTON DE IR ARRIBA */
-      #btn-top {
-        width: 5rem;
-        height: 5rem;
-        background: #3b455c;
-        cursor: pointer;
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
-        z-index: 1;
-        transform: translateY(200%);
-        transition: all 0.5s;
-      }
-
-      #btn-top.show {
-        transform: translateY(0);
-      }
-
-      #btn-top.scrollFinal {
-        transform: translateY(-250%);
-      }
-
-      #btn-top span {
-        color: #fff;
-        font-size: 2.5rem;
-        width: 100%;
-        text-align: center;
-        line-height: 5rem;
-        transition: all 0.5s;
-      }
-
-      #btn-top:hover {
-        background: rgb(15, 148, 224);
-      }
-
-      #btn-top:hover span {
-        transform: translateY(-3px);
-      }
-
-      /***************MENU PRINCIPAL*************************/
-
-      .menu-principal {
-        width: 100%;
-        max-width: auto;
-        display: flex;
-        margin: auto;
-        justify-content: space-between;
-        align-items: center;
-        height: auto;
-
-        padding: 0 30px;
-        padding-top: 1rem;
-
-        background-color: rgba(13, 37, 56, 0.322);
-        overflow: hidden;
-        position: sticky;
-        top: 0;
-        z-index: 200;
-      }
-
-      header {
-        display: flex;
-        height: 100vh;
-        width: 100%;
-        background-image: linear-gradient(
-            160deg,
-            rgba(106, 110, 112, 0.5) 0%,
-            rgba(70, 75, 74, 0.5) 100%
-          ),
-          url(./assets/workoffice2.webp);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-        overflow: hidden;
-      }
-
-      .head h1 {
-        font-size: 3vw;
-        color: #f8f8f8;
-        letter-spacing: 0.1em;
-      }
-
-      .zoom-in-zoom-out {
-        animation: zoom-in-zoom-out 4s ease-out;
-      }
-
-      @keyframes zoom-in-zoom-out {
-        0% {
-          transform: scale(0, 0);
-        }
-        50% {
-          transform: scale(1, 1);
-        }
-        100% {
-          transform: scale(1, 1);
-        }
-      }
-
-      .logo img {
-        width: 20rem;
-        cursor: pointer;
-      }
-
-      .menu-bar {
-        /* DISPLAY FLEX PARA QUE APAREZCAN UNO AL LADO DEL OTRO space bet separa uno para qcada lado*/
-        display: flex;
-        width: 100%;
-        justify-content: space-evenly;
-        left: 2rem;
-        margin-left: 1rem;
-        align-items: center;
-      }
-
-      .enlaces {
-        padding-left: 0;
-      }
-
-      @media (min-width: 768px) {
-        .enlaces {
-          padding-left: 5rem;
-        }
-      }
-      .menu-bar .enlaces ul li {
-        /* display in line block para que aparezcan en linea uno al lado del otro*/
-        display: inline-block;
-        padding: 0 1rem;
-      }
-
-      .menu-bar .enlaces ul li a {
-        /*el backgarnd es espacial para que tenga una linea abajo cuando hago hover*/
-        font-size: 1.4rem;
-        text-transform: uppercase;
-        text-decoration: none;
-        color: #fff;
-        font-weight: 600;
-        background: linear-gradient(currentColor, currentColor);
-        background-position: 100% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 0.2rem;
-        transition: all 0.5s;
-      }
-      .menu-bar .enlaces ul li a:hover {
-        color: var(--color-secundario);
-        background-size: 50% 0.2rem;
-      }
-      .menu-bar .sociales a {
-        font-size: 1.6rem;
-        text-transform: uppercase;
-        padding: 0 1rem;
-        font-weight: 700;
-        text-decoration: none;
-        color: #fff;
-        transition: all 0.5s;
-        z-index: 30;
-      }
-
-      .menu-bar .sociales a:hover {
-        color: var(--color-secundario);
-      }
-      .menu-principal i {
-        cursor: pointer;
-        color: var(--color-texto);
-        font-size: 3rem;
-        float: right;
-        display: none;
-        transition: all 0.5s;
-      }
-      .menu-principal i:hover {
-        color: var(--color-secundario);
-      }
-
-      .fa-chevron-down {
-        margin-top: 8rem;
-        font-weight: bold;
-        font-size: 3em;
-        color: #fff;
-        animation-name: upAnDown;
-        animation-duration: 1s;
-        animation-iteration-count: infinite;
-        transition: all 0.5s;
-        overflow: hidden;
-      }
-
-      @keyframes upAnDown {
-        from,
-        to {
-          transform: translate(0, -5px);
-        }
-        50% {
-          transform: translate(0, 5px);
-        }
-        100% {
-          transform: translate(0, -5px);
-        }
-      }
-
-      .fa-chevron-down:hover {
-        color: var(--color-secundario);
-      }
-
-      /* ALERTAS */
-      .alertas {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      .alert {
-        width: 60%;
-        padding: 20px 60px;
-        position: fixed;
-        top: 0;
-        transition: all 0.5s;
-      }
-
-      .alert.show {
-        transform: translateY(50%);
-      }
-
-      .alert.hide {
-        transform: translateY(-100%);
-      }
-
-      .alert .icono-alert {
-        position: absolute;
-        left: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 30px;
-      }
-
-      .alert .msg {
-        padding: 0 20px;
-        font-size: 18px;
-      }
-
-      #alertError {
-        background: #f8d7da;
-        border-right: 4px solid #da3748;
-      }
-
-      #alertErrorMail {
-        background: #f8d7da;
-        border-right: 4px solid #da3748;
-      }
-
-      #alertError .icono-alert {
-        color: #da3748;
-      }
-
-      #alertError .msg {
-        color: #721c24;
-      }
-
-      #alertSuccess {
-        background: #d4edda;
-        border-right: 4px solid #279e43;
-      }
-
-      #alertSuccess .icono-alert {
-        color: #279e43;
-      }
-
-      #alertSuccess .msg {
-        color: #155724;
-      }
-
-      /* ##################################
-########## MEDIA QUERYS ##############
-#####################################*/
-
-      @media screen and (max-width: 920px) {
-        footer {
-          flex-wrap: wrap;
-          margin-top: 0px;
-          display: flex;
-          flex-direction: column;
-          text-align: center;
-        }
-      }
-
-      /* ***************************** 650 px  *********************************************** */
-
-      @media screen and (max-width: 650px) {
-        /* MENU PRINCIPAL */
-        .menu-principal {
-          top: 0;
-          margin-top: 0;
-          width: 100%;
-          z-index: 500;
-          background-color: rgba(13, 37, 56, 0.322);
-          padding-top: 1rem;
-        }
-        .head h1 {
-          font-size: 2.3vh;
-          text-align: center;
-          padding: 0 2rem;
-        }
-
-        .fa-bars:before {
-          color: #707070;
-        }
-
-        .menu-principal i {
-          display: block;
-        }
-
-        .menu-bar {
-          justify-content: space-around;
-          align-items: center;
-          flex-direction: column;
-          width: 100%;
-          height: 100vh;
-          position: fixed;
-          right: 0;
-          top: 0;
-          z-index: 1000;
-          background: #333;
-          transition: all 1s;
-          transform: translateX(100%);
-          text-align: center;
-        }
-
-        .menu-bar.active {
-          /*CREAR CLASE .ACTIVE PARA CUANDO SE LA PONGA APAREZCA EN PANTALLA POR EL TRASLATE X)*/
-          transform: translateX(0%);
-        }
-
-        .menu-bar i {
-          position: absolute;
-          right: 5rem;
-          top: 5rem;
-        }
-
-        .menu-bar .enlaces ul li {
-          display: block;
-          padding: 2rem 2rem;
-          text-align: center;
-        }
-
-        .menu-bar .enlaces ul li a,
-        .menu-bar .sociales a {
-          font-size: 2rem;
-        }
-
-        /* ALERTAS */
-        .alert {
-          width: 100%;
-        }
-
-        .alert.show {
-          transform: translateY(150%);
-        }
-
-        /* FOOTER */
-        footer {
-          flex-wrap: wrap;
-          margin-top: 0px;
-        }
-
-        /* BOTON DE IR ARRIBA */
-        #btn-top {
-          display: none;
-        }
-
-        .social-icon i {
-          font-size: 10rem !important;
-        }
-      }
-      /** FINALIZACION DE MEDIA QUERYS MAX WIDTH*****/
-    </style>
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link
       rel="preload"
@@ -594,7 +94,7 @@ font-family: 'PT Serif', serif; */
 
     <meta name="robots" content="index" />
     <meta name="robots" content="follow" />
-    <link rel="shortcut icon" href="assets/logoSinaptic.ico" />
+    <link rel="shortcut icon" href="assets/32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
@@ -619,10 +119,9 @@ font-family: 'PT Serif', serif; */
         <nav class="enlaces" id="enlaces">
           <ul>
             <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#tecnologias">Tecnologías</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#contacto">Contacto</a></li>
-            <li><a href="#testimoniales">Testimoniales</a></li>
           </ul>
         </nav>
 
@@ -667,11 +166,13 @@ font-family: 'PT Serif', serif; */
 
     <header>
       <div class="head">
-        <h1 class="zoom-in-zoom-out">Hacemos tu trabajo más fácil</h1>
+        <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="400">
+          Hacemos tu trabajo más fácil
+        </h1>
       </div>
 
-      <a href="#servicios" aria-label="Abajo">
-        <i class="fas fa-chevron-down" alt="ir abajo"></i>
+      <a href="#servicios" aria-label="Abajo" class="container-flecha">
+        <i class="fas fa-plus" alt="ir abajo"></i>
       </a>
     </header>
     <!-- FINISH HEADER -->
@@ -681,14 +182,7 @@ font-family: 'PT Serif', serif; */
       <h2>NUESTROS SERVICIOS</h2>
       <div class="contenido-servicios">
         <p>
-          Las empresas constantemente suman objetivos y se enfrentan a nuevos
-          desafíos, una empresa que crece debe ser dinámica y afrontar
-          transformaciones para mantenerse a la vanguardia de su mercado. No se
-          trata solo de tecnología: se trata de impatar en todos los puntos
-          clave de la organización. Es por eso que en SINAPTIC contamos con
-          profesionales con múltiples habilidades para dar soluciones integrales
-          que cumplan y superen las expectativas en las necesidades de sus
-          clientes.
+          Somos un equipo de profesionales apasionados por lo que hacemos. Escuchamos a nuestros clientes, analizamos su necesidad y diseñamos un plan de acción para brindarles la solución que mejor se ajuste a sus intereses. Luego ejecutamos la planificación utilizando tecnologías de vanguardia. Nos abrazamos a los desafíos y es por ello que logramos siempre resultados de gran impacto en el negocio
         </p>
       </div>
 
@@ -696,16 +190,16 @@ font-family: 'PT Serif', serif; */
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
-              <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-file-word i-alt"></i
-              ></a>
+              <a href="#" aria-label="title">
+                <i class="icon-1 serviciosintegrales i-alt"></i>
+              </a>
             </div>
           </div>
           <h3>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h3>
           <p>
-            Ayudamos a las organizaciones a incrementar sus fortalezas de
-            negocio valiendonos de las múltiples funcionalidades que la
-            plataforma Microsoft Office 365 ofrece.
+            Potenciamos a las organizaciones con las múltiples funciones
+            disponibles en la plataforma Microsoft Office 365.Optimizamos todo
+            tipo de tareas segun la necesidad de cada cliente.
           </p>
         </div>
 
@@ -713,16 +207,14 @@ font-family: 'PT Serif', serif; */
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-code i-alt"></i
-              ></a>
+                ><i class="icon-2 desarrolloweb i-alt"></i></a>
             </div>
           </div>
           <h3>DESARROLLO WEB</h3>
           <p>
-            Somos líderes en el desarrollo de aplicaciones web y móviles.
-            Contamos con una gran experiencia creando soluciones de alta
-            performance utilizando las últimas tendencias y la tecnología que
-            mejor se ajusta al contexto de la implementación.
+            Creamos aplicaciones web de alta performance utilizando las últimas
+            tendencias y tecnologia que mejor se ajuste a cada necesidad de
+            negocio.
           </p>
         </div>
 
@@ -730,17 +222,15 @@ font-family: 'PT Serif', serif; */
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-mobile-alt i-alt"></i
-              ></a>
+                ><i class="icon-3 desarrollomobile i-alt"></i></a>
             </div>
           </div>
           <h3>DESARROLLO MOBILE</h3>
           <p>
-            Nuestro equipo de especialistas en desarrollo mobile le ofrecen un
-            servicio end-to-end para lograr que sus proyectos móviles se
-            materialicen en aplicaciones performantes, robustas y escalables.
-            Podemos ayudarlo cuando necesite desarrollar un proyecto de cero
-            mobilizar uno existente o mantener una aplicación productiva.
+            Desarrollamos productos móviles con un servicio
+            end-to-end. Ayudamos a desarrollar proyectos de cero, mejorar uno
+            existente o mantener una aplización productiva utilizando tecnología
+            de punta.
           </p>
         </div>
 
@@ -748,21 +238,16 @@ font-family: 'PT Serif', serif; */
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-cogs i-alt"></i
+                ><i class="icon-4 diseñoyarquitectura i-alt"></i></i
               ></a>
             </div>
           </div>
           <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
           <p>
-            Nuestros consultores lo guiarán en el diseño y arquitectura de
-            soluciones,aplicando patrones de diseño y buenas prácticas con el
-            fin de lograr un software robusto y escalable.El proceso de
-            desarrollo de un sistema o plataforma requiere un plan de trabajo
-            robusto. Nuestros expertos realizarán investigaciones y análisis
-            para ofrecer la mejor solución de software. Los arquitectos de
-            Sinaptic ofrecen su experiencia en el diseño, revisión, desarrollo,
-            ajuste y mejora de una arquitectura de software compleja para
-            sistemas de TI heredados, nuevos y obsoletos.
+            Aplicamos patrones de diseño y buenas prácticas con el fin de guiar
+            a nuestros clientes en el proceso de desarrollo de un software
+            sólido y escalable.
+            Nuestros expertos realizaran investigaciones y análisis de negocio para ofrecer la mejor solución. Implementamos nuestra experiencia en diseño, revisión, desarrollo, ajuste y mejora de una arquitectura de software compleja.
           </p>
         </div>
 
@@ -770,7 +255,7 @@ font-family: 'PT Serif', serif; */
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-chalkboard-teacher i-alt"></i
+                ><i class="icon-5 capacitación i-alt"></i></i
               ></a>
             </div>
           </div>
@@ -780,8 +265,10 @@ font-family: 'PT Serif', serif; */
           </h3>
           <p>
             Acompañamos a las organizaciones en su proceso de transformación
-            digital, integramos a las personas, los procesos y la tecnología.
-            Contamos con servicios de capacitación y workshops.
+            digital, llevando adelante un proceso de evolución de manera óptima.
+            Disponemos de servicios de capacitación y Workshops, permitiendo
+            incorporar nuestro conocimiento y experiencia a un plan de acción
+            para cumplir las metas en menor tiempo.
           </p>
         </div>
 
@@ -789,7 +276,7 @@ font-family: 'PT Serif', serif; */
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-robot i-alt"></i
+                ><i class="fas fa-robot i-alt" ></i></i
               ></a>
             </div>
           </div>
@@ -797,189 +284,191 @@ font-family: 'PT Serif', serif; */
           <p>
             Trabajamos utilizando tecnologías RPA Y BPM para generar nuevos
             niveles de calidad y productividad en la estrategia de
-            transformación digital de la empresa y sus procesos.
+            transformación digital de la empresa y sus productos. Brindamos
+            automatización de procesos procesos mediante robots y Gestión de
+            Procesos de Negocio.
           </p>
         </div>
       </div>
     </main>
     <!-- Servicios end =============================================  -->
 
-    <!-- Portfolio =============================================  -->
-    <section class="portfolio" id="portfolio">
-      <h2>PORTFOLIO</h2>
 
-      <article>
-        <div class="contenedor-informacion contenedor">
-          <div class="texto-portfolio">
-            <div id="willis"></div>
-
-            <h3 class="title-portfolio">Necesidad</h3>
-            <p>- Reducir los tiempos en la gestión de los siniestros</p>
-            <h3 class="title-portfolio">Beneficios</h3>
-            <ul>
-              <li>
-                Posiblidad de visualizar todo el sistema de manera gráfica desde
-                el tablero de control
-              </li>
-              <li>
-                Segmentación de tareas por rol de usuario con niveles de
-                jerarquía
-              </li>
-              <li>
-                Manejo de legajos de siniestros para adjuntar toda la
-                documentación digital relativa de manera centralizada
-              </li>
-              <li>
-                Posibilidad de realizar comentarios sobre un proceso para
-                detallar los sucesos relacionados a un siniestro
-              </li>
-              <li>Servicio automatizado de alertas y seguimiento de tareas</li>
-              <li>
-                Trazabilidad mediante la medición de tiempos del ciclo de vida
-                del siniestro que ayudaron a detectar procesos a mejorar
-              </li>
-              <li>
-                Reportes para el análisis de datos para la toma de decisiones
-                (BI)
-              </li>
-            </ul>
-
-            <div class="contenedor-tecnologias contenedor">
-              <h4>Técnologias usadas</h4>
-              <ul>
-                <li>Sharepoint 2010/2019</li>
-                <li>C#</li>
-                <li>CSOM</li>
-                <li>NodeJs</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="texto-portfolio">
-            <div id="syngenta"></div>
-
-            <h3 class="title-portfolio">Necesidad</h3>
-            <p>
-              - Contar con un catalogo de productos que se pueda ver desde el
-              celular
-            </p>
-            <h3 class="title-portfolio">Beneficios</h3>
-            <ul>
-              <li>
-                Contar con una aplicación mobile compatible con dispositivos
-                Android e iOS
-              </li>
-              <li>
-                Información centralizada y fácilmente actualizable sin necesidad
-                de publicar nuevas versiones de la aplicación
-              </li>
-              <li>Funcionalidad de productos favoritos</li>
-              <li>
-                Interfaz sencilla y con mucha gráfica para su fácil navegación
-              </li>
-              <li>
-                Buscador de productos para localizar productos por cultivo,
-                marca o datos accesorios del mismo
-              </li>
-            </ul>
-
-            <div class="contenedor-tecnologias contenedor">
-              <h4>Técnologias usadas</h4>
-              <ul>
-                <li>Ionic</li>
-                <li>Firebase</li>
-                <li>Android</li>
-                <li>iOS</li>
-              </ul>
-            </div>
-          </div>
+    <!-- Tecnologias =============================================  -->
+    <section class="tecnologias-contenedor" id="tecnologias">
+      <h2>TECNOLOGÍAS</h2>
+      <div class="contenido-tecnologias">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repellat ipsam nihil, deserunt, dolorum aperiam earum sit a rerum illum nesciunt aut ipsa. Nemo ea quod ad id itaque repudiandae!
+        </p>
+      </div>
+      
+      <div class="tecnologias-grid">
+        
+        <div class="tecnologias-secciones">
+          <img src="./assets/Sharepoint.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>SharePoint</h3>
+         
         </div>
-      </article>
-
-      <div class="barra"></div>
-
-      <article>
-        <div class="contenedor-informacion contenedor">
-          <div class="texto-portfolio">
-            <div id="redlink"></div>
-
-            <h3 class="title-portfolio">Necesidad</h3>
-            <p>
-              - Que los empleados puedan autogestionar la obtención de
-              beneficios corporativos
-            </p>
-            <h3 class="title-portfolio">Beneficios</h3>
-            <ul>
-              <li>
-                Los usuarios pueden solicitar beneficios desde la plataforma
-                optimizando recursos y tiempos
-              </li>
-              <li>
-                Notificaciones automatizadas a los involucrados del proceso
-              </li>
-              <li>
-                Procesos automatizados de asignación de puntos y beneficios
-                programados
-              </li>
-              <li>Circuitos de aprobación de beneficios especiales</li>
-            </ul>
-
-            <div class="contenedor-tecnologias contenedor">
-              <h4>Técnologias usadas</h4>
-              <ul>
-                <li>Sharepoint 2010/2019</li>
-                <li>C#</li>
-                <li>CSOM</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="texto-portfolio">
-            <div id="inta"></div>
-
-            <h3 class="title-portfolio">Necesidad</h3>
-            <p>
-              - Contar con un portal de comunicación interna y portal
-              colaborativo para la gestión de proyectos de investigación
-            </p>
-            <h3 class="title-portfolio">Beneficios</h3>
-            <ul>
-              <li>
-                Se desarrolló una intranet para canalizar la comunicación
-                mediante el portal
-              </li>
-              <li>Posibilidad de gestionar búsquedas internas de personal</li>
-              <li>
-                Se optimizó la plataforma para dar servicio a los más de 10.000
-                usuarios distribuidos por todo el país
-              </li>
-              <li>Gestión y reserva de salas y equipamiento tecnológico</li>
-              <li>
-                Diseño de la arquitectura de información para que los usuarios
-                encuentren de manera sencilla lo que necesitan
-              </li>
-            </ul>
-
-            <div class="contenedor-tecnologias contenedor">
-              <h4>Técnologias usadas</h4>
-              <ul>
-                <li>Office 365</li>
-                <li>SharePoint</li>
-              </ul>
-            </div>
-          </div>
+        
+        <div class="tecnologias-secciones">
+          <img src="./assets/OFFICE 365.png" alt="" style="max-width: 100%; height: 70px;" class="apagado office-365">
+          <h3>Office 365</h3>
+         
         </div>
-      </article>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/net.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>.Net</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/angular logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>Angular</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/Dynamics-365-logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>Dynamics 365</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/firebase.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>Firebase</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/HTML5 JS Y CSS JUNTOS.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>HTML5, CSS3, Javascript</h3>
+        
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/ionic logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>Ionic</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/Microsoft_Azure_Logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>Microsoft Azure</h3>
+         
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/mongodb logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>MongoDB</h3>
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/Node js logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>NodeJs</h3>
+          
+        </div>
+
+
+        <div class="tecnologias-secciones">
+          <img src="./assets/React logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
+          <h3>ReactJs</h3>
+          
+        </div>
+
+        
+      </div>
     </section>
-    <!-- Portfolio end =============================================  -->
+    <!-- Tecnologias end =============================================  -->
+
 
     <!-- Clientes =============================================  -->
-    <section id="clientes" class="clientes">
-      <div class="contenedor-h2">
-        <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+    <section class="clientes-contenedor" id="clientes">
+      <h2>Algunos de Nuestros Clientes</h2>
+      <div class="contenido-clientes">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repellat ipsam nihil, deserunt, dolorum aperiam earum sit a rerum illum nesciunt aut ipsa. Nemo ea quod ad id itaque repudiandae!
+        </p>
       </div>
+      
+      <div class="clientes-grid">
+        
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/antofagasta.png" alt="" style="max-width: 100%; height: 70px;" >
+        
+         
+        </div>
+        
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/ataway.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+         
+        </div>
 
-      <div id="clientesImg"></div>
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/INTA.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/Mototech.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/Multitech.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/redlink.png alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/Secure auth.png alt="" style="max-width: 100%; height: 70px;" >
+          
+        
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/syngenta.png" alt="" style="max-width: 100%; height: 70px;" >
+        
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Logos clientes/willis.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+         
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/mongodb logo.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        <div class="clientes-secciones">
+          <img src="./assets/Node js logo.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+        </div>
+
+
+        <div class="clientes-secciones">
+          <img src="./assets/React logo.png" alt="" style="max-width: 100%; height: 70px;" >
+          
+          
+        </div>
+
+        
+      </div>
     </section>
     <!-- Clientes  end =============================================  -->
 
@@ -1077,76 +566,6 @@ font-family: 'PT Serif', serif; */
     </section>
     <!-- Contacto end =============================================  -->
 
-    <!-- TESTIMONIALES -->
-    <section class="page-section testimoniales" id="testimoniales">
-      <div class="container">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase">Testimoniales</h2>
-          <h3 class="section-subheading text-muted">
-            Nuestros clientes nos recomiendan
-          </h3>
-        </div>
-        <ul class="timeline">
-          <li>
-            <div class="timeline-image timeline-image-juanunda"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Juan Carlos Hunda</h4>
-                <h5 class="subheading">
-                  Jefe de Procesos y Mejora Continua Cordial Compañía Financiera
-                </h5>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  "Para nosotros incorporar los servicios de Sinaptic fue
-                  ampliamente ventajoso y beneficioso, ya que nos encontrábamos
-                  con una mala experiencia anterior, y mediante sus servicios
-                  logramos desarrollar con éxito nuestra primera intranet."
-                </p>
-              </div>
-            </div>
-          </li>
-          <li class="timeline-inverted">
-            <div class="timeline-image timeline-image-jorge"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Jorge Donantueno</h4>
-                <h5 class="subheading">Owner Inbio Tubes</h5>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  "Con Sinaptic hemos logrado construir una aplicación móvil
-                  robusta que nos permite llevar a cabo la tarea de toma de
-                  pedidos de manera más eficiente en los clientes, es sin duda
-                  una ventaja competitiva la que adquirimos al contratar sus
-                  servicios."
-                </p>
-              </div>
-            </div>
-          </li>
-          <li>
-            <div class="timeline-image timeline-image-monica"></div>
-            <div class="timeline-panel">
-              <div class="timeline-heading">
-                <h4>Mónica Garibaldi</h4>
-                <h5 class="subheading">
-                  Gerenta de RR. HH. Cordial Cia. Financiera
-                </h5>
-              </div>
-              <div class="timeline-body">
-                <p class="text-muted">
-                  "Con la herramienta de analytics logramos conocer como las
-                  personas de nuestra organización usan la intranet y eso nos
-                  permite desplegar estrategias de publicación de los
-                  contenidos."
-                </p>
-              </div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- FOOTER =============================================  -->
 
     <footer id="footer" class="footer">
@@ -1207,6 +626,12 @@ font-family: 'PT Serif', serif; */
     <!--APP JS DE LA WEB-->
     <script src="./pwa.js" defer></script>
     <script src="js/app.js" defer></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <!--TRABAJAMOS CON VUE PARA EMAIL-->
     <script src="./js/vue@2.js"></script>
