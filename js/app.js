@@ -57,43 +57,43 @@ logo.addEventListener("click", function () {
   window.scrollTo(0, 0);
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-  agregarImagen();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//   agregarImagen();
+// });
 
 // FUNCION PARA AGREGAR IMAGENES SIN USAR EL INDEX
-function agregarImagen() {
-  const imagenWillis = document.createElement("IMG");
-  imagenWillis.src = "./assets/willislogo.webp";
+// function agregarImagen() {
+//   const imagenWillis = document.createElement("IMG");
+//   imagenWillis.src = "./assets/willislogo.webp";
 
-  imagenWillis.alt = "imagen empresa Willis";
-  document.querySelector("#willis").appendChild(imagenWillis);
+//   imagenWillis.alt = "imagen empresa Willis";
+//   document.querySelector("#willis").appendChild(imagenWillis);
 
-  const imagenSyngenta = document.createElement("IMG");
-  imagenSyngenta.src = "./assets/syngentalogo.webp";
+//   const imagenSyngenta = document.createElement("IMG");
+//   imagenSyngenta.src = "./assets/syngentalogo.webp";
 
-  imagenSyngenta.alt = "imagen empresa Syngenta";
-  document.querySelector("#syngenta").appendChild(imagenSyngenta);
+//   imagenSyngenta.alt = "imagen empresa Syngenta";
+//   document.querySelector("#syngenta").appendChild(imagenSyngenta);
 
-  const imagenRedlink = document.createElement("IMG");
-  imagenRedlink.src = "./assets/1024px-Red_link_logo.svg.webp";
-  imagenRedlink.style = "width: 80px; height: auto;";
-  imagenRedlink.alt = "imagen empresa RedLink";
-  document.querySelector("#redlink").appendChild(imagenRedlink);
+//   const imagenRedlink = document.createElement("IMG");
+//   imagenRedlink.src = "./assets/1024px-Red_link_logo.svg.webp";
+//   imagenRedlink.style = "width: 80px; height: auto;";
+//   imagenRedlink.alt = "imagen empresa RedLink";
+//   document.querySelector("#redlink").appendChild(imagenRedlink);
 
-  const imagenInta = document.createElement("IMG");
-  imagenInta.src = "./assets/inta-logo.webp";
-  imagenInta.style = "width: 150px; margin-left: -3rem";
+//   const imagenInta = document.createElement("IMG");
+//   imagenInta.src = "./assets/inta-logo.webp";
+//   imagenInta.style = "width: 150px; margin-left: -3rem";
 
-  imagenInta.alt = "imagen empresa INTA";
-  document.querySelector("#inta").appendChild(imagenInta);
+//   imagenInta.alt = "imagen empresa INTA";
+//   document.querySelector("#inta").appendChild(imagenInta);
 
-  const imagenClientes = document.createElement("IMG");
-  imagenClientes.src = "./assets/bannerclientescolor.webp";
-  imagenClientes.style = "max-width: 100%; width:100%; height: auto";
-  imagenClientes.alt = "imagen Clientes";
-  document.querySelector("#clientesImg").appendChild(imagenClientes);
-}
+//   const imagenClientes = document.createElement("IMG");
+//   imagenClientes.src = "./assets/bannerclientescolor.webp";
+//   imagenClientes.style = "max-width: 100%; width:100%; height: auto";
+//   imagenClientes.alt = "imagen Clientes";
+//   document.querySelector("#clientesImg").appendChild(imagenClientes);
+// }
 
 // SCROLL SUAVE
 (function () // Code in a function to create an isolate scope
