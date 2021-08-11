@@ -303,14 +303,14 @@ header {
   justify-content: center;
 }
 
-.fa-plus {
+.mas {
   font-weight: bold;
   font-size: 3em;
   color: #fff;
   transition: all 3s;
 }
 
-.fa-plus:hover::before {
+.mas:hover::before {
   content: "\f063";
   color: var(--color-secundario);
 }
