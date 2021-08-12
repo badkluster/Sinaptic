@@ -98,29 +98,6 @@ main {
   cursor: default;
 }
 
-.nosotros-secciones span {
-  border-radius: 50%;
-  border: black 1px solid;
-  padding: 30px;
-  margin-bottom: 2rem;
-  background: rgb(79, 99, 145);
-  background: linear-gradient(
-    144deg,
-    rgba(79, 99, 145, 1) 50%,
-    rgba(55, 67, 94, 1) 100%
-  );
-  transition: all 0.2s ease-in-out;
-}
-
-.nosotros-secciones span:hover {
-  background: #fec400;
-}
-
-.nosotros-secciones span::before {
-  font-size: 3rem;
-  color: #fff;
-}
-
 .content-servicios {
   font-size: 2rem !important;
   line-height: 1.5;
@@ -149,28 +126,45 @@ main {
   flex-direction: column;
 }
 
-.contenedor-parrafo-scio a {
-  text-decoration: none;
-  transition: all 0.5s;
-}
-.contenedor-parrafo-scio i {
-  font-size: 3rem;
-  color: #000;
-  transition: all 0.5s;
-}
-
-.contenedor-parrafo-scio a:hover i::before {
-  content: "\f068";
-  color: var(--color-secundario);
-}
-
-.contenedor-parrafo-scio p {
+.read-more-state {
   display: none;
-  transition: all 0.5s;
 }
 
-.contenedor-parrafo-scio a:hover ~ p {
-  display: block;
+.read-more-target {
+  opacity: 0;
+  max-height: 0;
+  font-size: 0;
+  transition: 0.25s ease;
+}
+
+.read-more-state:checked ~ .read-more-wrap .read-more-target {
+  opacity: 1;
+  font-size: inherit;
+  max-height: 999em;
+}
+
+.read-more-state ~ .read-more-trigger:before {
+  content: "Ver Más";
+  color: #000;
+}
+
+.read-more-state:checked ~ .read-more-trigger:before {
+  content: "Ver Menos";
+}
+
+.read-more-trigger {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0 0.5em;
+  color: #666;
+  font-size: 0.9em;
+  line-height: 2;
+  border: 1px solid #ddd;
+  border-radius: 0.25em;
+}
+
+.read-more-trigger:hover {
+  background-color: var(--color-secundario);
 }
 
 /************** TECNOLOGIAS *********************/
@@ -446,6 +440,60 @@ main {
   text-align: center;
   margin: 0 auto;
   padding: 0 3rem;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  margin-bottom: 7rem;
+  margin-top: 7rem;
+}
+.slider::before,
+.slider::after {
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
 }
 
 /********* FINALIZA CLIENTES *********/
