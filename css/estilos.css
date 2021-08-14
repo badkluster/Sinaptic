@@ -194,6 +194,7 @@ main {
   grid-template-rows: repeat(1, 1fr);
   color: #fff;
   text-align: center;
+  padding-bottom: 10rem;
 }
 
 @media (min-width: 500px) {
@@ -443,11 +444,12 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 10rem;
 }
 
 .clientes-contenedor h2 {
   padding: 0 2rem;
-  padding-top: 7rem;
+  padding-top: 10rem;
   margin-bottom: 0;
   font-size: 3rem;
   color: #000;
@@ -1277,6 +1279,7 @@ ul {
   outline: 0;
   color: #fff;
   border-bottom: 1px solid #fff;
+  transition: all 0.5s;
 }
 
 .contact-form .form button {
@@ -1331,6 +1334,14 @@ ul {
   .contact-form .form {
     display: block;
   }
+}
+
+.contact-form .form input:focus {
+  border-bottom: 1px solid var(--color-secundario);
+}
+
+.contact-form .form textarea:focus {
+  border-bottom: 1px solid var(--color-secundario);
 }
 
 /**********  FOOTER  ***********/

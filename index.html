@@ -31,7 +31,14 @@
     <link rel="manifest" href="./manifest.json" />
 
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" />
+    
+    <link
+      rel="preload"
+      href="./assets/glyphter-font/css/Glyphter.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" /></noscript>
     <link
       rel="preload"
       href="./css/normalize.css"
@@ -59,13 +66,7 @@
       defer
     ></script>
 
-    <link
-      rel="preload"
-      href="./css/css2.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./css/css2.css" /></noscript>
+    
 
     <meta content="Sinaptic" name="Author" />
 
@@ -192,7 +193,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
-              <a aria-label="title">
+              <a href="#" aria-label="title">
                 <label for="post-1">
                   <i class="icon-1 serviciosintegrales i-alt"></i>
                 </label>
@@ -218,7 +219,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="" aria-label="title" class="titulo">
+              <a href="#" aria-label="title" class="titulo">
                 <label for="post-2"
                   ><i class="icon-2 desarrolloweb i-alt"></i></label
               ></a>
@@ -241,7 +242,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a aria-label="title" class="titulo">
+              <a href="#" aria-label="title" class="titulo">
                 <label for="post-3">
                   <i class="icon-3 desarrollomobile i-alt"> </i>
                 </label>
@@ -266,7 +267,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a aria-label="title" class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><label for="post-4"
                   ><i class="icon-4 diseñoyarquitectura i-alt"></i
                 ></label>
@@ -294,7 +295,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a aria-label="title" class="titulo"
+              <a href="#" aria-label="title" class="titulo"
                 ><label for="post-5"
                   ><i class="icon-5 capacitación i-alt"></i></label
               ></a>
@@ -323,7 +324,7 @@
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a aria-label="title" class="titulo"
+              <a href="#"  aria-label="title" class="titulo"
                 ><label for="post-6"><i class="fas fa-robot i-alt"></i></label
               ></a>
             </div>
@@ -357,37 +358,38 @@
         <div class="div1  div-beneficios">
           <img
             src="./assets/beneficios-2.png"
-            alt=""
+            alt="Retorno de inversion"
             style="max-width: 100%; height: 20rem"
+            loading="lazy" 
           />
           <p>Retorno de inversión</p>
         </div>
         <div class="div2 div-beneficios">
-          <img src="./assets/beneficios-3.png" alt="" style="max-width: 100%; height: 20rem" />
+          <img src="./assets/beneficios-3.png" alt="Aumento del canal de ventas" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Aumento del canal de ventas</p>
         </div>
         <div class="div3 div-beneficios">
-          <img src="./assets/beneficios-4.png" alt="" style="max-width: 100%; height: 20rem"/>
+          <img src="./assets/beneficios-4.png" alt="Mantenerse a la vanguardia de su mercado" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Mantenerse a la vanguardia de su mercado</p>
         </div>
         <div class="div4 div-beneficios">
-          <img src="./assets/beneficios-1.png" alt="" style="max-width: 100%; height: 20rem"/>
+          <img src="./assets/beneficios-1.png" alt="Dominio de Tecnologías de última generacion" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Dominio de Tecnologías de última generacion</p>
         </div>
         <div class="div5 div-beneficios">
-          <img src="./assets/beneficios-5.png" alt="" style="max-width: 100%; height: 20rem"/>
+          <img src="./assets/beneficios-5.png" alt="" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Transferencia de conocimiento</p>
         </div>
         <div class="div6 div-beneficios">
-          <img src="./assets/beneficios-6.png" alt="" style="max-width: 100%; height: 20rem"/>
+          <img src="./assets/beneficios-6.png" alt="Transferencia de conocimiento" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Acompañamiento y seguimiento</p>
         </div>
         <div class="div7 div-beneficios">
-          <img src="./assets/beneficios-7.png" alt=""style="max-width: 100%; height: 20rem" />
+          <img src="./assets/beneficios-7.png" alt="Optimización de tareas"style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Optimización de tareas</p>
         </div>
         <div class="div8 div-beneficios">
-          <img src="./assets/beneficios-8.png" alt="" style="max-width: 100%; height: 20rem"/>
+          <img src="./assets/beneficios-8.png" alt="Ahorro de tiempo y dinero" style="max-width: 100%; height: 20rem" loading="lazy" />
           <p>Ahorro de tiempo y dinero</p>
         </div>
       </div>
@@ -410,9 +412,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/Sharepoint.png"
-            alt=""
+            alt="imagen SharePoint"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>SharePoint</h3>
         </div>
@@ -420,9 +423,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/OFFICE 365.png"
-            alt=""
+            alt="Imagen Office 365"
             style="max-width: 100%; height: 60px"
             class="apagado office-365"
+            loading="lazy" 
           />
           <h3>Office 365</h3>
         </div>
@@ -430,9 +434,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/net.png"
-            alt=""
+            alt="imagen .Net"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>.Net</h3>
         </div>
@@ -440,9 +445,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/angular logo.png"
-            alt=""
+            alt="Imagen Angular"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>Angular</h3>
         </div>
@@ -450,9 +456,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/Dynamics-365-logo.png"
-            alt=""
+            alt="imagen Dynamics 365"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>Dynamics 365</h3>
         </div>
@@ -460,9 +467,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/firebase.png"
-            alt=""
+            alt="Imagen Firebase"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>Firebase</h3>
         </div>
@@ -470,9 +478,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/HTML5 JS Y CSS JUNTOS.png"
-            alt=""
+            alt="imagen HTML5, CSS3, Javascript"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>HTML5, CSS3, Javascript</h3>
         </div>
@@ -480,9 +489,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/ionic logo.png"
-            alt=""
+            alt="imagen Ionic"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>Ionic</h3>
         </div>
@@ -490,9 +500,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/Microsoft_Azure_Logo.png"
-            alt=""
+            alt="imagen Microsoft Azure"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>Microsoft Azure</h3>
         </div>
@@ -500,9 +511,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/mongodb logo.png"
-            alt=""
+            alt="imagen MongoDB"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>MongoDB</h3>
         </div>
@@ -510,9 +522,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/Node js logo.png"
-            alt=""
+            alt="imagen NodeJs"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>NodeJs</h3>
         </div>
@@ -520,9 +533,10 @@
         <div class="tecnologias-secciones">
           <img
             src="./assets/React logo.png"
-            alt=""
+            alt="imagen ReactJs"
             style="max-width: 100%; height: 70px"
             class="apagado"
+            loading="lazy" 
           />
           <h3>ReactJs</h3>
         </div>
@@ -548,7 +562,8 @@
               src="./assets/Logos clientes/antofagasta.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen antofagasta"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -556,7 +571,8 @@
               src="./assets/Logos clientes/ataway.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen ataway"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -564,7 +580,8 @@
               src="./assets/Logos clientes/INTA.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen inta"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -572,7 +589,8 @@
               src="./assets/Logos clientes/Secure auth.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen secure auth"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -580,7 +598,8 @@
               src="./assets/Logos clientes/Mototech.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen mototech"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -588,7 +607,8 @@
               src="./assets/Logos clientes/Multitech.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen multitech"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -596,7 +616,8 @@
               src="./assets/Logos clientes/redlink.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen redlink"
+              loading="lazy" 
             />
           </div>
           
@@ -605,7 +626,8 @@
               src="./assets/Logos clientes/syngenta.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen syngenta"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -613,7 +635,8 @@
               src="./assets/Logos clientes/willis.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen willis"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -621,7 +644,8 @@
               src="./assets/Logos clientes/abinbev logo png.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen abinbev"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -629,7 +653,8 @@
               src="./assets/Logos clientes/afab logo png.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen afab"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -637,7 +662,8 @@
               src="./assets/Logos clientes/armytech logo png.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen armytech"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -645,7 +671,8 @@
               src="./assets/Logos clientes/beccar png logo.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen beccar"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -653,7 +680,8 @@
               src="./assets/Logos clientes/cordial logo png.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen cordial"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -661,7 +689,8 @@
               src="./assets/Logos clientes/creoslogopng.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen creos"
+              loading="lazy" 
             />
           </div>
           <div class="slide">
@@ -669,7 +698,8 @@
               src="./assets/Logos clientes/pothole logo png.png"
               height="60"
               max-width="100%"
-              alt=""
+              alt="imagen pothole"
+              loading="lazy" 
             />
           </div>
         </div>
