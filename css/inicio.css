@@ -940,7 +940,7 @@ img {
   height: auto;
   padding: 0 4rem;
   padding-top: 1rem;
-  background-color: rgba(13, 37, 56, 0.322);
+  background-color: rgba(13, 37, 56, 0.822);
   overflow: hidden;
   position: sticky;
   top: 0;
@@ -974,10 +974,15 @@ header {
 }
 
 .head h1 {
-  font-size: 2vw;
+  font-size: 4vw;
+
   color: #f8f8f8;
+
   letter-spacing: 0.1em;
+
   padding-bottom: 8rem;
+
+  text-align: center;
 }
 
 .logo img {
@@ -1035,7 +1040,7 @@ header {
   background-size: 50% 0.2rem;
 }
 .menu-bar .sociales a {
-  font-size: 1.6rem;
+  font-size: 2rem;
   text-transform: uppercase;
   padding: 0 1rem;
   font-weight: 700;
