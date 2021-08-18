@@ -167,6 +167,10 @@ main {
   background-color: var(--color-secundario);
 }
 
+.read-more-state:checked ~ .read-more-wrap .tres-puntos {
+  display: none;
+}
+
 /********* INICIA BENEFICIOS *********/
 
 .beneficios {
@@ -175,10 +179,73 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../assets/fondo-beneficios.png);
+  background: rgba(45, 57, 86, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(45, 57, 86, 1) 0%,
+    rgba(45, 57, 86, 1) 12%,
+    rgba(45, 57, 86, 1) 20%,
+    rgba(45, 57, 86, 1) 28%,
+    rgba(45, 57, 86, 1) 35%,
+    rgba(28, 28, 28, 1) 85%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(45, 57, 86, 1)),
+    color-stop(12%, rgba(45, 57, 86, 1)),
+    color-stop(20%, rgba(45, 57, 86, 1)),
+    color-stop(28%, rgba(45, 57, 86, 1)),
+    color-stop(35%, rgba(45, 57, 86, 1)),
+    color-stop(85%, rgba(28, 28, 28, 1)),
+    color-stop(100%, rgba(19, 19, 19, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(45, 57, 86, 1) 0%,
+    rgba(45, 57, 86, 1) 12%,
+    rgba(45, 57, 86, 1) 20%,
+    rgba(45, 57, 86, 1) 28%,
+    rgba(45, 57, 86, 1) 35%,
+    rgba(28, 28, 28, 1) 85%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(45, 57, 86, 1) 0%,
+    rgba(45, 57, 86, 1) 12%,
+    rgba(45, 57, 86, 1) 20%,
+    rgba(45, 57, 86, 1) 28%,
+    rgba(45, 57, 86, 1) 35%,
+    rgba(28, 28, 28, 1) 85%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(45, 57, 86, 1) 0%,
+    rgba(45, 57, 86, 1) 12%,
+    rgba(45, 57, 86, 1) 20%,
+    rgba(45, 57, 86, 1) 28%,
+    rgba(45, 57, 86, 1) 35%,
+    rgba(28, 28, 28, 1) 85%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(45, 57, 86, 1) 0%,
+    rgba(45, 57, 86, 1) 12%,
+    rgba(45, 57, 86, 1) 20%,
+    rgba(45, 57, 86, 1) 28%,
+    rgba(45, 57, 86, 1) 35%,
+    rgba(28, 28, 28, 1) 85%,
+    rgba(19, 19, 19, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d3956', endColorstr='#131313', GradientType=1 );
+  /* background-image: url(../assets/fondo-beneficios.png);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .beneficios h2 {
@@ -194,6 +261,7 @@ main {
   grid-template-rows: repeat(1, 1fr);
   color: #fff;
   text-align: center;
+  padding: 0 5rem;
   padding-bottom: 10rem;
 }
 
@@ -204,7 +272,7 @@ main {
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 1.5rem;
     grid-row-gap: 1.5rem;
-    padding: 0 5rem;
+    padding: 0 8rem;
     padding-bottom: 10rem;
     color: #fff;
     text-align: center;
@@ -283,6 +351,10 @@ main {
   transition: all 1s;
 }
 
+.div-beneficios p {
+  line-height: 1.3;
+}
+
 .div-beneficios img:hover {
   transform: scale(1.05);
 }
@@ -335,9 +407,12 @@ main {
   grid-gap: 1rem;
   margin-bottom: 10rem;
   padding: 0 5rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 450px) {
   .tecnologias-grid {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
@@ -351,10 +426,6 @@ main {
     grid-gap: 5rem;
     padding: 0 10rem;
   }
-}
-
-.office-365 {
-  margin-left: -3rem;
 }
 
 .tecnologias-secciones {
@@ -444,21 +515,33 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 
 .clientes-contenedor h2 {
   padding: 0 2rem;
-  padding-top: 10rem;
+  padding-top: 7rem;
   margin-bottom: 0;
   font-size: 3rem;
   color: #000;
+  padding-bottom: 5rem;
 }
 
-.clientes-servicios {
-  max-width: 80%;
-  margin: 0 auto;
+@media (min-width: 768px) {
+  .clientes-contenedor h2 {
+    padding: 0 2rem;
+    padding-top: 10rem;
+    margin-bottom: 0;
+    font-size: 3rem;
+    color: #000;
+    padding-bottom: 5rem;
+  }
+
+  .clientes-contenedor {
+    padding-bottom: 10rem;
+  }
 }
+
 .clientes-contenedor p {
   color: #000;
   font-family: "Lato", sans-serif;
@@ -473,101 +556,9 @@ main {
   }
 }
 
-.clientes-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-gap: 1rem;
-  margin-bottom: 10rem;
-  padding: 0 5rem;
-}
-
-@media (min-width: 768px) {
-  .clientes-grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 1rem;
-    padding: 0 20rem;
-  }
-}
-
-@media (min-width: 1043px) {
-  .clientes-grid {
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1rem;
-    padding: 0 20rem;
-  }
-}
-
-.clientes-secciones {
-  padding: 0;
-  text-align: left;
-}
-
-.clientes-secciones h3 {
-  font-weight: bolds;
-  font-size: 1.5rem;
-  margin-top: 0;
-  line-height: 1.5;
-  color: #000;
-}
-
-.clientes-secciones p {
-  text-align: left;
-  margin: 1rem 0;
-  line-height: 1.2;
-  color: #000;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden;
-  cursor: pointer;
-  transition: all 0.5s;
-}
-
-.clientes-secciones p:hover {
-  display: block;
-  cursor: default;
-}
-
-.clientes-secciones span {
-  border-radius: 50%;
-  border: black 1px solid;
-  padding: 30px;
-  margin-bottom: 2rem;
-  background: rgb(79, 99, 145);
-  background: linear-gradient(
-    144deg,
-    rgba(79, 99, 145, 1) 50%,
-    rgba(55, 67, 94, 1) 100%
-  );
-  transition: all 0.2s ease-in-out;
-}
-
-.clientes-secciones span:hover {
-  background: #fec400;
-}
-
-.clientes-secciones span::before {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.content-clientes-item h3 {
-  font-size: 1.5rem;
-}
-
-.contenido-clientes {
-  text-align: center;
-  margin: 0 auto;
-  padding: 0 3rem;
-}
-
 @-webkit-keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(300px);
   }
   100% {
     transform: translateX(calc(-250px * 7));
@@ -576,7 +567,7 @@ main {
 
 @keyframes scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(300px);
   }
   100% {
     transform: translateX(calc(-250px * 7));
@@ -615,8 +606,8 @@ main {
   width: calc(250px * 14);
 }
 .slider .slide {
-  height: 100px;
-  width: 250px;
+  width: 270px;
+  margin-right: 5rem;
 }
 
 /********* FINALIZA CLIENTES *********/
