@@ -9,10 +9,10 @@
       name="keywords"
       content="Sinaptic, Sinaptic.com.ar, www.sinaptic.com.ar, programacion, app, moviles, mobiles, desarrollo movil, desarrollo web, office 365, Sharepoint, rpa, bpm"
     />
-    <title>Sinaptic || Applied Technology</title>
+    <title>Sinaptic | Applied Technology</title>
 
     <meta
-      content="Pagina de Sinaptic || Applied Technology"
+      content="Pagina de Sinaptic | Applied Technology"
       name="description"
     />
 
@@ -27,11 +27,53 @@
     />
 
     <link rel="apple-touch-icon" href="./assets/32x32.png" />
-    <link rel="apple-touch-startup-image" href="./assets/logoblanco.webp" />
+    <link rel="apple-touch-startup-image" href="./assets/32x32.png" />
     <link rel="manifest" href="./manifest.json" />
 
+    
+    <meta content="Sinaptic" name="Author" />
+
+    <!-- Og: Property -->
+    <meta property="og:title" content="Sinaptic | Applied Technology" />
+    <meta property="og:type" content="text" />
+    <meta property="og:url" content="http://sinaptic.com.ar" />
+
+    <!-- Twitter Card -->
+    <meta
+      name="twitter:card"
+      content="Pagina web de Sinaptic | Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
+    />
+    <meta name="twitter:creator" content="Sinaptic" />
+    <meta name="twitter:site" content="http://sinaptic.com.ar" />
+    <meta property="og:title" content="Sinaptic || Applied Technology" />
+    <meta property="og:url" content="http://sinaptic.com.ar" />
+    <meta
+      property="og:description"
+      content="Pagina web de Sinaptic | Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
+    />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logoSinaptic.webp"
+    />
+
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
+    <link rel="shortcut icon" href="assets/32x32.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+
+
+
     <!-- ESTILOS -->
-    <link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" />
+    
+    <link
+      rel="preload"
+      href="./assets/glyphter-font/css/Glyphter.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" /></noscript>
     <link
       rel="preload"
       href="./css/normalize.css"
@@ -59,44 +101,8 @@
       defer
     ></script>
 
-    <link
-      rel="preload"
-      href="./css/css2.css"
-      as="style"
-      onload="this.onload=null;this.rel='stylesheet'"
-    />
-    <noscript><link rel="stylesheet" href="./css/css2.css" /></noscript>
+    
 
-    <meta content="Sinaptic" name="Author" />
-
-    <!-- Og: Property -->
-    <meta property="og:title" content="Sinaptic || Applied Technology" />
-    <meta property="og:type" content="text" />
-    <meta property="og:url" content="http://sinaptic.com.ar" />
-
-    <!-- Twitter Card -->
-    <meta
-      name="twitter:card"
-      content="Pagina web de Sinaptic || Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
-    />
-    <meta name="twitter:creator" content="Sinaptic" />
-    <meta name="twitter:site" content="http://sinaptic.com.ar" />
-    <meta property="og:title" content="Sinaptic || Applied Technology" />
-    <meta property="og:url" content="http://sinaptic.com.ar" />
-    <meta
-      property="og:description"
-      content="Pagina web de Sinaptic || Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
-    />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logoSinaptic.webp"
-    />
-
-    <meta name="robots" content="index" />
-    <meta name="robots" content="follow" />
-    <link rel="shortcut icon" href="assets/32x32.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   </head>
   <body id="body">
     <!-- BOTON DE IR ARRIBA -->
@@ -119,6 +125,7 @@
         <nav class="enlaces" id="enlaces">
           <ul>
             <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#beneficios">Beneficios</a></li>
             <li><a href="#tecnologias">Tecnologías</a></li>
             <li><a href="#clientes">Clientes</a></li>
             <li><a href="#contacto">Contacto</a></li>
@@ -130,7 +137,6 @@
             href="https://www.facebook.com/Sinaptic.ES"
             target="_blank"
             aria-label="Facebook"
-            alt="facebook de Sinaptic"
             rel="noopener"
             ><span class="fab fa-facebook" alt="facebook de Sinaptic"></span
           ></a>
@@ -138,7 +144,6 @@
             href="https://www.instagram.com/sinaptic_ar/"
             target="_blank"
             aria-label="Instagram"
-            alt="instagram de Sinaptic"
             rel="noopener"
             ><span class="fab fa-instagram" alt="intagram de Sinaptic"></span
           ></a>
@@ -146,7 +151,6 @@
             href="https://api.whatsapp.com/send?phone=+541168119269"
             target="_blank"
             aria-label="Whatsapp"
-            alt="whatsapp de Sinaptic"
             rel="noopener"
             ><span class="fab fa-whatsapp" alt="whatsapp de Sinaptic"></span
           ></a>
@@ -154,7 +158,6 @@
             href="https://www.linkedin.com/company/sinaptic"
             target="_blank"
             aria-label="Linkedin"
-            alt="linkedin de Sinaptic"
             rel="noopener"
             ><span class="fab fa-linkedin" alt="linkedin de Sinaptic"></span
           ></a>
@@ -167,12 +170,12 @@
     <header>
       <div class="head">
         <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="400">
-          Hacemos tu trabajo más fácil
+          Alianzas fuertes logran resultados extraordinarios
         </h1>
       </div>
 
       <a href="#servicios" aria-label="Abajo" class="container-flecha">
-        <i class="fas fa-plus" alt="ir abajo"></i>
+        <i class="fas fa-plus mas" alt="ir abajo"></i>
       </a>
     </header>
     <!-- FINISH HEADER -->
@@ -182,7 +185,12 @@
       <h2>NUESTROS SERVICIOS</h2>
       <div class="contenido-servicios">
         <p>
-          Somos un equipo de profesionales apasionados por lo que hacemos. Escuchamos a nuestros clientes, analizamos su necesidad y diseñamos un plan de acción para brindarles la solución que mejor se ajuste a sus intereses. Luego ejecutamos la planificación utilizando tecnologías de vanguardia. Nos abrazamos a los desafíos y es por ello que logramos siempre resultados de gran impacto en el negocio
+          Somos un equipo de profesionales apasionados por lo que hacemos.
+          Escuchamos a nuestros clientes, analizamos su necesidad y diseñamos un
+          plan de acción para brindarles la solución que mejor se ajuste a sus
+          intereses. Ejecutamos la planificación utilizando tecnologías de
+          vanguardia. Nos abrazamos a los desafíos y es por ello que logramos
+          siempre resultados de gran impacto en el negocio
         </p>
       </div>
 
@@ -191,71 +199,110 @@
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon alt-it">
               <a href="#" aria-label="title">
-                <i class="icon-1 serviciosintegrales i-alt"></i>
+                <label for="post-1">
+                  <i class="icon-1 serviciosintegrales i-alt"></i>
+                </label>
               </a>
             </div>
           </div>
           <h3>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h3>
-          <p>
-            Potenciamos a las organizaciones con las múltiples funciones
-            disponibles en la plataforma Microsoft Office 365.Optimizamos todo
-            tipo de tareas segun la necesidad de cada cliente.
-          </p>
-        </div>
 
-        <div class="nosotros-secciones">
-          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
-            <div class="fbox-icon">
-              <a href="#" aria-label="title" class="titulo"
-                ><i class="icon-2 desarrolloweb i-alt"></i></a>
-            </div>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-1" />
+            <p class="read-more-wrap">
+              Potenciamos a las organizaciones con las múltiples funciones
+              disponibles en la plataforma <span class="tres-puntos">...</span>
+              <span class="read-more-target"
+                >Microsoft Office 365.Optimizamos todo tipo de tareas segun la
+                necesidad de cada cliente</span
+              >
+            </p>
+            <label for="post-1" class="read-more-trigger"></label>
           </div>
-          <h3>DESARROLLO WEB</h3>
-          <p>
-            Creamos aplicaciones web de alta performance utilizando las últimas
-            tendencias y tecnologia que mejor se ajuste a cada necesidad de
-            negocio.
-          </p>
         </div>
 
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" aria-label="title" class="titulo"
-                ><i class="icon-3 desarrollomobile i-alt"></i></a>
-            </div>
-          </div>
-          <h3>DESARROLLO MOBILE</h3>
-          <p>
-            Desarrollamos productos móviles con un servicio
-            end-to-end. Ayudamos a desarrollar proyectos de cero, mejorar uno
-            existente o mantener una aplización productiva utilizando tecnología
-            de punta.
-          </p>
-        </div>
-
-        <div class="nosotros-secciones">
-          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
-            <div class="fbox-icon">
-              <a href="#" aria-label="title" class="titulo"
-                ><i class="icon-4 diseñoyarquitectura i-alt"></i></i
+              <a href="#" aria-label="title" class="titulo">
+                <label for="post-2"
+                  ><i class="icon-2 desarrolloweb i-alt"></i></label
               ></a>
             </div>
           </div>
-          <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
-          <p>
-            Aplicamos patrones de diseño y buenas prácticas con el fin de guiar
-            a nuestros clientes en el proceso de desarrollo de un software
-            sólido y escalable.
-            Nuestros expertos realizaran investigaciones y análisis de negocio para ofrecer la mejor solución. Implementamos nuestra experiencia en diseño, revisión, desarrollo, ajuste y mejora de una arquitectura de software compleja.
-          </p>
+          <h3>DESARROLLO WEB</h3>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-2" />
+            <p class="read-more-wrap">
+              Creamos aplicaciones web de alta performance utilizando las
+              últimas tendencias y tecnologia <span class="tres-puntos">...</span>
+              <span class="read-more-target"
+                >que mejor se ajuste a cada necesidad de negocio.</span
+              >
+            </p>
+            <label for="post-2" class="read-more-trigger"></label>
+          </div>
+        </div>
+
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#" aria-label="title" class="titulo">
+                <label for="post-3">
+                  <i class="icon-3 desarrollomobile i-alt"> </i>
+                </label>
+              </a>
+            </div>
+          </div>
+          <h3>DESARROLLO MOBILE</h3>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-3" />
+            <p class="read-more-wrap">
+              Desarrollamos productos móviles con un servicio end-to-end.
+              Ayudamos a desarrollar proyectos <span class="tres-puntos">...</span> 
+              <span class="read-more-target"
+                >de cero, mejorar uno existente o mantener una aplización
+                productiva utilizando tecnología de punta.</span
+              >
+            </p>
+            <label for="post-3" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
               <a href="#" aria-label="title" class="titulo"
-                ><i class="icon-5 capacitación i-alt"></i></i
+                ><label for="post-4"
+                  ><i class="icon-4 diseñoyarquitectura i-alt"></i
+                ></label>
+              </a>
+            </div>
+          </div>
+          <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-4" />
+            <p class="read-more-wrap">
+              Aplicamos patrones de diseño y buenas prácticas con el fin de
+              guiar a nuestros clientes en <span class="tres-puntos">...</span>
+              <span class="read-more-target"
+                >el proceso de desarrollo de un software sólido y escalable.
+                Nuestros expertos realizaran investigaciones y análisis de
+                negocio para ofrecer la mejor solución. Implementamos nuestra
+                experiencia en diseño, revisión, desarrollo, ajuste y mejora de
+                una arquitectura de software compleja.</span
+              >
+            </p>
+            <label for="post-4" class="read-more-trigger"></label>
+          </div>
+        </div>
+
+        <div class="nosotros-secciones">
+          <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
+            <div class="fbox-icon">
+              <a href="#" aria-label="title" class="titulo"
+                ><label for="post-5"
+                  ><i class="icon-5 capacitación i-alt"></i></label
               ></a>
             </div>
           </div>
@@ -263,212 +310,422 @@
             CAPACITACIÓN Y TRANSFERENCIA DE CONOCIMIENTO A EQUIPOS PARA
             AUTOGESTION
           </h3>
-          <p>
-            Acompañamos a las organizaciones en su proceso de transformación
-            digital, llevando adelante un proceso de evolución de manera óptima.
-            Disponemos de servicios de capacitación y Workshops, permitiendo
-            incorporar nuestro conocimiento y experiencia a un plan de acción
-            para cumplir las metas en menor tiempo.
-          </p>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-5" />
+            <p class="read-more-wrap">
+              Acompañamos a las organizaciones en su proceso de transformación
+              digital, llevando adelante <span class="tres-puntos">...</span> 
+              <span class="read-more-target"
+                >un proceso de evolución de manera óptima. Disponemos de
+                servicios de capacitación y Workshops, permitiendo incorporar
+                nuestro conocimiento y experiencia a un plan de acción para
+                cumplir las metas en menor tiempo.</span
+              >
+            </p>
+            <label for="post-5" class="read-more-trigger"></label>
+          </div>
         </div>
 
         <div class="nosotros-secciones">
           <div class="feature-box fbox-center fbox-outline fbox-lg fbox-effect">
             <div class="fbox-icon">
-              <a href="#" aria-label="title" class="titulo"
-                ><i class="fas fa-robot i-alt" ></i></i
+              <a href="#"  aria-label="title" class="titulo"
+                ><label for="post-6"><i class="fas fa-robot i-alt"></i></label
               ></a>
             </div>
           </div>
           <h3>RPA Y BPM</h3>
-          <p>
-            Trabajamos utilizando tecnologías RPA Y BPM para generar nuevos
-            niveles de calidad y productividad en la estrategia de
-            transformación digital de la empresa y sus productos. Brindamos
-            automatización de procesos procesos mediante robots y Gestión de
-            Procesos de Negocio.
-          </p>
+          <div>
+            <input type="checkbox" class="read-more-state" id="post-6" />
+            <p class="read-more-wrap">
+              Trabajamos utilizando tecnologías RPA Y BPM para generar nuevos
+              niveles de calidad y <span class="tres-puntos">...</span>
+              <span class="read-more-target"
+                >productividad en la estrategia de transformación digital de la
+                empresa y sus productos. Brindamos automatización de procesos
+                procesos mediante robots y Gestión de Procesos de Negocio.</span
+              >
+            </p>
+            <label for="post-6" class="read-more-trigger"></label>
+          </div>
         </div>
       </div>
     </main>
     <!-- Servicios end =============================================  -->
 
+    <!-- Beneficios =============================================  -->
+    <section id="beneficios" class="beneficios">
+      <h2>BENEFICIOS</h2>
+      
+     
+      </div>
+      <div class="parent">
+        <div class="div1  div-beneficios">
+          <img
+            src="./assets/beneficios-2.png"
+            alt="Retorno de inversion"
+            style="max-width: 100%; height: 15rem"
+            loading="lazy" 
+          />
+          <p>Retorno de inversión</p>
+        </div>
+        <div class="div2 div-beneficios">
+          <img src="./assets/beneficios-3.png" alt="Aumento del canal de ventas" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Aumento del canal de ventas</p>
+        </div>
+        <div class="div3 div-beneficios">
+          <img src="./assets/beneficios-4.png" alt="Mantenerse a la vanguardia de su mercado" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Mantenerse a la vanguardia de su mercado</p>
+        </div>
+        <div class="div4 div-beneficios">
+          <img src="./assets/beneficios-1.png" alt="Dominio de Tecnologías de última generacion" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Dominio de Tecnologías de última generacion</p>
+        </div>
+        <div class="div5 div-beneficios">
+          <img src="./assets/beneficios-5.png" alt="" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Transferencia de conocimiento</p>
+        </div>
+        <div class="div6 div-beneficios">
+          <img src="./assets/beneficios-6.png" alt="Transferencia de conocimiento" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Acompañamiento y seguimiento</p>
+        </div>
+        <div class="div7 div-beneficios">
+          <img src="./assets/beneficios-7.png" alt="Optimización de tareas"style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Optimización de tareas</p>
+        </div>
+        <div class="div8 div-beneficios">
+          <img src="./assets/beneficios-8.png" alt="Ahorro de tiempo y dinero" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Ahorro de tiempo y dinero</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beneficios end =============================================  -->
 
     <!-- Tecnologias =============================================  -->
     <section class="tecnologias-contenedor" id="tecnologias">
       <h2>TECNOLOGÍAS</h2>
       <div class="contenido-tecnologias">
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repellat ipsam nihil, deserunt, dolorum aperiam earum sit a rerum illum nesciunt aut ipsa. Nemo ea quod ad id itaque repudiandae!
+          Nos especializamos en tecnologías de última generación. Esto nos permite aplicar la que mejor se ajuste a cada necesidad de negocio, generando resultados de alto impacto en las empresas. 
         </p>
       </div>
-      
+
       <div class="tecnologias-grid">
-        
         <div class="tecnologias-secciones">
-          <img src="./assets/Sharepoint.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>SharePoint</h3>
+          <img
+            src="./assets/Sharepoint.png"
+            alt="imagen SharePoint"
+            style="max-width: 100%; height: 100px"
+            class="apagado"
+            loading="lazy" 
+          />
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/365 color logo.png"
+            alt="Imagen Office 365"
+            style="max-width: 100%; height: 50px"
+            class="apagado"
+            loading="lazy" 
+          />
+        
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/net.png"
+            alt="imagen .Net"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
+       
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/angular-logo-png.png"
+            alt="Imagen Angular"
+            style="max-width: 100%; height: 100px"
+            class="apagado"
+            loading="lazy" 
+          />
+        
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/Dynamics-365-logo.png"
+            alt="imagen Dynamics 365"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
          
         </div>
-        
+
         <div class="tecnologias-secciones">
-          <img src="./assets/OFFICE 365.png" alt="" style="max-width: 100%; height: 70px;" class="apagado office-365">
-          <h3>Office 365</h3>
+          <img
+            src="./assets/firebase.png"
+            alt="Imagen Firebase"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
+          
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/HTML5 JS Y CSS JUNTOS.png"
+            alt="imagen HTML5, CSS3, Javascript"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
          
         </div>
 
         <div class="tecnologias-secciones">
-          <img src="./assets/net.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>.Net</h3>
+          <img
+            src="./assets/ionic logo.png"
+            alt="imagen Ionic"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
           
         </div>
 
         <div class="tecnologias-secciones">
-          <img src="./assets/angular logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>Angular</h3>
+          <img
+            src="./assets/Microsoft_Azure_Logo.png"
+            alt="imagen Microsoft Azure"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
           
         </div>
 
         <div class="tecnologias-secciones">
-          <img src="./assets/Dynamics-365-logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>Dynamics 365</h3>
-          
-        </div>
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/firebase.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>Firebase</h3>
-          
-        </div>
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/HTML5 JS Y CSS JUNTOS.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>HTML5, CSS3, Javascript</h3>
-        
-        </div>
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/ionic logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>Ionic</h3>
-          
-        </div>
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/Microsoft_Azure_Logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>Microsoft Azure</h3>
+          <img
+            src="./assets/mongodb logo.png"
+            alt="imagen MongoDB"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
          
         </div>
 
         <div class="tecnologias-secciones">
-          <img src="./assets/mongodb logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>MongoDB</h3>
-          
-        </div>
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/Node js logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>NodeJs</h3>
-          
-        </div>
-
-
-        <div class="tecnologias-secciones">
-          <img src="./assets/React logo.png" alt="" style="max-width: 100%; height: 70px;" class="apagado">
-          <h3>ReactJs</h3>
-          
-        </div>
-
+          <img
+            src="./assets/Node js logo.png"
+            alt="imagen NodeJs"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
         
+        </div>
+
+        <div class="tecnologias-secciones">
+          <img
+            src="./assets/React logo.png"
+            alt="imagen ReactJs"
+            style="max-width: 100%; height: 70px"
+            class="apagado"
+            loading="lazy" 
+          />
+          
+        </div>
       </div>
     </section>
     <!-- Tecnologias end =============================================  -->
 
-
     <!-- Clientes =============================================  -->
     <section class="clientes-contenedor" id="clientes">
-      <h2>Algunos de Nuestros Clientes</h2>
+      <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+
       <div class="contenido-clientes">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, repellat ipsam nihil, deserunt, dolorum aperiam earum sit a rerum illum nesciunt aut ipsa. Nemo ea quod ad id itaque repudiandae!
-        </p>
+        <p>Acompañamos a las empresas en su proceso de crecimiento y transformación digital. Cumplimos con los objetivos en menor tiempo y maximizando los beneficios.</p>
       </div>
       
-      <div class="clientes-grid">
-        
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/antofagasta.png" alt="" style="max-width: 100%; height: 70px;" >
-        
-         
-        </div>
-        
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/ataway.png" alt="" style="max-width: 100%; height: 70px;" >
+      <div class="slider">
+        <div class="slide-track">
+          <div class="slide">
+            <img
+            src="./assets/Logos clientes/ataway.png"
+            height="60px"
+            max-width="100%"
+            alt="imagen ataway"
+            loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+            src="./assets/Logos clientes/INTA.png"
+            height="60px"
+            max-width="100%"
+            
+            alt="imagen inta"
+            loading="lazy" 
+            />
+          </div>
+       
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/Secure auth.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen secure auth"
+              loading="lazy" 
+            />
+          </div>
           
          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/INTA.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/Mototech.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/Multitech.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/redlink.png alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/Secure auth.png alt="" style="max-width: 100%; height: 70px;" >
-          
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/Mototech.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen mototech"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/antofagasta.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen antofagasta"
+              loading="lazy" 
+            />
+          </div>
         
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/syngenta.png" alt="" style="max-width: 100%; height: 70px;" >
-        
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/redlink.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen redlink"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/Multitech.png"
+              height="70px"
+              max-width="100%"
+              alt="imagen multitech"
+              loading="lazy" 
+            />
+          </div>
           
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Logos clientes/willis.png" alt="" style="max-width: 100%; height: 70px;" >
-          
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/syngenta.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen syngenta"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/willis.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen willis"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/abinbev logo png.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen abinbev"
+              loading="lazy" 
+            />
+          </div>
          
         </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/mongodb logo.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        <div class="clientes-secciones">
-          <img src="./assets/Node js logo.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-        </div>
-
-
-        <div class="clientes-secciones">
-          <img src="./assets/React logo.png" alt="" style="max-width: 100%; height: 70px;" >
-          
-          
-        </div>
-
-        
       </div>
+
+      <div class="slider">
+        <div class="slide-track">
+          
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/afab logo png.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen afab"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/armytech logo png.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen armytech"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/beccar png logo.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen beccar"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/cordial logo png.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen cordial"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/creoslogopng.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen creos"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/global mix.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen Global Mix"
+              loading="lazy" 
+            />
+          </div>
+          <div class="slide">
+            <img
+              src="./assets/Logos clientes/pothole logo png.png"
+              height="60px"
+              max-width="100%"
+              alt="imagen pothole"
+              loading="lazy" 
+            />
+          </div>
+        </div>
+      </div>
+
     </section>
     <!-- Clientes  end =============================================  -->
 
@@ -534,12 +791,11 @@
                 <li><i class="fas fa-phone"></i> +541168119269</li>
                 <li>
                   <i class="fas fa-envelope-open-text"></i>
-                  sales@sinaptic.com.ar
+                  <a href="mailto:sales@sinaptic.com.ar?subject=Asunto" style="color: #fff; text-decoration: none;">sales@sinaptic.com.ar</a> 
                 </li>
               </ul>
               <p>
-                Envianos tu consulta. Hace realidad tus sueños, nosotros te
-                ayudamos.
+                Envianos tu consulta.
               </p>
             </div>
           </div>
@@ -569,15 +825,9 @@
     <!-- FOOTER =============================================  -->
 
     <footer id="footer" class="footer">
-      <div class="footer-img">
-        <a href="#body">
-          <img
-            id="footerimg"
-            src="./assets/logoblanco.webp"
-            alt="logo Sinaptic"
-          />
-        </a>
-      </div>
+      
+<div class="footer-container">
+
 
       <div class="social-icons">
         <div class="sociales">
@@ -615,11 +865,21 @@
           ></a>
 
           <div class="footer-data">
-            <i class="icon-envelope2"></i> sales@sinaptic.com.ar
+            <i class="icon-envelope2"></i>  <a href="mailto:sales@sinaptic.com.ar?subject=Asunto" style="color: #fff; text-decoration: none; text-transform: lowercase;">sales@sinaptic.com.ar</a> 
             <span class="middot">&middot;</span>
           </div>
         </div>
       </div>
+      <div class="footer-img">
+        <a href="#body">
+          <img
+            id="footerimg"
+            src="./assets/logoblanco.webp"
+            alt="logo Sinaptic"
+          />
+        </a>
+      </div>
+    </div>
     </footer>
     <!-- #footer end -->
 
