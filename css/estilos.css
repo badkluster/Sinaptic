@@ -1299,11 +1299,13 @@ ul {
   font-size: 3rem;
   color: #fff;
   padding-top: 7rem;
+  margin-top: 0;
 }
 
 @media (min-width: 768px) {
   .logo-contact {
     font-size: 3rem;
+
     margin-top: 0;
   }
 }
