@@ -11,14 +11,14 @@ main {
   text-align: center;
   background-color: #f5f6f7;
   /* background-image: url(../assets/bannerservicios.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 }
 
 .nosotros-contenedor h2 {
   padding: 0 2rem;
-  padding-top: 7rem;
+  padding-top: 9rem;
   margin-bottom: 0;
   font-size: 3rem;
 }
@@ -86,10 +86,10 @@ main {
   font-weight: 400;
   font-size: 1.5rem;
   /* display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-  line-clamp: 3;
-  overflow: hidden; */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    overflow: hidden; */
   cursor: pointer;
   transition: all 0.5s;
 }
@@ -117,7 +117,7 @@ main {
 }
 
 .i-alt {
-  background-image: url(../assets/iconalt.svg) !important;
+  background-image: url("../assets/iconalt.svg") !important;
   background-position: center center;
   background-size: 100% 100%;
 }
@@ -244,108 +244,65 @@ main {
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2d3956', endColorstr='#131313', GradientType=1 );
   /* background-image: url(../assets/fondo-beneficios.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
 }
 
 .beneficios h2 {
   padding: 0 2rem;
-  padding-top: 7rem;
+  padding-top: 9rem;
   margin-bottom: 0;
   font-size: 3rem;
   color: #fff;
-  padding-bottom: 7rem;
+  padding-bottom: 6rem;
 }
 
-.parent {
-  grid-template-rows: repeat(1, 1fr);
-  color: #fff;
-  text-align: center;
-  padding: 0 5rem;
-  padding-bottom: 10rem;
-}
-
-@media (min-width: 500px) {
+@media (min-width: 768px) {
   .parent {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    padding: 0 8rem;
-    padding-bottom: 10rem;
-    color: #fff;
-    text-align: center;
-  }
-  .div1 {
-    grid-area: 1/3;
-  }
-
-  .div2 {
-    grid-area: 2/2;
-  }
-  .div3 {
-    grid-area: 2/3;
-  }
-  .div4 {
-    grid-area: 1/2;
-  }
-  .div5 {
-    grid-area: 3/2;
-  }
-  .div6 {
-    grid-area: 3/3;
-  }
-  .div7 {
-    grid-area: 4/2;
-  }
-  .div8 {
-    grid-area: 4/3;
-  }
-}
-
-@media (min-width: 980px) {
-  .parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-column-gap: 1.5rem;
-    grid-row-gap: 1.5rem;
-    padding: 5rem 15rem;
-    color: #fff;
-    text-align: center;
+    grid-column-gap: 4rem;
+    grid-row-gap: 4rem;
+    padding: 0 4rem;
+    padding-bottom: 6rem;
   }
 
   .div1 {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
-  .div2 {
-    grid-area: 1 / 3 / 2 / 4 !important;
-  }
-  .div3 {
-    grid-area: 1 / 4 / 2 / 5;
-  }
-  .div4 {
     grid-area: 1 / 1 / 2 / 2;
   }
-  .div5 {
-    grid-area: 1 / 5 / 2 / 6 !important;
+  .div2 {
+    grid-area: 1 / 2 / 2 / 3;
   }
-  .div6 {
+  .div3 {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+  .div4 {
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  .div5 {
     grid-area: 2 / 2 / 3 / 3;
   }
-  .div7 {
+  .div6 {
     grid-area: 2 / 3 / 3 / 4;
   }
-  .div8 {
-    grid-area: 2 / 4 / 3 / 5;
+}
+
+@media (min-width: 450px) {
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 }
 
 .parent p {
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+  padding-bottom: 2rem;
 }
 
 .div-beneficios {
@@ -353,13 +310,29 @@ main {
 }
 
 .div-beneficios p {
-  line-height: 1.3;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .div-beneficios img:hover {
   transform: scale(1.05);
 }
+.contenido-beneficios {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 3rem;
+  max-width: 80%;
+}
 
+.contenido-beneficios p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+
+  padding-bottom: 5rem;
+}
 /********* FINALIZA BENEFICIOS *********/
 
 /************** TECNOLOGIAS *********************/
@@ -375,7 +348,7 @@ main {
 
 .tecnologias-contenedor h2 {
   padding: 0 2rem;
-  padding-top: 7rem;
+  padding-top: 9rem;
   margin-bottom: 0;
   font-size: 3rem;
   color: #000;
@@ -509,15 +482,15 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-image: url(../assets/fondo\ tecnologías.jpg);
+  background-image: url(../assets/fondo\ tecnologías.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   /* background-image: url(../assets/bannerclientes.webp);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
   padding-bottom: 7rem;
 }
 
@@ -557,78 +530,49 @@ main {
     font-size: 2rem;
   }
 }
-
-@-webkit-keyframes scroll {
-  0% {
-    transform: translateX(700px);
-  }
-  100% {
-    transform: translateX(calc(-450px * 7));
-  }
+.parent-clientes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(20, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 5rem;
+  place-items: center;
+  padding: 8rem 4rem;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(700px);
-  }
-  100% {
-    transform: translateX(calc(-450px * 7));
+@media (min-width: 450px) {
+  .parent-clientes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5rem;
+    place-items: center;
+    padding: 8rem 4rem;
   }
 }
 
-@media (min-width: 768px) {
-  @-webkit-keyframes scroll {
-    0% {
-      transform: translateX(2000px);
-    }
-    100% {
-      transform: translateX(calc(-450px * 7));
-    }
-  }
-
-  @keyframes scroll {
-    0% {
-      transform: translateX(2000px);
-    }
-    100% {
-      transform: translateX(calc(-450px * 7));
-    }
+@media (min-width: 690px) {
+  .parent-clientes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5rem;
+    place-items: center;
+    padding: 8rem 4rem;
   }
 }
-.slider {
-  height: 100px;
-
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  margin: 3rem auto;
-}
-.slider::before,
-.slider::after {
-  content: "";
-  height: 100px;
-  position: absolute;
-  width: 200px;
-  z-index: 2;
-}
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-.slider::before {
-  left: 0;
-  top: 0;
-}
-.slider .slide-track {
-  -webkit-animation: scroll 50s linear infinite;
-  animation: scroll 50s linear infinite;
-  display: flex;
-  width: calc(250px * 14);
-}
-.slider .slide {
-  width: 270px;
-  margin-right: 5rem;
+@media (min-width: 1050px) {
+  .parent-clientes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 5rem;
+    place-items: center;
+    padding: 8rem 4rem;
+  }
 }
 
 /********* FINALIZA CLIENTES *********/
@@ -651,8 +595,8 @@ main {
 }
 
 /* ----------------------------------------------------------------
-Featured Boxes
------------------------------------------------------------------*/
+  Featured Boxes
+  -----------------------------------------------------------------*/
 
 .feature-box {
   position: relative;
@@ -749,7 +693,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Small
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-sm {
   margin-left: -0.5rem;
@@ -772,7 +716,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Large
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-lg .fbox-icon {
   width: 12rem;
@@ -784,7 +728,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon X-Large
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-xl .fbox-icon {
   width: 9.5rem;
@@ -797,7 +741,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Outline
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-outline .fbox-icon a {
   border: 1px solid #2d3956;
@@ -810,7 +754,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Outline Sizes
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-outline.fbox-sm .fbox-icon i {
   line-height: 1.5rem;
@@ -825,7 +769,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Rounded
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-rounded .fbox-icon {
   border-radius: 3px !important;
@@ -837,7 +781,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Rounded Sizes
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-rounded.fbox-lg .fbox-icon {
   border-radius: 4px !important;
@@ -858,7 +802,7 @@ Featured Boxes
 }
 
 /* Feature Box - Light Background
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-light.fbox-outline .fbox-icon a {
   border-color: #e5e5e5;
@@ -872,7 +816,7 @@ Featured Boxes
 }
 
 /* Feature Box - Dark Background
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-dark.fbox-outline .fbox-icon a {
   border-color: #444;
@@ -884,7 +828,7 @@ Featured Boxes
 }
 
 /* Feature Box - Border
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-border .fbox-icon a {
   border: 1px solid #1abc9c;
@@ -899,7 +843,7 @@ Featured Boxes
 }
 
 /* Feature Box - Border - Light
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-border.fbox-light .fbox-icon a {
   border-color: #e5e5e5;
@@ -911,7 +855,7 @@ Featured Boxes
 }
 
 /* Feature Box - Border - Dark
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-border.fbox-dark .fbox-icon a {
   border-color: #333;
@@ -923,7 +867,7 @@ Featured Boxes
 }
 
 /* Feature Box - Plain
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-plain .fbox-icon {
   border: none !important;
@@ -962,7 +906,7 @@ Featured Boxes
 }
 
 /* Feature Box - Icon Plain Sizes
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-plain.fbox-sm .fbox-icon i {
   font-size: 2rem;
@@ -977,7 +921,7 @@ Featured Boxes
 }
 
 /* Feature Box - Center & Large Icons
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-center {
   -ms-flex-direction: column;
@@ -996,7 +940,7 @@ Featured Boxes
 }
 
 /* Feature Box - Subtitle
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-content + .fbox-icon {
   margin-top: 1.5rem;
@@ -1033,7 +977,7 @@ Featured Boxes
 }
 
 /* Feature Box - Background
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-bg.fbox-center {
   margin-top: 2rem;
@@ -1069,7 +1013,7 @@ Featured Boxes
 }
 
 /* Animated Icon Hovers
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-effect .fbox-icon i {
   z-index: 1;
@@ -1137,7 +1081,7 @@ Featured Boxes
 }
 
 /* Icon Effects - Bordered
------------------------------------------------------------------*/
+  -----------------------------------------------------------------*/
 
 .fbox-border.fbox-effect .fbox-icon i {
   -webkit-transition: color 0.5s, box-shadow 0.5s, background-color 0.5s;
@@ -1151,7 +1095,7 @@ Featured Boxes
   padding: 2px;
   z-index: -1;
   box-shadow: none;
-  background-image: url("../images/icons/iconalt.svg");
+  background-image: url("../assets/iconalt.svg");
   background-position: center center;
   background-size: 100% 100%;
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s,
@@ -1305,7 +1249,7 @@ ul {
 @media (min-width: 768px) {
   .logo-contact {
     font-size: 3rem;
-
+    padding-top: 9rem;
     margin-top: 0;
   }
 }

@@ -7,63 +7,49 @@
 
     <meta
       name="keywords"
-      content="Sinaptic, Sinaptic.com.ar, www.sinaptic.com.ar, programacion, app, moviles, mobiles, desarrollo movil, desarrollo web, office 365, Sharepoint, rpa, bpm"
+      content="sharepoint, power apps, power sutomate, desarrollo, web, mobile, react, node, mongo, consultoría, ionic, android, ios, ecommerce, social media, migracion, microsoft, flow, microsfot 365, dynamics crm, serivce delivery, biometría, onboarding"
     />
     <title>Sinaptic | Applied Technology</title>
 
-    <meta
-      content="Pagina de Sinaptic | Applied Technology"
-      name="description"
-    />
-
+    <meta name="description" content="Sinaptic | Applied Technology"/>
+    <meta http-equiv="Cache-control" content="max-age=604800, public">
     <!-- PWA -->
     <meta name="MobileOptimized" content="width" />
     <meta name="theme-color" content="#626b80" />
     <meta name="HandheldFriendly" content="true" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta
-      name="apple-mobile-web-app-status-bar-style"
-      content="black-translucent"
-    />
-
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
     <link rel="apple-touch-icon" href="./assets/32x32.png" />
     <link rel="apple-touch-startup-image" href="./assets/32x32.png" />
     <link rel="manifest" href="./manifest.json" />
-
-    
     <meta content="Sinaptic" name="Author" />
 
     <!-- Og: Property -->
     <meta property="og:title" content="Sinaptic | Applied Technology" />
     <meta property="og:type" content="text" />
     <meta property="og:url" content="http://sinaptic.com.ar" />
+    <meta property="og:title" content="Sinaptic | Applied Technology" />
+    <meta property="og:url" content="http://sinaptic.com.ar" />
+    <meta property="og:description" content="Pagina web de Sinaptic | Applied Technology"
+    />
+    <meta property="og:image"content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0"/>
+    <meta property="og:image:url" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
+    <meta property="og:image:secure_url" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
+    <meta property="og:image:type" content="png">
+    <meta property="og:image:alt" content="Logo Sinaptic Website">
 
     <!-- Twitter Card -->
-    <meta
-      name="twitter:card"
-      content="Pagina web de Sinaptic | Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
-    />
+    <meta name="twitter:card" content="Pagina web de Sinaptic | Applied Technology"/>
     <meta name="twitter:creator" content="Sinaptic" />
     <meta name="twitter:site" content="http://sinaptic.com.ar" />
-    <meta property="og:title" content="Sinaptic || Applied Technology" />
-    <meta property="og:url" content="http://sinaptic.com.ar" />
-    <meta
-      property="og:description"
-      content="Pagina web de Sinaptic | Applied Technology - Empresa de Desarrollo web y aplicaciones mobiles."
-    />
-    <meta
-      property="og:image"
-      content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logoSinaptic.webp"
-    />
+    <meta name="twitter:image:alt" content="Logo Sinaptic Website">
+    <meta name="twitter:image" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
 
     <meta name="robots" content="index" />
     <meta name="robots" content="follow" />
-    <link rel="shortcut icon" href="assets/32x32.png" />
+    <link rel="shortcut icon" href="./assets/32x32.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-
-
 
     <!-- ESTILOS -->
     
@@ -76,16 +62,24 @@
     <noscript><link rel="stylesheet" href="./assets/glyphter-font/css/Glyphter.css" /></noscript>
     <link
       rel="preload"
+      href="./css/letras.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="./css/letras.css" /></noscript>
+    
+    <link
+      rel="preload"
       href="./css/normalize.css"
       as="style"
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./css/normalize.css" /></noscript>
 
-    <link rel="stylesheet" href="./css/inicio.css" />
+    <link rel="stylesheet" defer href="./css/inicio.css" />
 
     <!-- AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 
     <link
       rel="preload"
@@ -100,7 +94,33 @@
       crossorigin="anonymous"
       defer
     ></script>
-
+    <script>
+      window.dataLayer = window.dataLayer || [];
+  
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-96539148-1');
+  </script>
+  
+  <!-- Matomo -->
+  <script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://spanalytics.com.ar/";
+      _paq.push(['setTrackerUrl', u+'piwik.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+  </script>
+  
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-96539148-1"></script>
     
 
   </head>
@@ -169,7 +189,7 @@
 
     <header>
       <div class="head">
-        <h1 data-aos="zoom-in" data-aos-duration="3000" data-aos-delay="400">
+        <h1 data-aos="fade-up" data-aos-duration="2000" data-aos-delay="400">
           Alianzas fuertes logran resultados extraordinarios
         </h1>
       </div>
@@ -182,16 +202,10 @@
 
     <!-- Servicios =============================================  -->
     <main class="nosotros-contenedor" id="servicios">
-      <h2>NUESTROS SERVICIOS</h2>
+      <h2>Nuestros Servicios</h2>
       <div class="contenido-servicios">
         <p>
-          Somos un equipo de profesionales apasionados por lo que hacemos.
-          Escuchamos a nuestros clientes, analizamos su necesidad y diseñamos un
-          plan de acción para brindarles la solución que mejor se ajuste a sus
-          intereses. Ejecutamos la planificación utilizando tecnologías de
-          vanguardia. Nos abrazamos a los desafíos y es por ello que logramos
-          siempre resultados de gran impacto en el negocio
-        </p>
+          Somos un equipo de profesionales apasionados por lo que hacemos. Escuchamos a nuestros clientes, analizamos sus necesidades y diseñamos un plan de acción para brindarles la solución que mejor se ajuste a sus intereses. Llevamos a cabo la planificación utilizando tecnologías de vanguardia. Abrazamos los desafíos, logrando siempre resultados de gran impacto en el negocio.</p>
       </div>
 
       <div class="nosotros-grid">
@@ -205,16 +219,15 @@
               </a>
             </div>
           </div>
-          <h3>SERVICIOS INTEGRALES DE OFFICE365 Y SHAREPOINT</h3>
+          <h3>Servicios Integrales de Microsoft 365 Y SharePoint</h3>
 
           <div>
             <input type="checkbox" class="read-more-state" id="post-1" />
             <p class="read-more-wrap">
-              Potenciamos a las organizaciones con las múltiples funciones
+              Potenciamos a las organizaciones con las múltiples funcionalidades
               disponibles en la plataforma <span class="tres-puntos">...</span>
               <span class="read-more-target"
-                >Microsoft Office 365.Optimizamos todo tipo de tareas segun la
-                necesidad de cada cliente</span
+                >Microsoft 365. Optimizamos y automatizamos todo tipo de tareas y procesos.</span
               >
             </p>
             <label for="post-1" class="read-more-trigger"></label>
@@ -230,14 +243,14 @@
               ></a>
             </div>
           </div>
-          <h3>DESARROLLO WEB</h3>
+          <h3>Desarrollo Web</h3>
           <div>
             <input type="checkbox" class="read-more-state" id="post-2" />
             <p class="read-more-wrap">
               Creamos aplicaciones web de alta performance utilizando las
-              últimas tendencias y tecnologia <span class="tres-puntos">...</span>
+              últimas tecnologias <span class="tres-puntos">...</span>
               <span class="read-more-target"
-                >que mejor se ajuste a cada necesidad de negocio.</span
+                >para lograr productos que se marquen la diferencia en el negocio.</span
               >
             </p>
             <label for="post-2" class="read-more-trigger"></label>
@@ -254,7 +267,7 @@
               </a>
             </div>
           </div>
-          <h3>DESARROLLO MOBILE</h3>
+          <h3>Desarrollo Mobile</h3>
           <div>
             <input type="checkbox" class="read-more-state" id="post-3" />
             <p class="read-more-wrap">
@@ -279,7 +292,7 @@
               </a>
             </div>
           </div>
-          <h3>DISEÑO Y ARQUITECTURA DE SISTEMAS</h3>
+          <h3>Diseño y Arquitectura de Sistemas</h3>
           <div>
             <input type="checkbox" class="read-more-state" id="post-4" />
             <p class="read-more-wrap">
@@ -307,8 +320,7 @@
             </div>
           </div>
           <h3>
-            CAPACITACIÓN Y TRANSFERENCIA DE CONOCIMIENTO A EQUIPOS PARA
-            AUTOGESTION
+            Capacitación y Transferencia de Conocimiento
           </h3>
           <div>
             <input type="checkbox" class="read-more-state" id="post-5" />
@@ -316,7 +328,7 @@
               Acompañamos a las organizaciones en su proceso de transformación
               digital, llevando adelante <span class="tres-puntos">...</span> 
               <span class="read-more-target"
-                >un proceso de evolución de manera óptima. Disponemos de
+                >un proceso de evolución optimizado. Disponemos de
                 servicios de capacitación y Workshops, permitiendo incorporar
                 nuestro conocimiento y experiencia a un plan de acción para
                 cumplir las metas en menor tiempo.</span
@@ -355,48 +367,39 @@
 
     <!-- Beneficios =============================================  -->
     <section id="beneficios" class="beneficios">
-      <h2>BENEFICIOS</h2>
-      
+      <h2>Beneficios</h2>
+      <div class="contenido-beneficios">
+        <p>Acompañamos a las empresas en su proceso de crecimiento y transformación digital. Cumplimos con los objetivos en menor tiempo, maximizando los beneficios.</p>
+      </div>
      
       </div>
       <div class="parent">
-        <div class="div1  div-beneficios">
-          <img
-            src="./assets/beneficios-2.png"
-            alt="Retorno de inversion"
-            style="max-width: 100%; height: 15rem"
-            loading="lazy" 
-          />
-          <p>Retorno de inversión</p>
+        
+        <div class="div1 div-beneficios">
+          <img src="./assets/beneficios-3.webp" alt="Incremento en los canales de venta" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Incremento en los canales de venta</p>
         </div>
         <div class="div2 div-beneficios">
-          <img src="./assets/beneficios-3.png" alt="Aumento del canal de ventas" style="max-width: 100%; height: 15rem" loading="lazy" />
-          <p>Aumento del canal de ventas</p>
-        </div>
-        <div class="div3 div-beneficios">
-          <img src="./assets/beneficios-4.png" alt="Mantenerse a la vanguardia de su mercado" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <img src="./assets/beneficios-4.webp" alt="Mantenerse a la vanguardia de su mercado" style="max-width: 100%; height: 15rem" loading="lazy" />
           <p>Mantenerse a la vanguardia de su mercado</p>
         </div>
-        <div class="div4 div-beneficios">
-          <img src="./assets/beneficios-1.png" alt="Dominio de Tecnologías de última generacion" style="max-width: 100%; height: 15rem" loading="lazy" />
-          <p>Dominio de Tecnologías de última generacion</p>
+        <div class="div3 div-beneficios">
+          <img src="./assets/beneficios-1.webp" alt="Dominio de Tecnologías de última generacion" style="max-width: 100%; height: 15rem" loading="lazy" />
+          <p>Dominio de tecnologías de última generacion</p>
         </div>
-        <div class="div5 div-beneficios">
-          <img src="./assets/beneficios-5.png" alt="" style="max-width: 100%; height: 15rem" loading="lazy" />
+        <div class="div4 div-beneficios">
+          <img src="./assets/beneficios-5.webp" alt="" style="max-width: 100%; height: 15rem" loading="lazy" />
           <p>Transferencia de conocimiento</p>
         </div>
-        <div class="div6 div-beneficios">
-          <img src="./assets/beneficios-6.png" alt="Transferencia de conocimiento" style="max-width: 100%; height: 15rem" loading="lazy" />
+        <div class="div5 div-beneficios">
+          <img src="./assets/beneficios-6.webp" alt="Transferencia de conocimiento" style="max-width: 100%; height: 15rem" loading="lazy" />
           <p>Acompañamiento y seguimiento</p>
         </div>
-        <div class="div7 div-beneficios">
-          <img src="./assets/beneficios-7.png" alt="Optimización de tareas"style="max-width: 100%; height: 15rem" loading="lazy" />
+        <div class="div6 div-beneficios">
+          <img src="./assets/beneficios-7.webp" alt="Optimización de tareas"style="max-width: 100%; height: 15rem" loading="lazy" />
           <p>Optimización de tareas</p>
         </div>
-        <div class="div8 div-beneficios">
-          <img src="./assets/beneficios-8.png" alt="Ahorro de tiempo y dinero" style="max-width: 100%; height: 15rem" loading="lazy" />
-          <p>Ahorro de tiempo y dinero</p>
-        </div>
+        
       </div>
     </section>
 
@@ -404,7 +407,7 @@
 
     <!-- Tecnologias =============================================  -->
     <section class="tecnologias-contenedor" id="tecnologias">
-      <h2>TECNOLOGÍAS</h2>
+      <h2>Tecnologías</h2>
       <div class="contenido-tecnologias">
         <p>
           Nos especializamos en tecnologías de última generación. Esto nos permite aplicar la que mejor se ajuste a cada necesidad de negocio, generando resultados de alto impacto en las empresas. 
@@ -414,7 +417,7 @@
       <div class="tecnologias-grid">
         <div class="tecnologias-secciones">
           <img
-            src="./assets/Sharepoint.png"
+            src="./assets/Sharepoint.webp"
             alt="imagen SharePoint"
             style="max-width: 100%; height: 100px"
             class="apagado"
@@ -425,7 +428,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/365 color logo.png"
+            src="./assets/365 color logo.webp"
             alt="Imagen Office 365"
             style="max-width: 100%; height: 50px"
             class="apagado"
@@ -436,7 +439,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/net.png"
+            src="./assets/net.webp"
             alt="imagen .Net"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -447,7 +450,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/angular-logo-png.png"
+            src="./assets/angular-logo-png.webp"
             alt="Imagen Angular"
             style="max-width: 100%; height: 100px"
             class="apagado"
@@ -458,7 +461,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/Dynamics-365-logo.png"
+            src="./assets/Dynamics-365-logo.webp"
             alt="imagen Dynamics 365"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -469,7 +472,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/firebase.png"
+            src="./assets/firebase.webp"
             alt="Imagen Firebase"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -480,7 +483,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/HTML5 JS Y CSS JUNTOS.png"
+            src="./assets/HTML5 JS Y CSS JUNTOS.webp"
             alt="imagen HTML5, CSS3, Javascript"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -491,7 +494,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/ionic logo.png"
+            src="./assets/ionic logo.webp"
             alt="imagen Ionic"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -502,7 +505,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/Microsoft_Azure_Logo.png"
+            src="./assets/Microsoft_Azure_Logo.webp"
             alt="imagen Microsoft Azure"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -513,7 +516,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/mongodb logo.png"
+            src="./assets/mongodb logo.webp"
             alt="imagen MongoDB"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -524,7 +527,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/Node js logo.png"
+            src="./assets/Node js logo.webp"
             alt="imagen NodeJs"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -535,7 +538,7 @@
 
         <div class="tecnologias-secciones">
           <img
-            src="./assets/React logo.png"
+            src="./assets/React logo.webp"
             alt="imagen ReactJs"
             style="max-width: 100%; height: 70px"
             class="apagado"
@@ -549,182 +552,34 @@
 
     <!-- Clientes =============================================  -->
     <section class="clientes-contenedor" id="clientes">
-      <h2>ALGUNOS DE NUESTROS CLIENTES</h2>
+      <h2>Algunos de nuestros clientes</h2>
 
-      <div class="contenido-clientes">
-        <p>Acompañamos a las empresas en su proceso de crecimiento y transformación digital. Cumplimos con los objetivos en menor tiempo, maximizando los beneficios</p>
+      <div class="parent-clientes">
+        <img src="./assets/abinbev logo png.webp" alt="imagen logo abin" style="max-width: 100%; height: 70px;"  loading="lazy" >
+        <img src="./assets/INTA.webp" alt="imagen logo inta" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/afab logo png.webp" alt="imagen logo afab" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/antofagasta.webp" alt="imagen logo antofagasta" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/armytech logo png.webp" alt="imagen logo armytech" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/ataway.webp" alt="imagen logo ataway" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/beccar png logo.webp" alt="imagen logo beccar" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/cordial logo png.webp" alt="imagen logo cordial" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/creoslogopng.webp" alt="imagen logo creos" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/global mix.webp" alt="imagen logo glabal mix" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/Logo naranja VU.webp" alt="imagen logo vu" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/Mototech.webp" alt="imagen logo mototech" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/Multitech.webp" alt="imagen logo multitech" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/pothole logo png.webp" alt="imagen logo pothole" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/redlink.webp" alt="imagen logo redlink" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/Syn_med_black.webp" alt="imagen logo syn" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/Secure auth.webp" alt="imagen logo secure auth" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/beccar png logo.webp" alt="imagen loco beccar" style="max-width: 100%; height: 70px;" loading="lazy" >
+        <img src="./assets/syngenta.webp" alt="imagen logo syngenta" style="max-width: 100%; height: 50px;" loading="lazy" >
+        <img src="./assets/wizard.webp" alt="imagen logo wizard" style="max-width: 100%; height: 50px;" loading="lazy" >
+
       </div>
       
-      <div class="slider">
-        <div class="slide-track">
-          <div class="slide">
-            <img
-            src="./assets/Logos clientes/ataway.png"
-            height="60px"
-            max-width="100%"
-            alt="imagen ataway"
-            loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-            src="./assets/Logos clientes/INTA.png"
-            height="60px"
-            max-width="100%"
-            
-            alt="imagen inta"
-            loading="lazy" 
-            />
-          </div>
-       
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/Secure auth.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen secure auth"
-              loading="lazy" 
-            />
-          </div>
-          
-         
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/Mototech.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen mototech"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/antofagasta.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen antofagasta"
-              loading="lazy" 
-            />
-          </div>
-        
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/redlink.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen redlink"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/Multitech.png"
-              height="70px"
-              max-width="100%"
-              alt="imagen multitech"
-              loading="lazy" 
-            />
-          </div>
-          
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/syngenta.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen syngenta"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/willis.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen willis"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/abinbev logo png.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen abinbev"
-              loading="lazy" 
-            />
-          </div>
-         
-        </div>
-      </div>
-
-      <div class="slider">
-        <div class="slide-track">
-          
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/afab logo png.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen afab"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/armytech logo png.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen armytech"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/beccar png logo.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen beccar"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/cordial logo png.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen cordial"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/creoslogopng.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen creos"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/global mix.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen Global Mix"
-              loading="lazy" 
-            />
-          </div>
-          <div class="slide">
-            <img
-              src="./assets/Logos clientes/pothole logo png.png"
-              height="60px"
-              max-width="100%"
-              alt="imagen pothole"
-              loading="lazy" 
-            />
-          </div>
-        </div>
-      </div>
+      
+    
 
     </section>
     <!-- Clientes  end =============================================  -->
@@ -732,7 +587,7 @@
     <!-- Contacto  =============================================  -->
     <section id="contacto" class="contacto">
       <div class="content">
-        <h1 class="logo-contact">CONTACTO</h1>
+        <h1 class="logo-contact">Contacto</h1>
         <div>
           <div class="contact-wrapper animated bounceInUp">
             <div class="contact-form">
@@ -778,7 +633,7 @@
                   ></textarea>
                 </p>
                 <p class="block">
-                  <button @click="enviar">ENVIAR CONSULTA</button>
+                  <button @click="enviar">Enviar consulta</button>
                 </p>
               </div>
             </div>
@@ -786,7 +641,7 @@
               <h2>Más Info</h2>
               <ul>
                 <li>
-                  <i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina
+                  <i class="fas fa-map-marker-alt"></i> Paraguay 917, 1er piso, Buenos Aires, Argentina
                 </li>
                 <li><i class="fas fa-phone"></i> +541168119269</li>
                 <li>
@@ -866,7 +721,6 @@
 
           <div class="footer-data">
             <i class="icon-envelope2"></i>  <a href="mailto:sales@sinaptic.com.ar?subject=Asunto" style="color: #fff; text-decoration: none; text-transform: lowercase;">sales@sinaptic.com.ar</a> 
-            <span class="middot">&middot;</span>
           </div>
         </div>
       </div>
@@ -874,8 +728,9 @@
         <a href="#body">
           <img
             id="footerimg"
-            src="./assets/logoblanco.webp"
+            src="assets/logoblanco.png"
             alt="logo Sinaptic"
+            loading="lazy"
           />
         </a>
       </div>
@@ -1002,5 +857,6 @@
         },
       });
     </script>
+    <script type="text/javascript" async="" defer="" src="https://spanalytics.com.ar/piwik.js"></script>
   </body>
 </html>

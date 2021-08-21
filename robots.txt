@@ -1,0 +1,6 @@
+User-agent: * 
+Disallow: /stories/wp-admin
+Disallow: /stories/wp-includes
+Disallow: /stories/wp-content/plugins
+Disallow: /stories/wp-content/cache
+Disallow: /stories/wp-content/themes

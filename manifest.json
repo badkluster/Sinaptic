@@ -1,7 +1,7 @@
 {
     "name": "Sinaptic | Applied Technology",
     "short_name": "Sinaptic",
-    "description": "Bienvenid@s a Sinaptic | Applied Technology, Empresa dedicada al desarrollo web y de aplicaciones moviles.",
+    "description": "Bienvenid@s a Sinaptic | Applied Technology",
     "background_color": "#2B2B2B",
     "theme_color": "#626b80",
     "orientation": "portrait",
@@ -10,21 +10,13 @@
     "scope": "./",
     "lang": "es-AR",
  "icons": [
-   
    {
       "src": "./assets/img/android-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png",
       "density": "4.0",
       "purpose": "any"
-   },
-   {
-      "src": "./assets/img/ms-icon-512x512.png",
-      "sizes": "512x512",
-      "type": "image/png",
-      "density": "4.0",
-      "purpose": "any"
-   },
+   },  
    {
       "src": "./assets/img/ms-icon-310x310.png",
       "sizes": "310x310",
@@ -76,6 +68,13 @@
    "sizes": "144x144",
    "type": "image/png",
    "density": "3.0"
+   },
+   {
+      "src": "./assets/img/ms-icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "density": "4.0",
+      "purpose": "any"
    }
   
  ]
