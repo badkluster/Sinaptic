@@ -83,6 +83,7 @@ h4 {
 
 img {
   max-width: 100%;
+  object-fit: contain;
 }
 
 .section {
@@ -185,6 +186,7 @@ img {
 .logo img {
   width: 20rem;
   cursor: pointer;
+  object-fit: contain;
 }
 
 @media (min-width: 768px) {
