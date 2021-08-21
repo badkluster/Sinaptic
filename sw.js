@@ -59,6 +59,7 @@ const CACHE_NAME = "v1_cache_Sinaptic",
     "https://spanalytics.com.ar/piwik.js",
     "https://www.googletagmanager.com/gtag/js?id=UA-96539148-1",
     "./assets/banner-header.webp",
+    "https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logo-sinaptic-azul.png",
   ];
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
