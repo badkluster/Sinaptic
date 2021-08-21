@@ -11,7 +11,7 @@
     />
     <title>Sinaptic | Applied Technology</title>
 
-    <meta name="description" content="Sinaptic | Applied Technology"/>
+    <meta name="description" content="Alianzas fuertes logran resultados extraordinarios"/>
     <meta http-equiv="Cache-control" content="max-age=604800, public">
     <!-- PWA -->
     <meta name="MobileOptimized" content="width" />
@@ -28,22 +28,20 @@
     <meta property="og:title" content="Sinaptic | Applied Technology" />
     <meta property="og:type" content="text" />
     <meta property="og:url" content="http://sinaptic.com.ar" />
-    <meta property="og:title" content="Sinaptic | Applied Technology" />
-    <meta property="og:url" content="http://sinaptic.com.ar" />
-    <meta property="og:description" content="Pagina web de Sinaptic | Applied Technology"
+    <meta property="og:description" content="Alianzas fuertes logran resultados extraordinarios"
     />
-    <meta property="og:image"content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0"/>
-    <meta property="og:image:url" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
-    <meta property="og:image:secure_url" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
+    <meta property="og:image"content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logo-sinaptic-azul.png"/>
+    <meta property="og:image:url" content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logo-sinaptic-azul.png">
+    <meta property="og:image:secure_url" content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logo-sinaptic-azul.png">
     <meta property="og:image:type" content="png">
     <meta property="og:image:alt" content="Logo Sinaptic Website">
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="Pagina web de Sinaptic | Applied Technology"/>
+    <meta name="twitter:card" content="Alianzas fuertes logran resultados extraordinarios"/>
     <meta name="twitter:creator" content="Sinaptic" />
     <meta name="twitter:site" content="http://sinaptic.com.ar" />
     <meta name="twitter:image:alt" content="Logo Sinaptic Website">
-    <meta name="twitter:image" content="https://sinaptic.visualstudio.com/e198c559-133d-4a98-90a0-a545060a991c/_apis/git/repositories/5feb29bb-3464-41cc-a023-1d45e6c79960/items?path=%2Fassets%2Flogo-sinaptic-azul.png&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/badkluster/Sinaptic/main/assets/logo-sinaptic-azul.png">
 
     <meta name="robots" content="index" />
     <meta name="robots" content="follow" />
@@ -75,11 +73,18 @@
       onload="this.onload=null;this.rel='stylesheet'"
     />
     <noscript><link rel="stylesheet" href="./css/normalize.css" /></noscript>
+    
 
     <link rel="stylesheet" defer href="./css/inicio.css" />
 
     <!-- AOS -->
-    <link rel="stylesheet" defer href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link
+    rel="preload"
+    href="./css/aos.css"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  />
+  <noscript><link rel="stylesheet" href="./css/aos.css" /></noscript>
 
     <link
       rel="preload"
@@ -94,7 +99,7 @@
       crossorigin="anonymous"
       defer
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
   
       function gtag() {
@@ -106,7 +111,7 @@
   </script>
   
   <!-- Matomo -->
-  <script type="text/javascript">
+  <script type="text/javascript" defer>
     var _paq = _paq || [];
     /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
     _paq.push(['trackPageView']);
@@ -120,7 +125,7 @@
     })();
   </script>
   
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-96539148-1"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96539148-1"></script>
     
 
   </head>
